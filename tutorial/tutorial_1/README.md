@@ -21,11 +21,12 @@ A very simple `grep`.
 
 Therefore, the flag is, `Almay`.
 
-**Explanation**
+## Explanation
 
 **grep** - print lines matching a pattern
 
 **-E** - "--extended-regexp" -  Interpret PATTERN as an extended regular expression.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjQxMjM5MywtMTc2OTk2Nzc3MV19
+eyJoaXN0b3J5IjpbLTEyNTE1NTI4MTksLTE3Njk5Njc3NzFdfQ
+==
 -->
