@@ -24,9 +24,9 @@ Therefore, the flag is, `Almay`.
 **Explanation**
 
 ```
-**grep** - print lines matching a pattern
+grep - print lines matching a pattern
 
-**-E** - "--extended-regexp" -  Interpret PATTERN as an extended regular expression.
+-E - "--extended-regexp" -  Interpret PATTERN as an extended regular expression.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTA5MjI2NTFdfQ==
+eyJoaXN0b3J5IjpbLTE3Njk5Njc3NzFdfQ==
 -->
