@@ -5,14 +5,15 @@
 **Points:** 0
 
 **Description:**
-```
-How can you figure out Robin Morris's middle name? Thankfully you have a [list](contractors.txt) you can check!
-```
+
+>How can you figure out Robin Morris's middle name? Thankfully you have a [list](contractors.txt) you can check!
+
 **Hint:**
 
 >Please don't search by hand!
 
 ## Write-up
+
 A very simple `grep`.
 
     $ grep -E "^Robin (.*) Morris$" contractors.txt 
@@ -20,5 +21,5 @@ A very simple `grep`.
 
 Therefore, the flag is, `Almay`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4NDk2MDI5XX0=
+eyJoaXN0b3J5IjpbMTYyNzEwNDNdfQ==
 -->
