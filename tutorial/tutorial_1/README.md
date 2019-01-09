@@ -25,8 +25,7 @@ Therefore, the flag is, `Almay`.
 
 **grep** - print lines matching a pattern
 
-**-E** - **Matcher** **Selection** **--extended-regexp**
-           Interpret PATTERN as an extended regular expression (ERE, see below).  (**-E** is specified by POSIX.)
+**-E** - "--extended-regexp" -  Interpret PATTERN as an extended regular expression (ERE, see below).  (**-E** is specified by POSIX.)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA1NjExMDJdfQ==
+eyJoaXN0b3J5IjpbLTkyNzk3ODg2NV19
 -->
