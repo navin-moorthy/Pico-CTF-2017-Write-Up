@@ -1,11 +1,13 @@
 # PicoCTF_2017: Tutorial 1
 
 **Category:** Tutorial
+
 **Points:** 0
+
 **Description:**
-
->How can you figure out Robin Morris's middle name? Thankfully you have a [list](contractors.txt) you can check!
-
+```
+How can you figure out Robin Morris's middle name? Thankfully you have a [list](contractors.txt) you can check!
+```
 **Hint:**
 
 >Please don't search by hand!
@@ -17,3 +19,6 @@ A very simple `grep`.
     Robin Almay Morris
 
 Therefore, the flag is, `Almay`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzQ4NDk2MDI5XX0=
+-->
