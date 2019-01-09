@@ -23,7 +23,10 @@ Therefore, the flag is, `Almay`.
 
 **Explanation**
 
-grep - 
+**grep** - print lines matching a pattern
+
+**-E** - **Matcher** **Selection** **--extended-regexp**
+           Interpret PATTERN as an extended regular expression (ERE, see below).  (**-E** is specified by POSIX.)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMwOTQyMDldfQ==
+eyJoaXN0b3J5IjpbLTE5ODA1NjExMDJdfQ==
 -->
