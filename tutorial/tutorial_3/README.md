@@ -13,6 +13,8 @@
 ## Write-up
 Unfortunately, making an automated tool would be more troublesome. We can use deductive guessing here though, since we know colour codes are RGB. Therefore, we are looking for a value there's greater in the first two hexadecimal digits than the rest.
 
+`Well Said`
+
     7A3B00
     6000C7
     67C700
@@ -22,3 +24,6 @@ Unfortunately, making an automated tool would be more troublesome. We can use de
     007A78
 
 Therefore, the flag is, `C70002`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTg2OTM0NjM2XX0=
+-->
