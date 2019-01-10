@@ -27,8 +27,9 @@ Therefore, the flag is, `Almay`.
 
 **-E** - "--extended-regexp" -  Interpret PATTERN as an extended regular expression.
 
-
+- Learn or brush up your Regular Expression Skills 
+- Usefull site : https://regex101.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc2OTM5MTEsLTEyNTE1NTI4MTksLT
-E3Njk5Njc3NzFdfQ==
+eyJoaXN0b3J5IjpbLTk1ODcxNTA2OSwtMTI1MTU1MjgxOSwtMT
+c2OTk2Nzc3MV19
 -->
