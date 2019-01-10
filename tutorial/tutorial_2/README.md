@@ -17,6 +17,8 @@ A simple ROT-13 cipher,
 
     Lb, fb unir lbh orra cynlvat gung arj Zrfbcrgf tnzr? Gubfr arj Zrtnybalpuvqnr naq Oenqlcbqvqnr gurl nqqrq ner cerggl pbby. Npghnyyl, V jbhyq tb nf sne nf fnlvat gung vg vf abj zl yvsr'f qrnerfg nzovgvba gb bognva n "Vasyngnoyr Fybgu Zbafgre"!
 
+`cat message.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'`
+
 becomes
 
     Yo, so have you been playing that new Mesopets game? Those new Megalonychidae and Bradypodidae they added are pretty cool. Actually, I would go as far as saying that it is now my life's dearest ambition to obtain a "Inflatable Sloth Monster"!
@@ -25,5 +27,5 @@ after rotating each character 13 times.
 
 Therefore, the flag is `Inflatable Sloth Monster`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA4NDI0OTRdfQ==
+eyJoaXN0b3J5IjpbODU0Nzg2MTg5LC0xMzYwODQyNDk0XX0=
 -->
