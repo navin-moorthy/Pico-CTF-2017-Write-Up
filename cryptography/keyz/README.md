@@ -1,7 +1,9 @@
 # PicoCTF_2017: Keyz
 
 **Category:** Cryptography
+
 **Points:** 20
+
 **Description:**
 
 >While webshells are nice, it'd be nice to be able to login directly. To do so, please add your own public key to ~/.ssh/authorized_keys, using the webshell. Make sure to copy it correctly! The key is in the ssh banner, displayed when you login remotely with ssh, to shell2017.picoctf.com
@@ -52,3 +54,6 @@ Now try SSH-ing into the box at `shell2017.picoctf.com` from your computer!
     Here is your flag: who_needs_pwords_anyways
 
 Therefore, the flag is `who_needs_pwords_anyways`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODYxNDU2ODAwXX0=
+-->
