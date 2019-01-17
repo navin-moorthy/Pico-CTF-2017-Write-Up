@@ -19,7 +19,8 @@ Well, apparently the solution for the previous [challenge](../leaf-of-the-tree/)
 	c99501b0fe95402ed1c9191102fe1b68
 
 Easy!
-Therefore, the flag is `7ffb59b2f309c09959ba333d0af88565`.
+Therefore, the flag is `c99501b0fe95402ed1c9191102fe1b68`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjg3MzQ0NSwtMTg5NTYwMDA0M119
+eyJoaXN0b3J5IjpbNjE2ODk1Mzk4LC0xMDI4NzM0NDUsLTE4OT
+U2MDAwNDNdfQ==
 -->
