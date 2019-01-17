@@ -22,7 +22,7 @@ Again using Python, I designed [a simple script](decrypt.py) using pycrypto.
 
 # Script for PicoCTF computeAES challenge
 
-# Created by Amos (LFlare) Ng
+# Created by NavinNavi
 
 ##
 
@@ -48,5 +48,5 @@ print(plaintext)
 
 Therefore, the flag is `flag{do_not_let_machines_win_983e8a2d`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzQ5NDg0M119
+eyJoaXN0b3J5IjpbMzExODc1ODAxLDE4MzM0OTQ4NDNdfQ==
 -->
