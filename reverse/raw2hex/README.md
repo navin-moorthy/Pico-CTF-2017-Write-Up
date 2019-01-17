@@ -27,10 +27,11 @@ This seems like another question of bash piping... Running `/problems/45f3b0abcf
 
 Now, to hex it, we can simply use `xxd`, the wondertool~
 
-    $ /problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex | cut -d ':' -f 2 | xxd -plain
-    cc76ae5c1b19d06897338d2deaa50bf00a
+    $ /problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex | cut -d 's' -f 2 | xxd -plain
+	3acc76ae5c1b19d06897338d2deaa50bf00a
 
-Therefore, the flag is `cc76ae5c1b19d06897338d2deaa50bf00a`.
+Therefore, the flag is `3acc76ae5c1b19d06897338d2deaa50bf00a`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5Nzc3MjU3LDIwMjE0NjI2NTNdfQ==
+eyJoaXN0b3J5IjpbMTM4NjIwNzY2Miw2Njk3NzcyNTcsMjAyMT
+Q2MjY1M119
 -->
