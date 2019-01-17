@@ -64,18 +64,18 @@ Just bruteforce it, it's modulus 16, not modulus 2^16.
     A real Hashing Function is used for many things. This can include checking to ensure a file has not been changed (its hash value would change if any part of it is changed). An important use of hashes is for storing passwords because a Hashing Function cannot be reversed to find the initial data. Therefore if someone steals the hashes, they must try many different inputs to see if they can "crack" it to find what password yields the same hash. Normally, this is too much work (if the password is long enough). But many times, people's passwords are easy to guess... Brute forcing this hash yourself is not a good idea, but there is a strong possibility that, if the password is weak, this hash has been cracked by someone before. Try looking for websites that have stored already cracked hashes.
 
     TO CLAIM YOUR PRIZE, give me the string password that will result in this MD5 hash (MD5, like most hashes, are represented as hex digits):
-    811edc316305926e9883e2c283b8714c
+    21b6a74930ef75e32f69bc0b49fbe8ff
 
-    >k1dk1n
+    >hum4n
     Correct! Completed level 4
 
 Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decrypter.aspx)
 
-    You completed all 4 levels! Here is your prize: 21b6a74930ef75e32f69bc0b49fbe8ff = hum4n
+    You completed all 4 levels! Here is your prize: 1b16e0e724dc0a8b96d127a6af8ed9a7
 
 Therefore, the flag is `1b16e0e724dc0a8b96d127a6af8ed9a7`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTY5OTA3MCw3ODY4NzIwODgsMTg5Nz
-Y3NzExMiwtNTIyMjM4OTI0LDEwMDA4MjQxOTMsLTYwNjcxMzQ2
-OSwxNTU0NzgzNjE5XX0=
+eyJoaXN0b3J5IjpbLTIwMjY2ODQ2OTEsNzg2ODcyMDg4LDE4OT
+c2NzcxMTIsLTUyMjIzODkyNCwxMDAwODI0MTkzLC02MDY3MTM0
+NjksMTU1NDc4MzYxOV19
 -->
