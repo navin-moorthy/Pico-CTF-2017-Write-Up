@@ -26,8 +26,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Keyz_20](cryptography/keyz) :heavy_check_mark:
     - [Substitute_40](cryptography/substitute) :heavy_check_mark:
     - [Hash101_50](cryptography/hash101) :heavy_check_mark:
-    - [computeAES_50](cryptography/computeaes)
-    - [computeRSA_50](cryptography/computersa)
+    - [computeAES_50](cryptography/computeaes) :heavy_check_mark:
+    - [computeRSA_50](cryptography/computersa) :heavy_check_mark:
     - [SoRandom_75](cryptography/sorandom)
     - [LeakedHashes_90](cryptography/leakedhashes)
     - [Weird-RSA_90](cryptography/weird-rsa)
@@ -49,7 +49,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Forest_200](reverse/forest)
 * **Web Exploitation**
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
-    - [My-First-SQL_50](web/my-first-sql)
+    - [My-First-SQL_50](web/my-first-sql) :heavy_check_mark:
     - [Biscuit_75](web/biscuit)
     - [TW-GR-E1-ART_100](web/tw-gr-e1-art)
     - [A-Happy-Union_110](web/a-happy-union)
@@ -60,9 +60,9 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl)
     - [TW-GR-E4-STW_200](web/tw-gr-e4-stw)
 * **Binary Exploitation**
-    - [Bash-Loop_40](binary/bash-loop)
-    - [Just-No_40](binary/just-no)
-    - [Shellz_55](binary/shellz)
+    - [Bash-Loop_40](binary/bash-loop) :heavy_check_mark:
+    - [Just-No_40](binary/just-no) :heavy_check_mark:
+    - [Shellz_55](binary/shellz) :heavy_check_mark:
     - [Shells_70](binary/shells)
     - [Guess-The-Number_75](binary/guess-the-number)
     - [Ive-Got-A-Secret_75](binary/ive-got-a-secret)
@@ -82,8 +82,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Looooong_20](miscellanous/looooong) :heavy_check_mark:
     - [Leaf-of-the-Forest_30](miscellanous/leaf-of-the-forest) :heavy_check_mark:
     - [WorldChat_30](miscellanous/worldchat) :heavy_check_mark:
-    - [Yarn_55](miscellanous/yarn)
-    - [Mystery-Box_60](miscellanous/mystery-box)
+    - [Yarn_55](miscellanous/yarn) :heavy_check_mark:
+    - [Mystery-Box_60](miscellanous/mystery-box) :heavy_check_mark:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzY2NzY0Myw1NTgwMTI2MTVdfQ==
+eyJoaXN0b3J5IjpbLTE1ODQwNDkwMTUsNTU4MDEyNjE1XX0=
 -->
