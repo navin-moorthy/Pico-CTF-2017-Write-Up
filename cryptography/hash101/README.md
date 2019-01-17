@@ -71,11 +71,11 @@ Just bruteforce it, it's modulus 16, not modulus 2^16.
 
 Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decrypter.aspx)
 
-    You completed all 4 levels! Here is your prize: 21b6a74930ef75e32f69bc0b49fbe8ff
+    You completed all 4 levels! Here is your prize: 21b6a74930ef75e32f69bc0b49fbe8ff = hum4n
 
-Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
+Therefore, the flag is `1b16e0e724dc0a8b96d127a6af8ed9a7`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxMjk1OTMwLDc4Njg3MjA4OCwxODk3Nj
-c3MTEyLC01MjIyMzg5MjQsMTAwMDgyNDE5MywtNjA2NzEzNDY5
-LDE1NTQ3ODM2MTldfQ==
+eyJoaXN0b3J5IjpbMTMwNTY5OTA3MCw3ODY4NzIwODgsMTg5Nz
+Y3NzExMiwtNTIyMjM4OTI0LDEwMDA4MjQxOTMsLTYwNjcxMzQ2
+OSwxNTU0NzgzNjE5XX0=
 -->
