@@ -19,6 +19,9 @@ In simple python,
     $ ls 
 	flag hex2raw input
 	
+	$ python -c "print('416f1c7918f83a4f1922d86df5e78348'.decode('hex'))" 
+	Aoy:O"
+
 	$ python -c "print('416f1c7918f83a4f1922d86df5e78348'.decode('hex'))" | ./hex2raw
 	
 	Give me this in raw form (0x41 -> 'A'):
@@ -32,5 +35,6 @@ In simple python,
 
 Therefore, the flag is `1d2411efe307f5ac07bd28bbabb5769e`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzE4NzA1NywtODcyNDcwNTAwXX0=
+eyJoaXN0b3J5IjpbMTY0MTU0NTY0NywxNDE3MTg3MDU3LC04Nz
+I0NzA1MDBdfQ==
 -->
