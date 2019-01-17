@@ -11,10 +11,14 @@
 >Where can we find information on the browser in networking data? Maybe try reading up on user-agent strings.
 
 ## Write-up
-Looking in packet `#93`, we find the User-Agent(_I get the reference_)
+Looking in packet `#90`, we find the User-Agent(_I get the reference_)
 
-    Mozilla/5.0 (X11; OpenBSD i386) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+    Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36
+
 
 Attempting to pass `Mozilla 5.0`, `Safari 537.37` results as invalid flag but `Chrome 36.0.1985` results in the correct flag.
 
 Therefore, the flag is `Chrome 36.0.1985`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk3NjM3NDE5M119
+-->
