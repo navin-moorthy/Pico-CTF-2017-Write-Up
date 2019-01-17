@@ -23,7 +23,7 @@ This one is just a mess to document but I'll try my best. Firstly, do take note 
 	-------- LEVEL 1: Text = just 1's and 0's --------
 	All text can be represented by numbers. To see how different letters translate to numbers, go to http://www.asciitable.com/
 
-	TO UNLOCK NEXT LEVEL, give me the ASCII representation of 0110100001100101011011000110110001101111
+	TO UNLOCK NEXT LEVEL, give me the ASCII representation of 011011000110111101110110011001010110110001111001
 
 >
 
@@ -73,5 +73,5 @@ Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decr
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDc4MzYxOV19
+eyJoaXN0b3J5IjpbODMxNjUxNTI2LDE1NTQ3ODM2MTldfQ==
 -->
