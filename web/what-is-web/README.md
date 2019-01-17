@@ -12,9 +12,10 @@
 
 ## Write-up
 Viewing the [page source](index.html) gives us 1/3 of the flag, `<!-- The first part of the flag (there are 3 parts) is 72b28b258d2 -->`, 
-Viewing the [CSS source code](hacker.css) gives us 2/3 of the flag, `5ba511a0f24` and lastly viewing the [JS source code](script.js) gives us the last part of the flag `36308e33e85`.
+Viewing the [CSS source code](hacker.css) gives us 2/3 of the flag, `The second part of the flag is b2ea021486f` 
+Viewing the [JS source code](script.js) gives us the last part of the flag `36308e33e85`.
 
 Therefore, the flag is `fab79c49d9e5ba511a0f2436308e33e85`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIwMTI1OF19
+eyJoaXN0b3J5IjpbLTIwNzczMzc4MDVdfQ==
 -->
