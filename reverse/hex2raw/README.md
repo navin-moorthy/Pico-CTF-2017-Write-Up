@@ -14,7 +14,8 @@
 
 In simple python,
 
-Navigate to 
+Navigate to `/problems/9bbf83df34f9c5239f329f977f4a66c1` as per the question.
+
     $ cd /problems/9bbf83df34f9c5239f329f977f4a66c1
     
     $ ls 
@@ -26,11 +27,12 @@ Navigate to
 
 	You gave me:
 
-Now take the hex and decode it.
+Now take the hex `99d9835d83647dcf4cb202a51e1c29bc` and decode it.
 	
-	$ python -c "print('416f1c7918f83a4f1922d86df5e78348'.decode('hex'))" 
-	Aoy:O"
+	$ python -c "print('99d9835d83647dcf4cb202a51e1c29bc'.decode('hex'))" 
+	ك]d})
 
+Give the output to the 
 	$ python -c "print('416f1c7918f83a4f1922d86df5e78348'.decode('hex'))" | ./hex2raw
 	
 	Give me this in raw form (0x41 -> 'A'):
@@ -44,6 +46,6 @@ Now take the hex and decode it.
 
 Therefore, the flag is `1d2411efe307f5ac07bd28bbabb5769e`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTg0MzUxMywxNjQxNTQ1NjQ3LDE0MT
+eyJoaXN0b3J5IjpbLTgwNzE3MzY2MiwxNjQxNTQ1NjQ3LDE0MT
 cxODcwNTcsLTg3MjQ3MDUwMF19
 -->
