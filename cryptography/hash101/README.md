@@ -35,12 +35,12 @@ Fairly simple, level 1 just requires a binary conversion.
     ------ LEVEL 2: Numbers can be base ANYTHING -----
     Numbers can be represented many ways. A popular way to represent computer data is in base 16 or 'hex' since it lines up with bytes very well (2 hex characters = 8 binary bits). Other formats include base64, binary, and just regular base10 (decimal)! In a way, that ascii chart represents a system where all text can be seen as "base128" (not including the Extended ASCII codes)
 
-    TO UNLOCK NEXT LEVEL, give me the text you just decoded, plaid, as its hex and decimal equivalent
+    TO UNLOCK NEXT LEVEL, give me the text you just decoded, lovely, as its hex and decimal equivalent
 
-    hex>706c616964
-    Good job! 706c616964 to ASCII -> plaid is plaid
+    hex>6c6f76656c79
+    Good job! 6c6f76656c79to ASCII -> lovelyis plaid
     Now decimal
-    dec>482854660452
+    dec>108111118101108121
     Good job! 482854660452 to Hex -> 706c616964 to ASCII -> plaid is plaid
     Correct! Completed level 2
 
@@ -73,5 +73,6 @@ Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decr
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjcxMzQ2OSwxNTU0NzgzNjE5XX0=
+eyJoaXN0b3J5IjpbLTE1MzQxMTc1MTYsLTYwNjcxMzQ2OSwxNT
+U0NzgzNjE5XX0=
 -->
