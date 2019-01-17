@@ -15,24 +15,25 @@ I am a big fan of not wasting time by tab completion, thus we are going to cheat
 
     $ cd /problems/a45d1519bd193bc3a273744c83fad1e2
     
-    $ find /problems/a45d1519bd193bc3a273744c83fad1e2/ -type f
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/branch4118/leaf33d8                                
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/branchcd3c/leaf29a9            
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/branchcd3c/leaf280d            
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/branch8979/leaf184f  
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/branch8979/leaf52a9  
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/trunkc000/flag                                                         
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/trunkc000/branch8211/leaffbf3                                          
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/branch67f2/leaf5dd4                                                    
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/branch67f2/leaf7813                                                    
-    /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/branch3c2e/leaff81e
-
+    $ find -type f
+	./trunk/trunk9ef5/trunkded5/branch1e76/leaf69bd
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/branchb7ed/leaf63c2
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/branchb7ed/leaf1ecc
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/trunkb847/trunk7d34/flag
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/trunkb847/trunk7d34/branche7e8/leafbd67
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/trunkb847/trunk7d34/branche7e8/leafd627
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/branchb8fc/leaf723b
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/branch8807/leaffcd3
+	./trunk/trunk9ef5/trunkded5/trunk3f6a/branch8807/leaf2352
+	./trunk/branchebba/leaff8e4
+	./trunk/branchebba/leafd038
+	./trunk/branchebba/leaff61d
 Hmm, that flag file looks interesting.
 
-    $ cat /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/trunk430b/trunk122c/trunkc000/flag
-    5e3d48f32a6d6e17a8102d3cbae36283
+    $ cat ./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/trunkb847/trunk7d34/flag
+	1510e551a2821bd027da10a7653814c8
 
 Therefore, the flag is `5e3d48f32a6d6e17a8102d3cbae36283`.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODQzODQ4NV19
+eyJoaXN0b3J5IjpbODc2MTQ1NDg4LDE0MTg0Mzg0ODVdfQ==
 -->
