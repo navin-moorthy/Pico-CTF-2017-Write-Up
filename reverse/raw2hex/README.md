@@ -13,6 +13,11 @@
 ## Write-up
 This seems like another question of bash piping... Running `/problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex` gives us raw binary data, with additional placeholder text infront. That needs to be filtered out first.
 
+    $ cd /problems/45f3b0abcf176b7cf7c1536b28d05d72
+    
+    $ ls
+	flag  raw2hex
+	
     # Accomplished by using ':' as a delimiter.
     $ /problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex | cut -d ':' -f 2
 
@@ -22,3 +27,6 @@ Now, to hex it, we can simply use `xxd`, the wondertool~
     cc76ae5c1b19d06897338d2deaa50bf00a
 
 Therefore, the flag is `cc76ae5c1b19d06897338d2deaa50bf00a`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjUzNTU0NjA0XX0=
+-->
