@@ -13,10 +13,10 @@
 ## Write-up
 Simple simple, just this code is sufficient!
 
-    $ for iter in {0..4096}; do /problems/bd058e83a119c78a006543d23d9f6422/bashloop $iter | grep -v "Nope. Pick another number between 0 and 4096"; done
-    Yay! That's the number! Here be the flag: d3aaad36e3947ceed96a916ca92d33b4 
+    $ for iter in {0..4096}; do /problems/e3f1970eb419b3aa32788a43ec91ef08/bashloop $iter | grep -v "Nope. Pick another number between 0 and 4096"; done
+	Yay! That's the number! Here be the flag: 9960332950d7db392f97f29dee04f4ee
 
-Therefore, the flag is `d3aaad36e3947ceed96a916ca92d33b4`.
+Therefore, the flag is `9960332950d7db392f97f29dee04f4ee`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTcyMjQ2OV19
+eyJoaXN0b3J5IjpbLTI3OTM3MjQ5NywxNjE5NzIyNDY5XX0=
 -->
