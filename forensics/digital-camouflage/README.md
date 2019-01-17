@@ -26,9 +26,9 @@ Looking up the `data.pcap` file in Wireshark lands us with packet #98
 Trying `cHJ2cUJaTnFZdw==` as the flag results in invalid... but wait, that looks like base64!
 
     $ echo "cHJ2cUJaTnFZdw==" | base64 -d
-    8PFEo0ttHQ
+    prvqBZNqYw
 
-Therefore, the flag is `8PFEo0ttHQ`.
+Therefore, the flag is `prvqBZNqYw`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTIwMTY1Nl19
+eyJoaXN0b3J5IjpbNzYyMjM2OTQyLDEyNTUyMDE2NTZdfQ==
 -->
