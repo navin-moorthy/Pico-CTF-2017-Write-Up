@@ -29,18 +29,17 @@ Bash piping~
 
 We seem to spot a common pattern `this is part 1/8 of the flag - 08bc`, let's try regexp!
 
-    $ nc shell2017.picoctf.com 11511 | grep -Eo "this is part [0-9]\/8 of the flag - [a-z0-9]{4}"
-    this is part 1/8 of the flag - 8d84
-    this is part 2/8 of the flag - 913f
-    this is part 3/8 of the flag - 84bd
-    this is part 4/8 of the flag - 68a4
-    this is part 5/8 of the flag - 6576
-    this is part 6/8 of the flag - 3e48
-    this is part 7/8 of the flag - d9d9
-    this is part 8/8 of the flag - ca1c
+    $ nc shell2017.picoctf.com 7911 | grep -E "this is part [0-9]/8 of the flag"
+	15:25:09 flagperson: this is part 1/8 of the flag - 08bc
+	15:25:10 flagperson: this is part 2/8 of the flag - 0aa6
+	15:25:13 flagperson: this is part 3/8 of the flag - 4ab9
+	15:25:13 flagperson: this is part 4/8 of the flag - 7621
+	15:25:20 flagperson: this is part 5/8 of the flag - e512
+	15:25:32 flagperson: this is part 6/8 of the flag - d2e4
+	15:25:34 flagperson: this is part 7/8 of the flag - 6d8b
+	15:25:34 flagperson: this is part 8/8 of the flag - dab3
 
-Therefore, the flag is `8d84913f84bd68a465763e48d9d9ca1c`.
+Therefore, the flag is `08bc0aa64ab97621e512d2e46d8bdab3`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTgyOTU5NjIsLTEzNDkwODU4NDRdfQ
-==
+eyJoaXN0b3J5IjpbMTQyNDIzODU2NiwtMTM0OTA4NTg0NF19
 -->
