@@ -13,17 +13,22 @@
 ## Write-up
 Looking up the `data.pcap` file in Wireshark lands us with packet #122
 
+    
     HTML Form URL Encoded: application/x-www-form-urlencoded
-        Form item: "userid" = "randled"
-            Key: userid
-            Value: randled
-        Form item: "pswrd" = "OFBGRW8wdHRIUQ=="
-            Key: pswrd
-            Value: OFBGRW8wdHRIUQ==
+    Form item: "userid" = "grassers"
+        Key: userid
+        Value: grassers
+    Form item: "pswrd" = "cHJ2cUJaTnFZdw=="
+        Key: pswrd
+        Value: cHJ2cUJaTnFZdw==
 
-Trying `OFBGRW8wdHRIUQ==` as the flag results in invalid... but wait, that looks like base64!
 
-    $ echo "OFBGRW8wdHRIUQ==" | base64 -d
+Trying `cHJ2cUJaTnFZdw==` as the flag results in invalid... but wait, that looks like base64!
+
+    $ echo "cHJ2cUJaTnFZdw==" | base64 -d
     8PFEo0ttHQ
 
 Therefore, the flag is `8PFEo0ttHQ`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNjgxMzkzNTZdfQ==
+-->
