@@ -39,11 +39,11 @@ or
 	flag.txt
 	shellz
 	shellz_no_aslr
-xinetd_wrapper.sh
-cat flag.txt
-5b5ba2c3b5558ec86315fd52b0c55a87
+	xinetd_wrapper.sh
+	cat flag.txt
+	5b5ba2c3b5558ec86315fd52b0c55a87
 
-Therefore, the flag is `a15898b0a97abc19164f240407d6c51b`.
+Therefore, the flag is `5b5ba2c3b5558ec86315fd52b0c55a87`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTI0Mzk2NiwtNDQ3MzUyNzRdfQ==
+eyJoaXN0b3J5IjpbLTEyNjQ5MzAyMTcsLTQ0NzM1Mjc0XX0=
 -->
