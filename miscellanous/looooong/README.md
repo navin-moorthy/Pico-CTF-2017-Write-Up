@@ -4,7 +4,7 @@
 **Points:** 20
 **Description:**
 
->I heard you have some "delusions of grandeur" about your typing speed. How fast can you go at shell2017.picoctf.com:30277?
+>I heard you have some "delusions of grandeur" about your typing speed. How fast can you go at shell2017.picoctf.com:44840?
 
 **Hint:**
 
@@ -25,3 +25,6 @@ With an easily designed [Python script](script.py), the flag prints out easily.
     Flag: with_some_recognition_and_training_delusions_become_glimpses_493092611815c4e8f8eee8df7264c4c0
 
 Therefore, the flag is `with_some_recognition_and_training_delusions_become_glimpses_493092611815c4e8f8eee8df7264c4c0`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzgzMTM0NTUxXX0=
+-->
