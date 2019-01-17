@@ -13,17 +13,19 @@
 ## Write-up
 This one is just a mess to document but I'll try my best. Firstly, do take note that none of the values will be the same everytime attempted. We will be using `nc` to connect as well.
 
-    $ nc shell2017.picoctf.com 9661
+    $ nc shell2017.picoctf.com 19170
 
-    Welcome to Hashes 101!
+	Welcome to Hashes 101!
 
-    There are 4 Levels. Complete all and receive a prize!
+	There are 4 Levels. Complete all and receive a prize!
 
 
-    -------- LEVEL 1: Text = just 1's and 0's --------
-    All text can be represented by numbers. To see how different letters translate to numbers, go to http://www.asciitable.com/
+	-------- LEVEL 1: Text = just 1's and 0's --------
+	All text can be represented by numbers. To see how different letters translate to numbers, go to http://www.asciitable.com/
 
-    TO UNLOCK NEXT LEVEL, give me the ASCII representation of 0111000001101100011000010110100101100100
+	TO UNLOCK NEXT LEVEL, give me the ASCII representation of 0110100001100101011011000110110001101111
+
+>
 
     >plaid
     Correct! Completed level 1
@@ -70,3 +72,6 @@ Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decr
     You completed all 4 levels! Here is your prize: c3ee093f26ba147ccc451fd13c91ffce
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU1NDc4MzYxOV19
+-->
