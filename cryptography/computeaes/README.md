@@ -44,9 +44,10 @@ print(plaintext)
 ```
 
     $ ./decrypt.py 
-    flag{do_not_let_machines_win_983e8a2d}__________
+    flag{do_not_let_machines_win_1e6b4cf4}__________
 
-Therefore, the flag is `flag{do_not_let_machines_win_983e8a2d`.
+Therefore, the flag is `flag{do_not_let_machines_win_1e6b4cf4}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExODc1ODAxLDE4MzM0OTQ4NDNdfQ==
+eyJoaXN0b3J5IjpbLTE0MDg4MzQxNzIsMzExODc1ODAxLDE4Mz
+M0OTQ4NDNdfQ==
 -->
