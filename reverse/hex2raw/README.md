@@ -14,7 +14,7 @@
 
 In simple python,
 
-    $cd /problems/33432c6de9329bca3a3ff26e5538d8f2
+    $ cd /problems/9bbf83df34f9c5239f329f977f4a66c1
     
     $ ls 
 	flag hex2raw input
@@ -35,6 +35,6 @@ In simple python,
 
 Therefore, the flag is `1d2411efe307f5ac07bd28bbabb5769e`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTU0NTY0NywxNDE3MTg3MDU3LC04Nz
-I0NzA1MDBdfQ==
+eyJoaXN0b3J5IjpbNTEwODczOTU4LDE2NDE1NDU2NDcsMTQxNz
+E4NzA1NywtODcyNDcwNTAwXX0=
 -->
