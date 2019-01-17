@@ -13,27 +13,21 @@
 ## Write-up
 Bash piping~
 
-    $ nc shell2017.picoctf.com 11511 | grep flag
-    06:37:16 personwithflag: My friend would like to meet you to help me spell 'raspberry' correctly
-    06:37:16 whatisflag: my homegirlz need to meet up to understand me
-    06:37:18 whatisflag: A dog with a cape has attacked my toes for the future of humanity
-    06:37:18 ihazflag: my parents , in my opinion, are our best chance for the future of humanity
-    06:37:18 personwithflag: that girl from that movie has attacked my toes for what, I do not know
-    06:37:18 whatisflag: A huge moose gives me hope to make a rasberry pie
-    06:37:19 whatisflag: Hungry jackolanterns give me hope for the future of humanity
-    06:37:20 personwithflag: Anyone but me has attacked my toes to help me spell 'raspberry' correctly
-    06:37:20 personwithflag: I wants to see me to drink your milkshake
-    06:37:20 noihazflag: my parents , in my well-educated opinion, are our best chance to drink your milkshake
-    06:37:20 ihazflag: Cats with hats give me hope to drink your milkshake
-    06:37:20 noihazflag: My sworn enemy wants to see me to understand me
-    06:37:21 personwithflag: Cats with hats , in my well-educated opinion, are our best chance to generate fusion power
-    06:37:21 flagperson: this is part 1/8 of the flag - 8d84
-    06:37:22 ihazflag: We are the best of friends to help me spell 'raspberry' correctly
-    06:37:22 ihazflag: my homegirlz give me hope to create a self driving car
-    06:37:22 noihazflag: Cats with hats give me hope to create a self driving car
-    06:37:22 flagperson: this is part 2/8 of the flag - 913f
+    $ nc shell2017.picoctf.com 7911 | grep "flag"
+	15:22:33 noihazflag: my parents , in my opinion, are our best chance for the future of humanity
+	15:22:33 ihazflag: Hungry jackolanterns will never be able for what, I do not know
+	15:22:33 ihazflag: Cats with hats , in my well-educated opinion, are our best chance to help me spell 'raspberry' correctly
+	15:22:34 ihazflag: A small moose totally understands me and my pet sloth to generate fusion power
+	15:22:34 flagperson: this is part 1/8 of the flag - 08bc
+	15:22:34 whatisflag: Only us want to see me to generate fusion power
+	15:22:35 ihazflag: a heavily bearded dolphin wants to see me to drink your milkshake
+	15:22:35 whatisflag: Hungry jackolanterns , in my opinion, are our best chance 	for the future of humanity
+	15:22:35 personwithflag: We , in my well-educated opinion, are our best chance to generate fusion power
+	15:22:35 noihazflag: my homegirlz will never be able to understand me
+	15:22:36 flagperson: this is part 2/8 of the flag - 0aa6
 
-We seem to spot a common pattern `this is part 1/8 of the flag - 8d84`, let's try regexp!
+
+We seem to spot a common pattern `this is part 1/8 of the flag - 08bc`, let's try regexp!
 
     $ nc shell2017.picoctf.com 11511 | grep -Eo "this is part [0-9]\/8 of the flag - [a-z0-9]{4}"
     this is part 1/8 of the flag - 8d84
@@ -47,5 +41,6 @@ We seem to spot a common pattern `this is part 1/8 of the flag - 8d84`, let's tr
 
 Therefore, the flag is `8d84913f84bd68a465763e48d9d9ca1c`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDkwODU4NDRdfQ==
+eyJoaXN0b3J5IjpbLTE0OTgyOTU5NjIsLTEzNDkwODU4NDRdfQ
+==
 -->
