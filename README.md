@@ -9,14 +9,14 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Tutorial-2_0](tutorial/tutorial_2) :heavy_check_mark:
     - [Tutorial-3_0](tutorial/tutorial_3) :heavy_check_mark:
 * **Master**
-    - [Lazy-Dev_50](master/lazy-dev)
+    - [Lazy-Dev_50](master/lazy-dev) :heavy_check_mark:
     - [Missing-Identity_100](master/missing-identity)
     - [War_125](master/war)
     - [WeirderRSA_175](master/weirderRSA)
     - Choose_150
 * **Forensics**
-    - [Digital-Camouflage_50](forensics/digital-camouflage)
-    - [Special-Agent-User_50](forensics/special-agent-user)
+    - [Digital-Camouflage_50](forensics/digital-camouflage) :heavy_check_mark:
+    - [Special-Agent-User_50](forensics/special-agent-user) :heavy_check_mark:
     - [Meta-Find-Me_70](forensics/meta-find-me)
     - [Little-School-Bus_75](forensics/little-school-bus)
     - [Just-Keyp-Trying_80](forensics/just-keyp-trying)
@@ -24,8 +24,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Connect-the-Wigle_140](forensics/connect-the-wigle)
 * **Cryptography**
     - [Keyz_20](cryptography/keyz) :heavy_check_mark:
-    - [Substitute_40](cryptography/substitute)
-    - [Hash101_50](cryptography/hash101)
+    - [Substitute_40](cryptography/substitute) :heavy_check_mark:
+    - [Hash101_50](cryptography/hash101) :heavy_check_mark:
     - [computeAES_50](cryptography/computeaes)
     - [computeRSA_50](cryptography/computersa)
     - [SoRandom_75](cryptography/sorandom)
@@ -85,5 +85,5 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Yarn_55](miscellanous/yarn)
     - [Mystery-Box_60](miscellanous/mystery-box)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4MDEyNjE1XX0=
+eyJoaXN0b3J5IjpbMjAxMzY2NzY0Myw1NTgwMTI2MTVdfQ==
 -->
