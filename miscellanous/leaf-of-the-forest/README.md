@@ -4,7 +4,7 @@
 **Points:** 30
 **Description:**
 
->We found an even bigger directory tree hiding a flag starting at /problems/7d91c03dff81a9c95bffb6d69358c92d. It would be impossible to find the file named flag manually...
+>We found an even bigger directory tree hiding a flag starting at /problems/db39b5c002d8445dc6d2bbf49a8ccc37. It would be impossible to find the file named flag manually...
 
 **Hint:**
 
@@ -18,3 +18,6 @@ Well, apparently the solution for the previous [challenge](../leaf-of-the-tree/)
 
 Easy!
 Therefore, the flag is `7ffb59b2f309c09959ba333d0af88565`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4OTU2MDAwNDNdfQ==
+-->
