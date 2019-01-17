@@ -4,7 +4,7 @@
 **Points:** 40
 **Description:**
 
->We found a program that is hiding a flag but requires you to guess the number it is thinking of. Chances are Linux has an easy way to try all the numbers... Go to /problems/bd058e83a119c78a006543d23d9f6422 and try it out!
+>We found a program that is hiding a flag but requires you to guess the number it is thinking of. Chances are Linux has an easy way to try all the numbers... Go to /problems/e3f1970eb419b3aa32788a43ec91ef08 and try it out!
 
 **Hint:**
 
@@ -17,3 +17,6 @@ Simple simple, just this code is sufficient!
     Yay! That's the number! Here be the flag: d3aaad36e3947ceed96a916ca92d33b4 
 
 Therefore, the flag is `d3aaad36e3947ceed96a916ca92d33b4`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTYxOTcyMjQ2OV19
+-->
