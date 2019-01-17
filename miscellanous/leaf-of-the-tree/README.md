@@ -33,7 +33,7 @@ Hmm, that flag file looks interesting.
     $ cat ./trunk/trunk9ef5/trunkded5/trunk3f6a/trunk6034/trunk41fe/trunkb847/trunk7d34/flag
 	1510e551a2821bd027da10a7653814c8
 
-Therefore, the flag is `5e3d48f32a6d6e17a8102d3cbae36283`.  
+Therefore, the flag is `1510e551a2821bd027da10a7653814c8`.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2MTQ1NDg4LDE0MTg0Mzg0ODVdfQ==
+eyJoaXN0b3J5IjpbMTU0MTE3ODMwLDE0MTg0Mzg0ODVdfQ==
 -->
