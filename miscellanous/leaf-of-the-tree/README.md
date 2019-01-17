@@ -15,7 +15,7 @@ I am a big fan of not wasting time by tab completion, thus we are going to cheat
 
     $ cd /problems/a45d1519bd193bc3a273744c83fad1e2
     
-    $ find /problems/a47d10dd80018fc6e7e1c5094c1ca323/ -type f
+    $ find /problems/a45d1519bd193bc3a273744c83fad1e2/ -type f
     /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/branch4118/leaf33d8                                
     /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/branchcd3c/leaf29a9            
     /problems/a47d10dd80018fc6e7e1c5094c1ca323/trunk/trunkbe9c/trunk8ec3/trunk708d/trunk664c/branchcd3c/leaf280d            
@@ -34,5 +34,5 @@ Hmm, that flag file looks interesting.
 
 Therefore, the flag is `5e3d48f32a6d6e17a8102d3cbae36283`.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyODY3NDcxXX0=
+eyJoaXN0b3J5IjpbMTQxODQzODQ4NV19
 -->
