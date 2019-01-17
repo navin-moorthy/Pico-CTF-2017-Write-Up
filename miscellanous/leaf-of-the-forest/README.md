@@ -13,11 +13,11 @@
 ## Write-up
 Well, apparently the solution for the previous [challenge](../leaf-of-the-tree/) is used for this one. So, lets `find` the flag!
 
-    $ find /problems/7d91c03dff81a9c95bffb6d69358c92d/ -type f -name flag -exec cat {} \;
-    7ffb59b2f309c09959ba333d0af88565
+    $ find -type f -name flag -exec cat {} \;
+	c99501b0fe95402ed1c9191102fe1b68
 
 Easy!
 Therefore, the flag is `7ffb59b2f309c09959ba333d0af88565`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU2MDAwNDNdfQ==
+eyJoaXN0b3J5IjpbLTIwMTI0NDIyMywtMTg5NTYwMDA0M119
 -->
