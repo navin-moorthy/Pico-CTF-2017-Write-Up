@@ -16,9 +16,9 @@ Looking in packet `#90`, we find the User-Agent(_I get the reference_)
     Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36
 
 
-Attempting to pass `Mozilla 5.0`, `Safari 537.37` results as invalid flag but `Chrome 36.0.1985` results in the correct flag.
+Attempting to pass `Mozilla 5.0`, `Safari 537.36` results as invalid flag but `Chrome 36.0.1985` results in the correct flag.
 
 Therefore, the flag is `Chrome 36.0.1985`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjM3NDE5M119
+eyJoaXN0b3J5IjpbLTE5MjQ4NjM5MjIsLTk3NjM3NDE5M119
 -->
