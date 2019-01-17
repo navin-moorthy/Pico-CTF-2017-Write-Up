@@ -11,11 +11,11 @@
 >How can you figure out how the webpage is actually built?
 
 ## Write-up
-Viewing the [page source](index.html) gives us 1/3 of the flag, `<!-- The first part of the flag (there are 3 parts) is 72b28b258d2 -->`, 
-Viewing the [CSS source code](hacker.css) gives us 2/3 of the flag, `The second part of the flag is b2ea021486f` 
-Viewing the [JS source code](script.js) gives us the last part of the flag `36308e33e85`.
+Viewing the [page source](index.html) gives us `The first part of the flag (there are 3 parts) is 72b28b258d2`, 
+Viewing the [CSS source code](hacker.css) gives us  `The second part of the flag is b2ea021486f` 
+Viewing the [JS source code](http://shell2017.picoctf.com:4443/script.js) gives us `The final part of the flag is ddd5020451d`.
 
-Therefore, the flag is `fab79c49d9e5ba511a0f2436308e33e85`.
+Therefore, the flag is `72b28b258d2b2ea021486fddd5020451d`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzczMzc4MDVdfQ==
+eyJoaXN0b3J5IjpbMjExODkyNjE2Nl19
 -->
