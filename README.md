@@ -48,7 +48,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking)
     - [Forest_200](reverse/forest)
 * **Web Exploitation**
-    - [What-Is-Web_20](web/what-is-web)
+    - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
     - [My-First-SQL_50](web/my-first-sql)
     - [Biscuit_75](web/biscuit)
     - [TW-GR-E1-ART_100](web/tw-gr-e1-art)
@@ -78,12 +78,12 @@ _Challenges without links are uncompleted/unattempted challenges._
 * **Miscellanous**
     - [Internet-Kitties_10](miscellanous/internet-kitties) :heavy_check_mark:
     - [Piazza_10](miscellanous/piazza) :heavy_check_mark:
-    - [Leaf-of-the-Tree_20](miscellanous/leaf-of-the-tree)
-    - [Looooong_20](miscellanous/looooong)
-    - [Leaf-of-the-Forest_30](miscellanous/leaf-of-the-forest)
-    - [WorldChat_30](miscellanous/worldchat)
+    - [Leaf-of-the-Tree_20](miscellanous/leaf-of-the-tree) :heavy_check_mark:
+    - [Looooong_20](miscellanous/looooong) :heavy_check_mark:
+    - [Leaf-of-the-Forest_30](miscellanous/leaf-of-the-forest) :heavy_check_mark:
+    - [WorldChat_30](miscellanous/worldchat) :heavy_check_mark:
     - [Yarn_55](miscellanous/yarn)
     - [Mystery-Box_60](miscellanous/mystery-box)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk5NTM1NjddfQ==
+eyJoaXN0b3J5IjpbNTU4MDEyNjE1XX0=
 -->
