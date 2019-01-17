@@ -27,7 +27,7 @@ This one is just a mess to document but I'll try my best. Firstly, do take note 
 
 >
 
-    >plaid
+    >lovely
     Correct! Completed level 1
 
 Fairly simple, level 1 just requires a binary conversion.
@@ -73,5 +73,5 @@ Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decr
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNjUxNTI2LDE1NTQ3ODM2MTldfQ==
+eyJoaXN0b3J5IjpbLTYwNjcxMzQ2OSwxNTU0NzgzNjE5XX0=
 -->
