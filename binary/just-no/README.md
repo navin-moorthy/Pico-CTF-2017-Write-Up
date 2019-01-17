@@ -60,10 +60,10 @@ Haha! Relative paths! Now we can simply spoof a directory structure and make a f
     $ cd problems/ec9da1496f80c8248197ba564097cebb
     $ echo "yes" > auth
     $ /problems/ec9da1496f80c8248197ba564097cebb/justno
-    Oh. Well the auth file doesn't say no anymore so... Here's the flag: ddf649b13d560409d2649dc06f2a43ee
+	Oh. Well the auth file doesn't say no anymore so... Here's the flag: e4cec8fdf76a931b03ad7ef026103d43
 
-Therefore, the flag is `ddf649b13d560409d2649dc06f2a43ee`.
+Therefore, the flag is `e4cec8fdf76a931b03ad7ef026103d43`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTMzMzc0MTIsMTI3NTk0ODIyMCwxMz
-E1NDQ3OTY2XX0=
+eyJoaXN0b3J5IjpbLTQyMjYxNjk4NiwtMTk1MzMzNzQxMiwxMj
+c1OTQ4MjIwLDEzMTU0NDc5NjZdfQ==
 -->
