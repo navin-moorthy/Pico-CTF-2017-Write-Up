@@ -15,19 +15,21 @@ This one is just a mess to document but I'll try my best. Firstly, do take note 
 
     $ nc shell2017.picoctf.com 19170
 
-	Welcome to Hashes 101!
+	9661
 
-	There are 4 Levels. Complete all and receive a prize!
+    Welcome to Hashes 101!
+
+	    There are 4 Levels. Complete all and receive a prize!
 
 
-	-------- LEVEL 1: Text = just 1's and 0's --------
-	All text can be represented by numbers. To see how different letters translate to numbers, go to http://www.asciitable.com/
+	    -------- LEVEL 1: Text = just 1's and 0's --------
+	    All text can be represented by numbers. To see how different letters translate to numbers, go to http://www.asciitable.com/
 
-	TO UNLOCK NEXT LEVEL, give me the ASCII representation of 0111011101101111011100100110110001100100
+	    TO UNLOCK NEXT LEVEL, give me the ASCII representation of 0111000001110110001111011100001001101100101100100
 
 >
 
-    >world
+    >worlplaid
     Correct! Completed level 1
 
 Fairly simple, level 1 just requires a binary conversion.
@@ -35,13 +37,13 @@ Fairly simple, level 1 just requires a binary conversion.
     ------ LEVEL 2: Numbers can be base ANYTHING -----
     Numbers can be represented many ways. A popular way to represent computer data is in base 16 or 'hex' since it lines up with bytes very well (2 hex characters = 8 binary bits). Other formats include base64, binary, and just regular base10 (decimal)! In a way, that ascii chart represents a system where all text can be seen as "base128" (not including the Extended ASCII codes)
 
-    TO UNLOCK NEXT LEVEL, give me the text you just decoded, world, as its hex and decimal equivalent
+    TO UNLOCK NEXT LEVEL, give me the text you just decoded, worlplaid, as its hex and decimal equivalent
 
-    hex>776f726c64
-    Good job! 776f726c64 to ASCII -> world is world
+    hex>776f726c06c616964
+    Good job! 776f726c06c616964 to ASCII -> worlplaid is worlplaid
     Now decimal
-    dec>512970878052
-    Good job! 512970878052 to Hex -> 776f726c64 to ASCII -> world is world
+    dec>5129708780482854660452
+    Good job! 5129708780482854660452 to Hex -> 776f726c06c616964 to ASCII -> worlplaid is worlplaid
     Correct! Completed level 2
 
 This one was slightly tricky, because it wasn't asking for the decimal representation of the ascii, but rather the **of the hex**.
@@ -69,10 +71,10 @@ Just bruteforce it, it's modulus 16, not modulus 2^16.
 
 Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decrypter.aspx)
 
-    You completed all 4 levels! Here is your prize: e1e4b61b70486bc1495c40ae2f83b24c
+    You completed all 4 levels! Here is your prize: e1e4b61b7048c3ee093f26bca1495c40ae2f83b24c7ccc451fd13c91ffce
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjIzODkyNCwxMDAwODI0MTkzLC02MD
-Y3MTM0NjksMTU1NDc4MzYxOV19
+eyJoaXN0b3J5IjpbMTg5NzY3NzExMiwtNTIyMjM4OTI0LDEwMD
+A4MjQxOTMsLTYwNjcxMzQ2OSwxNTU0NzgzNjE5XX0=
 -->
