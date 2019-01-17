@@ -4,7 +4,7 @@
 **Points:** 30
 **Description:**
 
->We think someone is trying to transmit a flag over WorldChat. Unfortunately, there are so many other people talking that we can't really keep track of what is going on! Go see if you can find the messenger at shell2017.picoctf.com:11511. Remember to use Ctrl-C to cut the connection if it overwhelms you!
+>We think someone is trying to transmit a flag over WorldChat. Unfortunately, there are so many other people talking that we can't really keep track of what is going on! Go see if you can find the messenger at shell2017.picoctf.com:7911. Remember to use Ctrl-C to cut the connection if it overwhelms you!
 
 **Hint:**
 
@@ -46,3 +46,6 @@ We seem to spot a common pattern `this is part 1/8 of the flag - 8d84`, let's tr
     this is part 8/8 of the flag - ca1c
 
 Therefore, the flag is `8d84913f84bd68a465763e48d9d9ca1c`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNDkwODU4NDRdfQ==
+-->
