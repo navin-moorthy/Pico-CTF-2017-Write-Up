@@ -20,7 +20,7 @@ This seems to be a Enigma machine challenge. We are also given the following [no
     Ringstellung: LOG
     Steckerbrett: G-L, H-F
 
-Converting to English, we get,
+Converting German to English, we get,
 
     Secret: PXQQ TAMY YDBC WGYE LVN
     Reversing roller: B
@@ -38,3 +38,6 @@ gives us
     QUITEPUZZLINGINDEED
 
 Therefore, the flag is `QUITEPUZZLINGINDEED`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMjkxMjEyNzBdfQ==
+-->
