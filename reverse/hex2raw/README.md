@@ -13,7 +13,11 @@
 ## Write-up
 In simple python,
 
+    $cd /problems/33432c6de9329bca3a3ff26e5538d8f2
     
+    $ ls 
+	flag hex2raw input
+	
     $python -c "import base64; print('9b0f7b43804d4abd6f7e1bbe51
     5c55d5'.decode('hex'))" | /problems/33432c6de9329bca3a3ff26e
     5538d8f2/hex2raw
@@ -27,5 +31,5 @@ In simple python,
 
 Therefore, the flag is `84234a119cee0edf78366463973d518c`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzODQ2NDg0XX0=
+eyJoaXN0b3J5IjpbLTg3MjQ3MDUwMF19
 -->
