@@ -11,7 +11,7 @@
 >It looks like an Administrator might have accessed the routers earlier. He had to have logged in with his password. Where would log in data be located in a network capture?
 
 ## Write-up
-Looking up the `data.pcap` file in Wireshark lands us with packet #122
+Looking up the `data.pcap` file in Wireshark lands us with packet #98
 
     
     HTML Form URL Encoded: application/x-www-form-urlencoded
@@ -30,5 +30,5 @@ Trying `cHJ2cUJaTnFZdw==` as the flag results in invalid... but wait, that looks
 
 Therefore, the flag is `8PFEo0ttHQ`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgxMzkzNTZdfQ==
+eyJoaXN0b3J5IjpbMTI1NTIwMTY1Nl19
 -->
