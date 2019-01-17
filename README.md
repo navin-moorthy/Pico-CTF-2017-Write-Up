@@ -1,6 +1,8 @@
 # PicoCTF_2017 Writeup
 This repository serves as a writeup for PicoCTF_2017
 
+Happiness is a constant work-in-progress, because solving problems is a constant work-in-progress -the solutions to today's problems will lay the foundation for tomorrow's problems, and so on.
+
 ## Completed Challenges
 _Challenges without links are uncompleted/unattempted challenges._
 
