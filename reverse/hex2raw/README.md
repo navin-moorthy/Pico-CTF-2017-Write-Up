@@ -4,7 +4,7 @@
 **Points:** 20
 **Description:**
 
->This program requires some unprintable characters as input... But how do you print unprintable characters? CLI yourself to /problems/33432c6de9329bca3a3ff26e5538d8f2 and turn that Hex2Raw!
+>This program requires some unprintable characters as input... But how do you print unprintable characters? CLI yourself to /problems/9bbf83df34f9c5239f329f977f4a66c1 and turn that Hex2Raw!
 
 **Hint:**
 
@@ -14,10 +14,19 @@
 
 In simple python,
 
+Navigate to 
     $ cd /problems/9bbf83df34f9c5239f329f977f4a66c1
     
     $ ls 
 	flag hex2raw input
+	
+	$ ./hex2raw 
+	Give me this in raw form (0x41 -> 'A'):
+	99d9835d83647dcf4cb202a51e1c29bc
+
+	You gave me:
+
+Now take the hex and decode it.
 	
 	$ python -c "print('416f1c7918f83a4f1922d86df5e78348'.decode('hex'))" 
 	Aoy:O"
@@ -35,6 +44,6 @@ In simple python,
 
 Therefore, the flag is `1d2411efe307f5ac07bd28bbabb5769e`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwODczOTU4LDE2NDE1NDU2NDcsMTQxNz
-E4NzA1NywtODcyNDcwNTAwXX0=
+eyJoaXN0b3J5IjpbMTkzOTg0MzUxMywxNjQxNTQ1NjQ3LDE0MT
+cxODcwNTcsLTg3MjQ3MDUwMF19
 -->
