@@ -5,9 +5,9 @@ This repository serves as a writeup for PicoCTF_2017
 _Challenges without links are uncompleted/unattempted challenges._
 
 * **Tutorial**
-    - [Tutorial-1_0](tutorial/tutorial_1)
-    - [Tutorial-2_0](tutorial/tutorial_2)
-    - [Tutorial-3_0](tutorial/tutorial_3)
+    - [Tutorial-1_0](tutorial/tutorial_1) :heavy_check_mark:
+    - [Tutorial-2_0](tutorial/tutorial_2) :heavy_check_mark:
+    - [Tutorial-3_0](tutorial/tutorial_3) :heavy_check_mark:
 * **Master**
     - [Lazy-Dev_50](master/lazy-dev)
     - [Missing-Identity_100](master/missing-identity)
@@ -23,7 +23,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Puzzingly-Accountable_100](forensics/puzzingly-accountable)
     - [Connect-the-Wigle_140](forensics/connect-the-wigle)
 * **Cryptography**
-    - [Keyz_20](cryptography/keyz)
+    - [Keyz_20](cryptography/keyz) :heavy_check_mark:
     - [Substitute_40](cryptography/substitute)
     - [Hash101_50](cryptography/hash101)
     - [computeAES_50](cryptography/computeaes)
@@ -76,8 +76,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - Deeper-Into-The-Matrix_200
     - Contact-Helper_225
 * **Miscellanous**
-    - [Internet-Kitties_10](miscellanous/internet-kitties)
-    - [Piazza_10](miscellanous/piazza)
+    - [Internet-Kitties_10](miscellanous/internet-kitties) :heavy_check_mark:
+    - [Piazza_10](miscellanous/piazza) :heavy_check_mark:
     - [Leaf-of-the-Tree_20](miscellanous/leaf-of-the-tree)
     - [Looooong_20](miscellanous/looooong)
     - [Leaf-of-the-Forest_30](miscellanous/leaf-of-the-forest)
