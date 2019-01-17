@@ -38,8 +38,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Encrypted-Shell_190](cryptography/encrypted-shell)
     - ECC2_200
 * **Reverse Engineering**
-    - [Hex2Raw_20](reverse/hex2raw)
-    - [Raw2Hex_20](reverse/raw2hex)
+    - [Hex2Raw_20](reverse/hex2raw) :heavy_check_mark:
+    - [Raw2Hex_20](reverse/raw2hex) :heavy_check_mark:
     - [A-Thing-Called-The-Stack_60](reverse/a-thing-called-the-stack)
     - [Programmers-Assemble_75](reverse/programmers-assemble)
     - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up)
@@ -84,3 +84,6 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [WorldChat_30](miscellanous/worldchat)
     - [Yarn_55](miscellanous/yarn)
     - [Mystery-Box_60](miscellanous/mystery-box)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNjk5NTM1NjddfQ==
+-->
