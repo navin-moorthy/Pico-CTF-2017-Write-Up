@@ -38,10 +38,10 @@ Fairly simple, level 1 just requires a binary conversion.
     TO UNLOCK NEXT LEVEL, give me the text you just decoded, world, as its hex and decimal equivalent
 
     hex>776f726c64
-    Good job! 6c6f76656c79to ASCII -> world is world
+    Good job! 776f726c64 to ASCII -> world is world
     Now decimal
-    dec>108111118101108121
-    Good job! 482854660452 to Hex -> 706c616964 to ASCII -> plaid is plaid
+    dec>512970878052
+    Good job! 512970878052 to Hex -> 776f726c64 to ASCII -> world is world
     Correct! Completed level 2
 
 This one was slightly tricky, because it wasn't asking for the decimal representation of the ascii, but rather the **of the hex**.
@@ -73,6 +73,6 @@ Clue has been given, just look to [HashKiller](https://hashkiller.co.uk/md5-decr
 
 Therefore, the flag is `c3ee093f26ba147ccc451fd13c91ffce`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE0NTY2NzIsLTYwNjcxMzQ2OSwxNT
-U0NzgzNjE5XX0=
+eyJoaXN0b3J5IjpbMTAwMDgyNDE5MywtNjA2NzEzNDY5LDE1NT
+Q3ODM2MTldfQ==
 -->
