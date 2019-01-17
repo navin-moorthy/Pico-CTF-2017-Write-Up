@@ -14,11 +14,7 @@ Can you interact with the javascript directly?
 ## Write-up
 First, try attempting login.
 
-![Login Attempt](images/1.png)
-
 Hm, ok, `1` is not the password. Let's try looking at Chrome's Developer's console.
-
-![Interesting POST](images/2.png)
 
 Okay, so something is going on here... Can we try to change that `false` to a `true`? Taking a look into the [`client.js`](client.js) implemented into the HTML seems to reveal that the developer, was indeed lazy! _Badumtss~_
 
@@ -36,6 +32,4 @@ As such, there is no correct password! Let's override the function in Chrome's T
 
 Now, clicking the button again, gives us,
 
-![FLAG](images/3.png)
-
-Therefore, the flag is, `client_side_is_the_dark_sidebde1f567656f8c9b654a1ec24e1ff889`. EZ Master.
+Therefore, the flag is, `client_side_is_the_dark_side0c97381c155aae62b9ce3c59845d6941`. EZ Master.
