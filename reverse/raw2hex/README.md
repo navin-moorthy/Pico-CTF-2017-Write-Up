@@ -18,6 +18,9 @@ This seems like another question of bash piping... Running `/problems/45f3b0abcf
     $ ls
 	flag  raw2hex
 	
+	$ ./raw2hex 
+	The flag is:\3-
+	
     # Accomplished by using ':' as a delimiter.
     $ /problems/45f3b0abcf176b7cf7c1536b28d05d72/raw2hex | cut -d ':' -f 2
 
@@ -28,5 +31,5 @@ Now, to hex it, we can simply use `xxd`, the wondertool~
 
 Therefore, the flag is `cc76ae5c1b19d06897338d2deaa50bf00a`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzNTU0NjA0XX0=
+eyJoaXN0b3J5IjpbMjAyMTQ2MjY1M119
 -->
