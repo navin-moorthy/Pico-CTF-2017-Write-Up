@@ -127,11 +127,14 @@ $cat spirit_shells - | nc shell2017.picoctf.com 63545
  My mother told me to never accept things from strangers
  How bad could running a couple bytes be though?
  Give me 10 bytes:
- 4350d27b024f8597f10b98f164f0fc43
+ 529efbd9e2dec5400206bedaf6a10e21
 
-So, i think we got the flag  `4350d27b024f8597f10b98f164f0fc43`.
+So, i think we got the flag  `529efbd9e2dec5400206bedaf6a10e21`.
 
 Hope you liked it
+
+Thanks 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjM5OTE3OCwtMTIzNDcwNDI4OF19
+eyJoaXN0b3J5IjpbLTIxMTMxNjA3ODcsLTEyMzQ3MDQyODhdfQ
+==
 -->
