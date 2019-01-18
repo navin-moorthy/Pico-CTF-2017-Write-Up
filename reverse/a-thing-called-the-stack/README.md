@@ -62,9 +62,9 @@ Certain registers can be  **volatile**, meaning, we could change these registers
 
 Next, we subtract  `%esp`  by a value:
 
-sub $0x90, %esp ; 0x90 = 144
+sub $0x124, %esp ; 0x124 = 292
 
-This is typically done to make room for local temp variables. (i.e. when a function declares local variables, they are found right here in the stack). In this case, we seem to need 144 or  `0x90`  bytes of stack space to store local variables.
+This is typically done to make room for local temp variables. (i.e. when a function declares local variables, they are found right here in the stack). In this case, we seem to need 292 or  `0x90`  bytes of stack space to store local variables.
 
 > Return address location -  `%esp`  =  **160 bytes**
 
@@ -81,6 +81,6 @@ First notation to notice is that there are parenthesis around the  `%esp`  regis
 
 We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTI0MjcxODEsLTE1MTcyMjEyNDQsMT
-k1MTE1MjEwNl19
+eyJoaXN0b3J5IjpbLTM3MDkzNTcyNywtMTUxNzIyMTI0NCwxOT
+UxMTUyMTA2XX0=
 -->
