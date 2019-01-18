@@ -14,10 +14,10 @@ You don't need a full shell (yet...), just enough to get the flag
 ## Write-up
 
 1.  It's just little tricky one. But if you know basic of shellcode's then it might be easy for you. This time again we got two files
-```
-$ls
-shells shells.c
-```   
+	```
+	$ls
+	shells shells.c
+	```   
 So now lets try to HexDump the  `shells`  binary.
     
     ```
@@ -55,12 +55,13 @@ So now lets try to HexDump the  `shells`  binary.
       80483cb:	e9 d0 ff ff ff       	jmp    80483a0 <_init+0x28>
      --More--
     
-   ```
+```
     
-    So it's x86 binary.
+So it's x86 binary.
+
+Now lets take a look on  `shells.c`  file.
     
-    Now lets take a look on  `shells.c`  file.
-    
+```
      #include <stdio.h>
      #include <stdlib.h>
      #include <unistd.h>
@@ -98,7 +99,7 @@ So now lets try to HexDump the  `shells`  binary.
          vuln();
          return 0;
      }
-    
+```
     Just see their iss one  `win()`  function. Lets take a look on win() function in our HexDump. We can short out output using  `grep`  command.
     
     objdump -d shells | grep win
@@ -133,5 +134,5 @@ So, i think we got the flag  `4350d27b024f8597f10b98f164f0fc43`.
 
 Hope you liked it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDQ0MzQ3MCwtMTIzNDcwNDI4OF19
+eyJoaXN0b3J5IjpbNTYxNTQzNjM2LC0xMjM0NzA0Mjg4XX0=
 -->
