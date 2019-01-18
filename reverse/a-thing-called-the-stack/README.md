@@ -62,25 +62,25 @@ Certain registers can be  **volatile**, meaning, we could change these registers
 
 Next, we subtract  `%esp`  by a value:
 
-sub $0x124, %esp ; 0x124 = 292
+`sub $0x124, %esp ; 0x124 = 292`
 
 This is typically done to make room for local temp variables. (i.e. when a function declares local variables, they are found right here in the stack). In this case, we seem to need 292 or  `0x124`  bytes of stack space to store local variables.
 
 > Return address location -  `%esp`  =  **308 bytes**
 
 Finally we make some assignments to some of our local variables:
-
+```
 movl $0x1, (%esp)
 movl $0x2,  0x4(%esp)
 movl $0x3,  0x8(%esp)
 movl $0x4,  0xc(%esp)
-
+```
 First notation to notice is that there are parenthesis around the  `%esp`  register. As we discussed, %esp refers to a stack  _pointer_. In C, pointers are used to refer to something else. In this case  `%esp`  refers to the address of the top of the stack, but  `(%esp)`refers to the  _value_  at the top of the stack. The instructions  `mov`  or assign constants (denoted with a  `$`) into the variables located in the stack. The first one refers to the topmost value on the stack. The second one does an add offset to  `%esp`  so that we refer to the second value on the top of the stack. The third one refers to the third topmost value, the forth the forth topmost value. In all these assignments, the  `%esp`  register doesn't actually change at all.
 
 > Return address location -  `%esp`  =  **308 bytes**
 
-We see that the difference between the  `%esp`  register and the return address is 308 bytes. When we convert it into hexadecimal, we get  `0x134`, which is our answer. QED!
+We see that the difference between the  `%esp`  register and the return address is `308 bytes`. When we convert it into hexadecimal, we get  `0x134`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDg2ODAyMCw4MzkwNzI3MTksLTE1MT
+eyJoaXN0b3J5IjpbMTM5NTQxMDE5OCw4MzkwNzI3MTksLTE1MT
 cyMjEyNDQsMTk1MTE1MjEwNl19
 -->
