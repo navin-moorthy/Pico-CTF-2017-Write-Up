@@ -77,10 +77,10 @@ movl $0x4,  0xc(%esp)
 
 First notation to notice is that there are parenthesis around the  `%esp`  register. As we discussed, %esp refers to a stack  _pointer_. In C, pointers are used to refer to something else. In this case  `%esp`  refers to the address of the top of the stack, but  `(%esp)`refers to the  _value_  at the top of the stack. The instructions  `mov`  or assign constants (denoted with a  `$`) into the variables located in the stack. The first one refers to the topmost value on the stack. The second one does an add offset to  `%esp`  so that we refer to the second value on the top of the stack. The third one refers to the third topmost value, the forth the forth topmost value. In all these assignments, the  `%esp`  register doesn't actually change at all.
 
-> Return address location -  `%esp`  =  **160 bytes**
+> Return address location -  `%esp`  =  **308 bytes**
 
-We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
+We see that the difference between the  `%esp`  register and the return address is 308 bytes. When we convert it into hexadecimal, we get  `0x134`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTMyODUxMyw4MzkwNzI3MTksLTE1MT
+eyJoaXN0b3J5IjpbLTU3NDg2ODAyMCw4MzkwNzI3MTksLTE1MT
 cyMjEyNDQsMTk1MTE1MjEwNl19
 -->
