@@ -13,12 +13,6 @@ Which commands actually affect the stack?
 
 ## Write-up
 
-# A Thing Called The Stack - 60 Points
-
-A friend was stacking dinner plates, and handed you  [this](https://webshell2017.picoctf.com/static/ad7075160f4cc40cbe355c7f9f39e245/assembly.s), saying something about a "stack". Can you find the difference between the value of esp at the end of the code, and the location of the saved return address? Assume a 32 bit system. Submit the answer as a hexidecimal number, with no extraneous 0s. For example, the decimal number 2015 would be submitted as 0x7df, not 0x000007df
-
-## Write-Up
-
 This is a trivial reading-and-understanding assembly. The code that was given is conveniently printed as below:
 ```
 foo:
@@ -35,13 +29,13 @@ foo:
 ```
 A quick note for this assembly is that it is AT&T flavor.
 
-### [](https://github.com/theKidOfArcrania/picoCTF-2017-Writeups/tree/master/Reverse%20Engineering/A%20Thing%20Called%20The%20Stack%20%5B60%20points%5D#background-information)Background Information
+### Background Information
 
 In program terms, a stack refers to a chunk of memory that stores local variables in functions and stored data. Stored data, in this case would include your return address. When you  **push**  to a stack, you add data onto the top of the chunk of memory. When you  **pop**  from the stack, you take off the data that is at the top of this data chunk, or the data you last pushed onto the stack. This is defined as LIFO (Last In First Out). A interesting bit to note in a stack is the fact that when you push to the stack, the address to the top of the stack  _decreases_  instead of increase.
 
 A function that you call typically has two properties, a  **stack pointer**  (top of the stack) and a  **frame pointer**  (bottom of the stack relative to the function). The  `ebp`  register stores the frame pointer (also known as the  **base pointer**) and the  `esp`  register stores the  **stack pointer**.
 
-### [](https://github.com/theKidOfArcrania/picoCTF-2017-Writeups/tree/master/Reverse%20Engineering/A%20Thing%20Called%20The%20Stack%20%5B60%20points%5D#deciphering-the-assembly-code)Deciphering the Assembly Code
+### Deciphering the Assembly Code
 
 When a code calls a function, the address of the code's next instruction is implicitly pushed onto the stack (also known as the  **return address**).
 
@@ -87,5 +81,5 @@ First notation to notice is that there are parenthesis around the  `%esp`  regis
 
 We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMDUxMzYzXX0=
+eyJoaXN0b3J5IjpbMTk1MTE1MjEwNl19
 -->
