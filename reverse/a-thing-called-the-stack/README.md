@@ -66,7 +66,7 @@ sub $0x124, %esp ; 0x124 = 292
 
 This is typically done to make room for local temp variables. (i.e. when a function declares local variables, they are found right here in the stack). In this case, we seem to need 292 or  `0x124`  bytes of stack space to store local variables.
 
-> Return address location -  `%esp`  =  **160 bytes**
+> Return address location -  `%esp`  =  **308 bytes**
 
 Finally we make some assignments to some of our local variables:
 
@@ -81,6 +81,6 @@ First notation to notice is that there are parenthesis around the  `%esp`  regis
 
 We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM5MDcyNzE5LC0xNTE3MjIxMjQ0LDE5NT
-ExNTIxMDZdfQ==
+eyJoaXN0b3J5IjpbLTQzMTMyODUxMyw4MzkwNzI3MTksLTE1MT
+cyMjEyNDQsMTk1MTE1MjEwNl19
 -->
