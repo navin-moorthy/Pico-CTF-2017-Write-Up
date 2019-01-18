@@ -16,16 +16,16 @@ Which commands actually affect the stack?
 This is a trivial reading-and-understanding assembly. The code that was given is conveniently printed as below:
 ```
 foo:
- pushl %ebp
-  mov %esp, %ebp
- pushl %edi
- pushl %esi
- pushl %ebx
-  sub $0x90, %esp
- movl $0x1, (%esp)
- movl $0x2,  0x4(%esp)
- movl $0x3,  0x8(%esp)
- movl $0x4,  0xc(%esp)
+    pushl %ebp
+    mov %esp, %ebp
+    pushl %edi
+    pushl %esi
+    pushl %ebx
+    sub $0x124, %esp
+    movl $0x1, (%esp)
+    movl $0x2, 0x4(%esp)
+    movl $0x3, 0x8(%esp)
+    movl $0x4, 0xc(%esp
 ```
 A quick note for this assembly is that it is AT&T flavor.
 
@@ -81,5 +81,6 @@ First notation to notice is that there are parenthesis around the  `%esp`  regis
 
 We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTcyMjEyNDQsMTk1MTE1MjEwNl19
+eyJoaXN0b3J5IjpbLTEzNTI0MjcxODEsLTE1MTcyMjEyNDQsMT
+k1MTE1MjEwNl19
 -->
