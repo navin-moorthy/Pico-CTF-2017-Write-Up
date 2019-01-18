@@ -4,7 +4,7 @@
 **Points:** 70
 **Description:**
 
->How much can a couple bytes do? Use [shells](shells) [Source](shells.c). Connect on shell2017.picoctf.com:40976.
+>How much can a couple bytes do? Use [shells](shells) [Source](shells.c). Connect on shell2017.picoctf.com:63545.
 
 **Hint:**
 
@@ -47,3 +47,6 @@ Put together, this gives us `\x68\x40\x85\x04\x08\xC3`. Let's try it.
     cd875b6ffb5cdd3319532d52ceca71aa
 
 Therefore, the flag is `cd875b6ffb5cdd3319532d52ceca71aa`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMzQ3MDQyODhdfQ==
+-->
