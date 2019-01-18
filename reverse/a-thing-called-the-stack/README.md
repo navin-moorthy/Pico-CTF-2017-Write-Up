@@ -51,11 +51,11 @@ In AT&T flavor assembly, the  `mov`  instruction is an assignment operator, exce
 > **Note that return address location is greater than  `%esp`  because lower addresses of stack means values closer to the top of the stack.
 
 In this function we also push some other register values, each incrementing  `%esp`  by 4 bytes:
-
+```
 pushl %edi
 pushl %esi
 pushl %ebx
-
+```
 Certain registers can be  **volatile**, meaning, we could change these registers without having to revert back. For example  `eax`and  `edx`  are such registers. However, others are  **non-volatile**. We should keep these values the same throughout our code, but if we have to modify the values, we would first have to push to stack so that we could revert these register values later on. This code is doing such.
 
 > Return address location -  `%esp`  =  **16 bytes**
@@ -81,5 +81,5 @@ First notation to notice is that there are parenthesis around the  `%esp`  regis
 
 We see that the difference between the  `%esp`  register and the return address is 160 bytes. When we convert it into hexadecimal, we get  `0xA0`, which is our answer. QED!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTE1MjEwNl19
+eyJoaXN0b3J5IjpbLTE1MTcyMjEyNDQsMTk1MTE1MjEwNl19
 -->
