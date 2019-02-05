@@ -21,7 +21,7 @@ b3,r,lsb,xY         .. file: very old 16-bit-int big-endian archive
 b4,rgb,msb,xY       .. file: MPEG ADTS, layer I, v2, 112 kbps, 24 kHz, JntStereo
 ```
 Well, that worked!
-Therefore, the flag is `flag{remember_kids_protect_your_headers_5e31`.
+Therefore, the flag is `flag{remember_kids_protect_your_headers_f5e8}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTEyODY4OTldfQ==
+eyJoaXN0b3J5IjpbMTc0NjY5NDY1OF19
 -->
