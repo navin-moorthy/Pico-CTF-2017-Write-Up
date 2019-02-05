@@ -11,6 +11,8 @@
 >How can images store location data? Perhaps search for GPS info on photos.
 
 ## Write-up
+
+To get the
 Looking onto the GPS section of the image's metadata reveals
 
     Latitude: 7° 0’ 0” N
@@ -33,3 +35,6 @@ Now, `7, 96` is not the answer, nor is any other combinations. So what are we mi
 Easily found, we now have the format. Piecing together, we replace `<lat>` and `<lon>` with our previous coordinates.
 
 Therefore, the flag is `flag_2_meta_4_me_7_96_1c1f`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTExMDg1Nzg3XX0=
+-->
