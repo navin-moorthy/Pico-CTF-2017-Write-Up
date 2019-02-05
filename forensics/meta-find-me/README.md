@@ -15,6 +15,115 @@
 To get all the details of an image, install yum install ImageMagick.
 
 Now, run `identify -verbose image.jpg` to get all the details of an image.
+```
+Image: image.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Class: DirectClass
+  Geometry: 500x500+0+0
+  Resolution: 72x72
+  Print size: 6.94444x6.94444
+  Units: PixelsPerInch
+  Type: TrueColor
+  Endianess: Undefined
+  Colorspace: sRGB
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Red:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 234.521 (0.919689)
+      standard deviation: 40.0639 (0.157113)
+      kurtosis: 27.7297
+      skewness: -5.39654
+    Green:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 239.257 (0.938264)
+      standard deviation: 41.0309 (0.160906)
+      kurtosis: 27.718
+      skewness: -5.39578
+    Blue:
+      min: 0 (0)
+      max: 193 (0.756863)
+      mean: 142.497 (0.558812)
+      standard deviation: 24.3041 (0.0953101)
+      kurtosis: 27.4201
+      skewness: -5.36274
+  Image statistics:
+    Overall:
+      min: 0 (0)
+      max: 255 (1)
+      mean: 205.425 (0.805588)
+      standard deviation: 35.9599 (0.141019)
+      kurtosis: 28.2685
+      skewness: -5.6137
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Interlace: JPEG
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Compose: Over
+  Page geometry: 500x500+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 93
+  Orientation: TopLeft
+  Properties:
+    comment: "Your flag is flag_2_meta_4_me_<lat>_<lon>_06c3. Now find the GPS coordinates of this image! (Degrees only please)"
+    date:create: 2019-02-05T11:11:53+00:00
+    date:modify: 2017-03-31T23:11:10+00:00
+    exif:ColorSpace: 1
+    exif:Compression: 6
+    exif:DateTime: 2016:02:10 11:55:56
+    exif:ExifImageLength: 500
+    exif:ExifImageWidth: 500
+    exif:ExifOffset: 176
+    exif:GPSInfo: 218
+    exif:GPSLatitude: 88/1, 0/1, 0/1
+    exif:GPSLongitude: 4/1, 0/1, 0/1
+    exif:GPSVersionID: 2, 3, 0, 0
+    exif:JPEGInterchangeFormat: 402
+    exif:JPEGInterchangeFormatLength: 6989
+    exif:Orientation: 1
+    exif:ResolutionUnit: 2
+    exif:Software: Adobe Photoshop CS6 (Windows)
+    exif:XResolution: 720000/10000
+    exif:YResolution: 720000/10000
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 1x1,1x1,1x1
+    signature: b37c84adee07ac056749f93b85ddab2707762ff8e32a5d6680da63e2e361a8a8
+  Profiles:
+    Profile-8bim: 9330 bytes
+    Profile-exif: 7398 bytes
+    Profile-icc: 3144 bytes
+      Description: sRGB IEC61966-2.1
+      Manufacturer: IEC http://www.iec.ch
+      Model: IEC 61966-2.1 Default RGB colour space - sRGB
+      Copyright: Copyright (c) 1998 Hewlett-Packard Company
+    Profile-xmp: 3511 bytes
+  Artifacts:
+    filename: image.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 44.3KB
+  Number pixels: 250K
+  Pixels per second: 0B
+  User time: 0.000u
+  Elapsed time: 0:01.000
+  Version: ImageMagick 6.7.8-9 2016-06-22 Q16 http://www.imagemagick.org
+  ```
 Looking onto the GPS section of the image's metadata reveals
 
     Latitude: 7° 0’ 0” N
@@ -38,5 +147,5 @@ Easily found, we now have the format. Piecing together, we replace `<lat>` and `
 
 Therefore, the flag is `flag_2_meta_4_me_7_96_1c1f`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTgzNDk3XX0=
+eyJoaXN0b3J5IjpbMTk3MDk0MjUwMF19
 -->
