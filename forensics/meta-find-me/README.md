@@ -13,6 +13,7 @@
 ## Write-up
 
 To get all the details of an image, install yum install ImageMagick.
+Same can be done by installing **exiftool**.
 
 Now, run `identify -verbose image.jpg` to get all the details of an image.
 ```
@@ -133,5 +134,5 @@ Easily found, we now have the format. Piecing together, we replace `<lat>` and `
 
 Therefore, the flag is `flag_2_meta_4_me_88_4_06c3`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5MzE1Nzk4XX0=
+eyJoaXN0b3J5IjpbLTE4NzI5NDU3MzUsODA5MzE1Nzk4XX0=
 -->
