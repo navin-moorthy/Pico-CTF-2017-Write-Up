@@ -23,9 +23,9 @@ Looking in the `sorandom.py` code, we see that the random generator has already 
 Okay, [let's crack our Python knuckles and get to work.](crack.py)
 
     $ ./crack.py
-    FLAG: 107bd559693aef6692e1ed55ebe29514
+    FLAG: 0d6f1cac5615c7ae971761318430c9bb
 
-Therefore, the flag is `107bd559693aef6692e1ed55ebe29514`.
+Therefore, the flag is `0d6f1cac5615c7ae971761318430c9bb`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxMjE3MjkyXX0=
+eyJoaXN0b3J5IjpbLTU3NTA4NDM0NiwzNTEyMTcyOTJdfQ==
 -->
