@@ -12,7 +12,9 @@
 
 ## Write-up
 
-To get the
+To get all the details of an image, install yum install ImageMagick.
+
+Now, run `identify -verbose image.jpg` to get all the details of an image.
 Looking onto the GPS section of the image's metadata reveals
 
     Latitude: 7° 0’ 0” N
@@ -36,5 +38,5 @@ Easily found, we now have the format. Piecing together, we replace `<lat>` and `
 
 Therefore, the flag is `flag_2_meta_4_me_7_96_1c1f`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDg1Nzg3XX0=
+eyJoaXN0b3J5IjpbLTIxMTgzNDk3XX0=
 -->
