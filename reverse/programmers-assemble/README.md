@@ -27,7 +27,7 @@ So, first assembly challenge done.  We are given an assembly piece of code and l
         dec %eax                ; decrement eax
         jmp loop                ; loop back
     fin:
-        cmp $0xb47f, %ebx       ; if ebx = 46207,
+        cmp $0xdc98, %ebx       ; if ebx = 56472,
         je good                 ; jump to good
         mov $0, %eax            ; else, move 0 return value to eax
         jmp end                 ; jump to return
@@ -41,3 +41,6 @@ Simple! We want the file to return `0x1`, so we naturally want `good:` to execut
 So, how do we get `%ebx` up to `46207`? Simple! We just have to loop `46207 / 7 = 6601` times! So, `XXXXXXX` has to be `6601`! Converting `6601` to hex gives us `0x19C9`
 
 Therefore, the flag is `0x19C9`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzE5NTk2MjZdfQ==
+-->
