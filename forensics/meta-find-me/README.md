@@ -127,11 +127,11 @@ Image: image.jpg
   **Properties** section has all the information we need.
 `exif:GPSLatitude: 88/1, 0/1, 0/1`
 `exif:GPSLongitude: 4/1, 0/1, 0/1`
-`comment: "Your flag is flag_2_meta_4_me_<lat>_<lon>_06c3. Now find the GPS coordinates of this image! (Degrees only please)"
+`comment: "Your flag is flag_2_meta_4_me_<lat>_<lon>_06c3. Now find the GPS coordinates of this image! (Degrees only please)"`
 
 Easily found, we now have the format. Piecing together, we replace `<lat>` and `<lon>` with our previous coordinates.
 
-Therefore, the flag is `flag_2_meta_4_me_7_96_1c1f`.
+Therefore, the flag is `flag_2_meta_4_me_88_4_06c3`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQ0NTE0NDddfQ==
+eyJoaXN0b3J5IjpbODA5MzE1Nzk4XX0=
 -->
