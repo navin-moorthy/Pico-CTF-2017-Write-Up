@@ -17,8 +17,8 @@ _Challenges without links are uncompleted/unattempted challenges._
 * **Forensics**
     - [Digital-Camouflage_50](forensics/digital-camouflage) :heavy_check_mark:
     - [Special-Agent-User_50](forensics/special-agent-user) :heavy_check_mark:
-    - [Meta-Find-Me_70](forensics/meta-find-me)
-    - [Little-School-Bus_75](forensics/little-school-bus)
+    - [Meta-Find-Me_70](forensics/meta-find-me) :heavy_check_mark:
+    - [Little-School-Bus_75](forensics/little-school-bus) :heavy_check_mark:
     - [Just-Keyp-Trying_80](forensics/just-keyp-trying)
     - [Puzzingly-Accountable_100](forensics/puzzingly-accountable)
     - [Connect-the-Wigle_140](forensics/connect-the-wigle)
@@ -28,7 +28,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Hash101_50](cryptography/hash101) :heavy_check_mark:
     - [computeAES_50](cryptography/computeaes) :heavy_check_mark:
     - [computeRSA_50](cryptography/computersa) :heavy_check_mark:
-    - [SoRandom_75](cryptography/sorandom)
+    - [SoRandom_75](cryptography/sorandom) :heavy_check_mark:
     - [LeakedHashes_90](cryptography/leakedhashes)
     - [Weird-RSA_90](cryptography/weird-rsa)
     - [HashChain_90](cryptography/hashchain)
@@ -40,8 +40,8 @@ _Challenges without links are uncompleted/unattempted challenges._
 * **Reverse Engineering**
     - [Hex2Raw_20](reverse/hex2raw) :heavy_check_mark:
     - [Raw2Hex_20](reverse/raw2hex) :heavy_check_mark:
-    - [A-Thing-Called-The-Stack_60](reverse/a-thing-called-the-stack)
-    - [Programmers-Assemble_75](reverse/programmers-assemble)
+    - [A-Thing-Called-The-Stack_60](reverse/a-thing-called-the-stack) :heavy_check_mark:
+    - [Programmers-Assemble_75](reverse/programmers-assemble) :heavy_check_mark:
     - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up)
     - [Coffee_115](reverse/coffee)
     - [MIPS_140](reverse/mips)
@@ -63,8 +63,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Bash-Loop_40](binary/bash-loop) :heavy_check_mark:
     - [Just-No_40](binary/just-no) :heavy_check_mark:
     - [Shellz_55](binary/shellz) :heavy_check_mark:
-    - [Shells_70](binary/shells)
-    - [Guess-The-Number_75](binary/guess-the-number)
+    - [Shells_70](binary/shells) :heavy_check_mark:
+    - [Guess-The-Number_75](binary/guess-the-number) :heavy_check_mark:
     - [Ive-Got-A-Secret_75](binary/ive-got-a-secret)
     - [Flagsay-1_80](binary/flagsay-1)
     - [VR-Gear-Console_95](binary/vr-gear-console)
