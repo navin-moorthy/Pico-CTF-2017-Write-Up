@@ -21,11 +21,49 @@ Looking in the `sorandom.py` code, we see that the random generator has already 
     random.seed("random")
 
 Okay, [let's crack our Python knuckles and get to work.](crack.py)
+```
+#! /usr/bin/env python
+##
+# Script for picoctf 2017 sorandom
+# Script by NavinNavi
+##
+import socket
+import random
 
+# Open Socket
+s = socket.socket();
+s.connect(("shell2017.picoctf.com", 63997))
+
+# Receive from Socket
+instructions = s.recv(4096).decode("utf-8")
+print(instructions)
+encflag = ": ".join(instructions.split(":")[1:])
+print(encflag)
+flag = ""
+# Random Seed
+random.seed("random")
+
+for c in encflag:
+    if c.islower():
+        flag += chr((ord(c) - ord('a') - random.randrange(0, 26)) % 26 + ord('a'))
+        print(flag)
+    elif c.isupper():
+        flag += chr((ord(c) - ord('A') - random.randrange(0, 26)) % 26 + ord('A'))
+        print(flag)
+    elif c.isdigit():
+        flag += chr((ord(c) - ord('0') - random.randrange(0, 10)) % 10 + ord('0'))
+        print(flag)
+    else:
+        flag += c
+        print(flag)
+
+print(flag)
+```
     $ ./crack.py
     FLAG: 0d6f1cac5615c7ae971761318430c9bb
 
 Therefore, the flag is `0d6f1cac5615c7ae971761318430c9bb`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTA4NDM0NiwzNTEyMTcyOTJdfQ==
+eyJoaXN0b3J5IjpbMTk2ODE1ODEzMywtNTc1MDg0MzQ2LDM1MT
+IxNzI5Ml19
 -->
