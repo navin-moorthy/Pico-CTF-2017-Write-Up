@@ -40,7 +40,7 @@ GDB time!
     (gdb) info address win
     Symbol "win" is at 0x4006cd in a file compiled without debugging.
 
-Converting `0x4006cd` to hexadecimal gives us `4196045` or `1000000001001000010100101011`. We need to be able to call upon `((void (*)(void))val)();` to `win()` it, so now we have to figure out how to make `val` point to `win()`.
+Converting `0x4006cd` to hexadecimal gives us `4196045` or `10000000000011011001101`. We need to be able to call upon `((void (*)(void))val)();` to `win()` it, so now we have to figure out how to make `val` point to `win()`.
 
     val = strtol(buf, NULL, 10);
     printf("You entered %d. Let's see if it was right...\n", val);
@@ -73,5 +73,5 @@ However, now the binary is too large to enter into the system! But wait! We have
 
 Therefore, the flag is `c2bda0bde530c16fff8a8530addb44f8`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzIxMTAzNTldfQ==
+eyJoaXN0b3J5IjpbNjYxNjIyOTgwXX0=
 -->
