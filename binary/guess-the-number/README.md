@@ -4,7 +4,7 @@
 **Points:** 75
 **Description:**
 
->Just a simple number-guessing game. How hard could it be? [Binary](guess_num) [Source](guess_num.c). Connect on shell2017.picoctf.com:57641.
+>Just a simple number-guessing game. How hard could it be? [Binary](guess_num) [Source](guess_num.c). Connect on shell2017.picoctf.com:13532.
 
 **Hint:**
 
@@ -56,7 +56,7 @@ However, now the binary is too large to enter into the system! But wait! We have
     10000000010010000101001010110000
     -2142743888
 
-    $ nc shell2017.picoctf.com 57641
+    $ nc shell2017.picoctf.com 13532
     Welcome to the number guessing game!
     I'm thinking of a number. Can you guess it?
     Guess right and you get a shell!
@@ -69,9 +69,9 @@ However, now the binary is too large to enter into the system! But wait! We have
     guess_num
     xinetd_wrapper.sh
     $ cat flag.txt
-    c2bda0bde530c16fff8a8530addb44f8
+    eb485c1755fc97d4a3f0c3cc136f62e8
 
-Therefore, the flag is `c2bda0bde530c16fff8a8530addb44f8`.
+Therefore, the flag is `eb485c1755fc97d4a3f0c3cc136f62e8`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxNjIyOTgwXX0=
+eyJoaXN0b3J5IjpbLTIxNzY1NDczOCw2NjE2MjI5ODBdfQ==
 -->
