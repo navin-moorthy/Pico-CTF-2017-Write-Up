@@ -4,7 +4,7 @@
 **Points:** 75
 **Description:**
 
->Hopefully you can find the right format for my [secret](secret.c)! Source. Connect on shell2017.picoctf.com:55189.
+>Hopefully you can find the right format for my [secret](secret.c)! Source. Connect on shell2017.picoctf.com:39169.
 
 **Hint:**
 
@@ -22,7 +22,7 @@ By running the code for the first time, we come to know that the secret is in he
 	Now tell my secret in hex! Secret: f7fc7c20
     As my friend says,"You get nothing! You lose! Good day, Sir!"
 
-As seen in the above result, 
+With the same input `%x %x %x %x %x %x %x %x` run the program for some times to see that the 5th column generates a new value everytime. That's because of the urandom in the 
 
     $ nc shell2017.picoctf.com 39169
 	Give me something to say!
@@ -34,5 +34,5 @@ As seen in the above result,
 
 Therefore, the flag is `a18450ba7aaa8c085c522cdef6ab35ab`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwMDg1MTIxXX0=
+eyJoaXN0b3J5IjpbLTExNjI0NDU3MzJdfQ==
 -->
