@@ -110,6 +110,8 @@ We have the message. Last thing will be to turn it into a hexadecimal number, an
 ```
 
 Thanks  [Andrew](http://stackoverflow.com/questions/9641440/convert-from-ascii-string-encoded-in-hex-to-plain-ascii)  for this snippet. Here's the flag!
+
+Thanks [rootsec](https://www.rootnetsec.com/picoctf-weird-rsa/) for the detailed explanation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjAzNjc2OF19
+eyJoaXN0b3J5IjpbLTIwNjY1MzAxNzBdfQ==
 -->
