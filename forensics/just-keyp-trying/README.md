@@ -81,19 +81,19 @@ Consulting the [USB specification manual](http://www.usb.org/developers/hidpage/
     16  S
     00
     2d  _
-    00
-    07  D
-    08  E
-    04  A
-    09  F
-    06  C
-    05  B
-    20  3
-    1f  2
-    00  
-    30  }
-    00
-    00
-    06  C
+    04  a
+	21  4
+	1f  
+	23
+	20
+	09
+	27
+	24
+	30
+	00
+	06
 
 Therefore, the flag is `flag{pr355_0nwards_deafcb32}`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzU2Mzg2MTc0XX0=
+-->
