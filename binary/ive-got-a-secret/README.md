@@ -22,7 +22,7 @@ By running the code for the first time, we come to know that the secret is in he
 	Now tell my secret in hex! Secret: f7fc7c20
     As my friend says,"You get nothing! You lose! Good day, Sir!"
 
-With the same input `%x %x %x %x %x %x %x %x` run the program for some times to see that the 5th column generates a new value everytime. That's because of the urandom in the 
+With the same input `%x %x %x %x %x %x %x %x` run the program for some times to see that the 5th column generates a new value everytime. That's because of the urandom in the program and we can decide that this should be the required secret hex value.
 
     $ nc shell2017.picoctf.com 39169
 	Give me something to say!
@@ -32,7 +32,7 @@ With the same input `%x %x %x %x %x %x %x %x` run the program for some times to 
 	c9fd8f8a1dcaee8962bc60cb516a79a5
 	Wow, you got it!
 
-Therefore, the flag is `a18450ba7aaa8c085c522cdef6ab35ab`.
+Therefore, the flag is `c9fd8f8a1dcaee8962bc60cb516a79a5`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI0NDU3MzJdfQ==
+eyJoaXN0b3J5IjpbLTE2NDkxMDM3NTZdfQ==
 -->
