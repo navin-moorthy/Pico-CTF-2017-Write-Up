@@ -59,7 +59,7 @@ However, input is unescaped, so we can pass on a shell command like
 
 As seen above, `"` at the end of the input breaks the code. Also, we can see the shell in the second and the following lines.
 
-Then, we can do something like this to break the first line with charac
+Then, we can do something like this to break the first line with characters and the command for the second line, gives the flag
 
     $ nc shell2017.picoctf.com 12442
 	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"bin/cat flag.txt
@@ -83,5 +83,5 @@ Then, we can do something like this to break the first line with charac
 
 Therefore, the flag is `2ab2050bf32e84975a10d774a919e1d0`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQyNTMxNzhdfQ==
+eyJoaXN0b3J5IjpbLTEzOTY2OTA1OThdfQ==
 -->
