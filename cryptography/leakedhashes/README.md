@@ -74,113 +74,113 @@ ac2f556a0eb415745b31e14a91d55d75 MD5 : muc1d
 ```
 
  We are unable to find out what's root's password but never mind that, let's try `christene`.
+```
+ $ nc shell2017.picoctf.com 44804
+enter username:
+christene
+christene's password:r3ckr3ck
+welcome to shady file server. would you like to access the cat ascii art database? y/n
+y
 
-    $ nc shell2017.picoctf.com 44804
-    enter username:
-    christene
-    christene's password:r3ckr3ck
-    welcome to shady file server. would you like to access the cat ascii art database? y/n
-    y
+     /\_/\ 
+    ( o o )
+  G-==_Y_==-M
+      `-'
+      
+  /\ /\ 
+  (O o)
+=(: ^ :)=  
+  '*v*'
+  
+ |\_/|     
+ (. .)
+  =w= (\   
+ / ^ \//   
+(|| ||)
+,""_""_ .
 
-         /\_/\ 
-        ( o o )
-      G-==_Y_==-M
-          `-'
-          
-      /\ /\ 
-      (O o)
-    =(: ^ :)=  
-      '*v*'
-      
-     |\_/|     
-     (. .)
-      =w= (\   
-     / ^ \//   
-    (|| ||)
-    ,""_""_ .
-
-         /\_/\ 
-        ( o o )
-       -==_Y_==- 
-          `-'
-        /\**/\ 
-       ( o_o  )_)
-       ,(u  u  ,),
-      {}{}{}{}{}{}
-      
-      /\_/\ 
-     ( o.o )
-      > ^ <
-      
-           /\_/\ 
-      /\  / o o \ 
-     //\ \~(*)~/
-     `  \/   ^ /
-        | \|| ||  
-        \ '|| ||  
-         \)()-())
-         
-       A_A
-      (-.-)
-       |-|   
-      /   \  
-     |     |  __
-     |  || | |  \___
-     \_||_/_/
+     /\_/\ 
+    ( o o )
+   -==_Y_==- 
+      `-'
+    /\**/\ 
+   ( o_o  )_)
+   ,(u  u  ,),
+  {}{}{}{}{}{}
+  
+  /\_/\ 
+ ( o.o )
+  > ^ <
+  
+       /\_/\ 
+  /\  / o o \ 
+ //\ \~(*)~/
+ `  \/   ^ /
+    | \|| ||  
+    \ '|| ||  
+     \)()-())
      
-         /\__/\ 
-        /`    '\ 
-      === 0  0 ===
-        \  --  /    - flag is 53c0bedf15f745eeed4a6c6c30a10f30
+   A_A
+  (-.-)
+   |-|   
+  /   \  
+ |     |  __
+ |  || | |  \___
+ \_||_/_/
+ 
+     /\__/\ 
+    /`    '\ 
+  === 0  0 ===
+    \  --  /    - flag is 3977df525282eaf0e99f86efd2b645ed
 
-       /        \ 
-      /          \ 
-     |            |
-      \  ||  ||  /
-       \_oo__oo_/#######o
+   /        \ 
+  /          \ 
+ |            |
+  \  ||  ||  /
+   \_oo__oo_/#######o
+   
+  /\___/\ 
+ ( o   o )
+ (  =^=  ) 
+ (        )
+ (         )
+ (          )))))))))))
+ 
+ /\ /\ 
+ (O o)
+=(:^:)=  
+   U
+   
+    _,,/|
+    \o o' 
+    =_~_=
+    /   \ (\ 
+   (////_)//
+   ~~~
+   
+   /\     /\ 
+  {  `---'  }
+  {  O   O  }  
+~~|~   V   ~|~~  
+   \  \|/  /   
+    `-----'__
+    /     \  `^\_
+   {       }\ |\_\_   W
+   |  \_/  |/ /  \_\_( )
+    \__/  /(_E     \__/
+      (  /
+       MM
        
-      /\___/\ 
-     ( o   o )
-     (  =^=  ) 
-     (        )
-     (         )
-     (          )))))))))))
-     
-     /\ /\ 
-     (O o)
-    =(:^:)=  
-       U
-       
-        _,,/|
-        \o o' 
-        =_~_=
-        /   \ (\ 
-       (////_)//
-       ~~~
-       
-       /\     /\ 
-      {  `---'  }
-      {  O   O  }  
-    ~~|~   V   ~|~~  
-       \  \|/  /   
-        `-----'__
-        /     \  `^\_
-       {       }\ |\_\_   W
-       |  \_/  |/ /  \_\_( )
-        \__/  /(_E     \__/
-          (  /
-           MM
+              ("`-''-/").___..--''"`-._
+               `6_ 6  )   `-.  (     ).`-.__.`)
+               (_Y_.)'  ._   )  `._ `. ``-..-'
+             _..`--'_..-_/  /--'_.' ,'
+           (il),-''  (li),'  ((!.-'
            
-                  ("`-''-/").___..--''"`-._
-                   `6_ 6  )   `-.  (     ).`-.__.`)
-                   (_Y_.)'  ._   )  `._ `. ``-..-'
-                 _..`--'_..-_/  /--'_.' ,'
-               (il),-''  (li),'  ((!.-'
-               
-    from http://user.xmission.com/~emailbox/ascii_cats.htm
-
+from http://user.xmission.com/~emailbox/ascii_cats.htm
+```
 Easy.
-Therefore, the flag is `53c0bedf15f745eeed4a6c6c30a10f30`
+Therefore, the flag is `3977df525282eaf0e99f86efd2b645ed`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODUxMTAzNjddfQ==
+eyJoaXN0b3J5IjpbLTcyNTgwNzQxOV19
 -->
