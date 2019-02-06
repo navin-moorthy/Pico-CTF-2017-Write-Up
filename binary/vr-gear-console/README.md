@@ -51,6 +51,9 @@ So, to buffer overflow this, we need to fill up username past it's limits to ove
     Admin access granted!
     The flag is in "flag.txt".
     cat flag.txt
-    5a9aeea545615089851dd6a9b57a3139
+    8b7ea70220f19ab662750a8710a552c4
 
-Therefore, the flag is `5a9aeea545615089851dd6a9b57a3139`.
+Therefore, the flag is `8b7ea70220f19ab662750a8710a552c4`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM0MDM3Mzc3Nl19
+-->
