@@ -18,7 +18,7 @@ Let's try to see what the login looks like.
     root
     root's password:
 
-Well, damn, we only have root's hash. Let's do a simple `cat hashdump.txt | cut -d ':' -f 2` to retreive all password hashes and go down to our local rainbow table site to [solve all the hashes](solved.txt). We are unable to find out what's root's password but never mind that, let's try `christene`.
+Well, damn, we only have root's hash. Let's do a simple `cat hashdump.txt | cut -d ':' -f 2` to retreive all password hashes and go to HashKiller website to get the answer for the hashes. We are unable to find out what's root's password but never mind that, let's try `christene`.
 
     $ nc shell2017.picoctf.com 53397
     enter username:
@@ -126,3 +126,6 @@ Well, damn, we only have root's hash. Let's do a simple `cat hashdump.txt | cut 
 
 Easy.
 Therefore, the flag is `53c0bedf15f745eeed4a6c6c30a10f30`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMDU0MTcwMjVdfQ==
+-->
