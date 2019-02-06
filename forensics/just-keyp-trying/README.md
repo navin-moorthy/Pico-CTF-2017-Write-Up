@@ -10,7 +10,7 @@
 
 >Find out what kind of packets these are. What does the info column say in Wireshark/Cloudshark?
 What changes between packets? What does that data look like?
-Maybe take a look at http://www.usb.org/developers/hidpage/Hut1_12v2.pdf?
+Maybe take a look at https://serverhelfer.de/usb-hid-keyboard-scan-codes/
 
 ## Write-up
 Another challenge, this time testing on your capabilities to read the title. We will extract the USB additional capture data and extract only the 3rd column where the keypress event is encoded into.
@@ -55,7 +55,7 @@ Another challenge, this time testing on your capabilities to read the title. We 
     00
     06
 
-Consulting the [USB specification manual](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf?) for KEYPAD, granted in the challenge name, 
+Consulting the [USB specification manual](https://serverhelfer.de/usb-hid-keyboard-scan-codes/) for KEYPAD, granted in the challenge name, 
     
     09  F
     0f  L
@@ -83,17 +83,18 @@ Consulting the [USB specification manual](http://www.usb.org/developers/hidpage/
     2d  _
     04  a
 	21  4
-	1f  
-	23
-	20
-	09
-	27
-	24
+	1f  2
+	23  6
+	20  3
+	09  f
+	27  0 
+	24  7
+
 	30
 	00
 	06
 
 Therefore, the flag is `flag{pr355_0nwards_deafcb32}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2Mzg2MTc0XX0=
+eyJoaXN0b3J5IjpbMjAyOTM2NjAwMF19
 -->
