@@ -81,7 +81,7 @@ Then, we can do something like this to break the first line with characters and 
 	sh: 15: //: Permission denied
 	sh: 17: Syntax error: Unterminated quoted string
 
-Therefore, the flag is `2ab2050bf32e84975a10d774a919e1d0`.
+Therefore, the flag is `6116b5c621137949e3f70fd31f7cc29a`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY2OTA1OThdfQ==
+eyJoaXN0b3J5IjpbNDY1MDc3MDQzXX0=
 -->
