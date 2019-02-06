@@ -89,12 +89,11 @@ Consulting the [USB specification manual](https://serverhelfer.de/usb-hid-keyboa
 	09  f
 	27  0 
 	24  7
-
-	30
+	30  }
 	00
 	06
 
-Therefore, the flag is `flag{pr355_0nwards_deafcb32}`.
+Therefore, the flag is `flag{pr355_0nwards_a4263f07}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTM2NjAwMF19
+eyJoaXN0b3J5IjpbMTgzMjA4MTYwOF19
 -->
