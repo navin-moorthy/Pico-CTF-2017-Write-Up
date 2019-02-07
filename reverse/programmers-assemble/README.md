@@ -19,7 +19,7 @@ So, first assembly challenge done.  We are given an assembly piece of code and l
     main:
         mov $XXXXXXX, %eax.     ; move XXXXXXX into EAX 
         mov $0, %ebx            ; move 0 into EBX
-        mov $0x8, %ecx          ; move 8 into ECX
+        mov $0x87, %ecx          ; move 87 into ECX
     loop:
         test %eax, %eax         ; if eax is 0
         jz fin                  ; jump to finish
@@ -27,7 +27,7 @@ So, first assembly challenge done.  We are given an assembly piece of code and l
         dec %eax                ; decrement eax
         jmp loop                ; loop back
     fin:
-        cmp $0xdc98, %ebx       ; if ebx = 56472,
+        cmp $0xdc98b47f, %ebx       ; if ebx = 5647246207,
         je good                 ; jump to good
         mov $0, %eax            ; else, move 0 return value to eax
         jmp end                 ; jump to return
@@ -36,11 +36,12 @@ So, first assembly challenge done.  We are given an assembly piece of code and l
     end:
         ret                     ; exit
 
-Simple! We want the file to return `0x1`, so we naturally want `good:` to execute. However, for good to execute, we need `%ebx` to equal `56472` or `0xdc98`. The only way `%ebx` is actually incremented is by `%ecx`, whom adds `0x8` everytime the loop loops.
+Simple! We want the file to return `0x1`, so we naturally want `good:` to execute. However, for good to execute, we need `%ebx` to equal `5647246207` or `0xdc98b47f`. The only way `%ebx` is actually incremented is by `%ecx`, whom adds `0x87` everytime the loop loops.
 
-So, how do we get `%ebx` up to `56472`? Simple! We just have to loop `56472 / 8 = 7059` times! So, `XXXXXXX` has to be `7059`! Converting `7059` to hex gives us `0x1B93`
+So, how do we get `%ebx` up to `5647246207`? Simple! We just have to loop `5647246207 / 87 = 70596601` times! So, `XXXXXXX` has to be `70596601`! Converting `70596601` to hex gives us `0x1B939C9`
 
-Therefore, the flag is `0x1B93`.
+Therefore, the flag is `0x1B939C9`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzcxMjM3NjQsMzE5NTk2MjZdfQ==
+eyJoaXN0b3J5IjpbLTM4Njg5ODMwMywtMTMzNzEyMzc2NCwzMT
+k1OTYyNl19
 -->
