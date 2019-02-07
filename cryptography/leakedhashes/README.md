@@ -4,7 +4,7 @@
 **Points:** 90
 **Description:**
 
->Someone got hacked! Check out some service's password hashes that were leaked at hashdump.txt! Do you think they chose strong passwords? We should check... The service is running at shell2017.picoctf.com:44804!
+>Someone got hacked! Check out some service's password hashes that were leaked at hashdump.txt! Do you think they chose strong passwords? We should check... The service is running at shell2017.picoctf.com:4480453397!
 
 **Hint:**
 
@@ -13,7 +13,7 @@
 ## Write-up
 Let's try to see what the login looks like.
 
-    $ nc shell2017.picoctf.com 44804
+    $ nc shell2017.picoctf.com 4480453397
     enter username:
     root
     root's password:
@@ -73,114 +73,131 @@ ac2f556a0eb415745b31e14a91d55d75 MD5 : muc1d
 3f4e535a671209f394817559372286f2 MD5 : d3b17
 ```
 
- We are unable to find out what's root's password but never mind that, let's try `christene`.
+down to our local rainbow table site to [solve all the hashes](solved.txt). We are unable to find out what's root's password but never mind that, let's try `christene`.
 ```
- $ nc shell2017.picoctf.com 44804
-enter username:
-christene
-christene's password:r3ckr3ck
-welcome to shady file server. would you like to access the cat ascii art database? y/n
+
+    $ nc shell2017.picoctf.com 44804
+53397
+    enter username:
+    christene
+    christene's password:r3ckr3ck
+3lf1n
+    welcome to shady file server. would you like to access the cat ascii art database? y/n
 y
 
-     /\_/\ 
-    ( o o )
-  G-==_Y_==-M
-      `-'
+    y
+
+         /\_/\ 
+        ( o o )
+      G-==_Y_==-M
+          `-'
+         
+ 
+      /\ /\ 
+      (O o)
+    =(: ^ :)=  
+      '*v*'
+  
+    
+     |\_/|     
+     (. .)
+      =w= (\   
+     / ^ \//   
+    (|| ||)
+    ,""_""_ .
+
+         /\_/\ 
+        ( o o )
+       -==_Y_==- 
+          `-'
+        /\**/\ 
+       ( o_o  )_)
+       ,(u  u  ,),
+      {}{}{}{}{}{}
+  
+    
+      /\_/\ 
+     ( o.o )
+      > ^ <
       
-  /\ /\ 
-  (O o)
-=(: ^ :)=  
-  '*v*'
-  
- |\_/|     
- (. .)
-  =w= (\   
- / ^ \//   
-(|| ||)
-,""_""_ .
-
-     /\_/\ 
-    ( o o )
-   -==_Y_==- 
-      `-'
-    /\**/\ 
-   ( o_o  )_)
-   ,(u  u  ,),
-  {}{}{}{}{}{}
-  
-  /\_/\ 
- ( o.o )
-  > ^ <
-  
-       /\_/\ 
-  /\  / o o \ 
- //\ \~(*)~/
- `  \/   ^ /
-    | \|| ||  
-    \ '|| ||  
-     \)()-())
-     
-   A_A
-  (-.-)
-   |-|   
-  /   \  
- |     |  __
- |  || | |  \___
- \_||_/_/
+           /\_/\ 
+      /\  / o o \ 
+     //\ \~(*)~/
+     `  \/   ^ /
+        | \|| ||  
+        \ '|| ||  
+         \)()-())
+      
+   
+       A_A
+      (-.-)
+       |-|   
+      /   \  
+     |     |  __
+     |  || | |  \___
+     \_||_/_/
  
-     /\__/\ 
-    /`    '\ 
-  === 0  0 ===
-    \  --  /    - flag is 3977df525282eaf0e99f86efd2b645ed
+    
+         /\__/\ 
+        /`    '\ 
+      === 0  0 ===
+        \  --  /    - flag is 3977df525282eaf0e99f86efd2b645ed
 
-   /        \ 
-  /          \ 
- |            |
-  \  ||  ||  /
-   \_oo__oo_/#######o
-   
-  /\___/\ 
- ( o   o )
- (  =^=  ) 
- (        )
- (         )
- (          )))))))))))
- 
- /\ /\ 
- (O o)
-=(:^:)=  
-   U
-   
-    _,,/|
-    \o o' 
-    =_~_=
-    /   \ (\ 
-   (////_)//
-   ~~~
-   
-   /\     /\ 
-  {  `---'  }
-  {  O   O  }  
-~~|~   V   ~|~~  
-   \  \|/  /   
-    `-----'__
-    /     \  `^\_
-   {       }\ |\_\_   W
-   |  \_/  |/ /  \_\_( )
-    \__/  /(_E     \__/
-      (  /
-       MM
+53c0bedf15f745eeed4a6c6c30a10f30
+
+       /        \ 
+      /          \ 
+     |            |
+      \  ||  ||  /
+       \_oo__oo_/#######o
        
-              ("`-''-/").___..--''"`-._
-               `6_ 6  )   `-.  (     ).`-.__.`)
-               (_Y_.)'  ._   )  `._ `. ``-..-'
-             _..`--'_..-_/  /--'_.' ,'
-           (il),-''  (li),'  ((!.-'
+      /\___/\ 
+     ( o   o )
+     (  =^=  ) 
+     (        )
+     (         )
+     (          )))))))))))
+ 
+    
+     /\ /\ 
+     (O o)
+    =(:^:)=  
+   U
+    U
+       
+        _,,/|
+        \o o' 
+        =_~_=
+        /   \ (\ 
+       (////_)//
+       ~~~
+     
+  
+       /\     /\ 
+      {  `---'  }
+      {  O   O  }  
+    ~~|~   V   ~|~~  
+       \  \|/  /   
+        `-----'__
+        /     \  `^\_
+       {       }\ |\_\_   W
+       |  \_/  |/ /  \_\_( )
+        \__/  /(_E     \__/
+          (  /
+           MM
+        
+   
+                  ("`-''-/").___..--''"`-._
+                   `6_ 6  )   `-.  (     ).`-.__.`)
+                   (_Y_.)'  ._   )  `._ `. ``-..-'
+                 _..`--'_..-_/  /--'_.' ,'
+               (il),-''  (li),'  ((!.-'
            
-from http://user.xmission.com/~emailbox/ascii_cats.htm
+    
+    from http://user.xmission.com/~emailbox/ascii_cats.htm
 ```
 Easy.
-Therefore, the flag is `3977df525282eaf0e99f86efd2b645ed`
+Therefore, the flag is `3977df525282eaf0e99f86efd2b645ed53c0bedf15f745eeed4a6c6c30a10f30`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTgwNzQxOV19
+eyJoaXN0b3J5IjpbLTEyODAwODY5MDMsLTcyNTgwNzQxOV19
 -->
