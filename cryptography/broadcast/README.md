@@ -219,6 +219,8 @@ broadcast_with_small_e_is_killer_40332300191
 ```
 
 Amazing crypto challenge, and we have another flag!
+
+Thanks to [w3ndige](https://www.rootnetsec.com) for this amazing writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzU1NDI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTE4MjgwMTUxMTddfQ==
 -->
