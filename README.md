@@ -10,7 +10,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Tutorial-3_0](tutorial/tutorial_3) :heavy_check_mark:
 * **Master**
     - [Lazy-Dev_50](master/lazy-dev) :heavy_check_mark:
-    - [Missing-Identity_100](master/missing-identity)
+    - [Missing-Identity_100](master/missing-identity) :heavy_check_mark:
     - [War_125](master/war)
     - [WeirderRSA_175](master/weirderRSA)
     - Choose_150
@@ -19,7 +19,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Special-Agent-User_50](forensics/special-agent-user) :heavy_check_mark:
     - [Meta-Find-Me_70](forensics/meta-find-me) :heavy_check_mark:
     - [Little-School-Bus_75](forensics/little-school-bus) :heavy_check_mark:
-    - [Just-Keyp-Trying_80](forensics/just-keyp-trying)
+    - [Just-Keyp-Trying_80](forensics/just-keyp-trying) :heavy_check_mark:
     - [Puzzingly-Accountable_100](forensics/puzzingly-accountable)
     - [Connect-the-Wigle_140](forensics/connect-the-wigle)
 * **Cryptography**
@@ -29,8 +29,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [computeAES_50](cryptography/computeaes) :heavy_check_mark:
     - [computeRSA_50](cryptography/computersa) :heavy_check_mark:
     - [SoRandom_75](cryptography/sorandom) :heavy_check_mark:
-    - [LeakedHashes_90](cryptography/leakedhashes)
-    - [Weird-RSA_90](cryptography/weird-rsa)
+    - [LeakedHashes_90](cryptography/leakedhashes) :heavy_check_mark:
+    - [Weird-RSA_90](cryptography/weird-rsa) :heavy_check_mark:
     - [HashChain_90](cryptography/hashchain)
     - [Broadcast_120](cryptography/broadcast)
     - [smallRSA_120](cryptography/smallrsa)
@@ -51,9 +51,9 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
     - [My-First-SQL_50](web/my-first-sql) :heavy_check_mark:
     - [Biscuit_75](web/biscuit)
-    - [TW-GR-E1-ART_100](web/tw-gr-e1-art)
+    - [TW-GR-E1-ART_100](web/tw-gr-e1-art) :heavy_check_mark:
     - [A-Happy-Union_110](web/a-happy-union)
-    - [TW-GR-E2-EOTDS_120](web/tw-gr-e2-eotds)
+    - [TW-GR-E2-EOTDS_120](web/tw-gr-e2-eotds) :heavy_check_mark:
     - [A-Happy-Union_110](web/a-happy-union)
     - [No-Eyes_125](web/no-eyes)
     - [A-Kaley-Ceilidh](web/a-kaley-ceilidh)
@@ -65,10 +65,10 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Shellz_55](binary/shellz) :heavy_check_mark:
     - [Shells_70](binary/shells) :heavy_check_mark:
     - [Guess-The-Number_75](binary/guess-the-number) :heavy_check_mark:
-    - [Ive-Got-A-Secret_75](binary/ive-got-a-secret)
-    - [Flagsay-1_80](binary/flagsay-1)
-    - [VR-Gear-Console_95](binary/vr-gear-console)
-    - [Config-Console_125](binary/config-console)
+    - [Ive-Got-A-Secret_75](binary/ive-got-a-secret) :heavy_check_mark:
+    - [Flagsay-1_80](binary/flagsay-1) :heavy_check_mark:
+    - [VR-Gear-Console_95](binary/vr-gear-console) :heavy_check_mark:
+    - [Config-Console_125](binary/config-console) 
     - Enter-The-Matrix_150
     - Flagsay-2_150
     - Aggregator_190
