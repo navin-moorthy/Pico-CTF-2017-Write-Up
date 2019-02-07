@@ -44,9 +44,12 @@ nottheflag1.pngPK
 nottheflag2.pngPK
 nottheflag3.pngPK
 ```
+At the end of the provided output we can see 8 file names with additional **PK** letters appended to it. Quick google search shows us that PK are the initals of Phil Katz, co-creator of the ZIP file format and author of PKZIP. You can read more [here](http://www.garykessler.net/library/file_sigs.html).
 
 
+
+Thansk [w3ndige](https://www.rootnetsec.com/) for the tips.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTAwMzEyNzYsLTEzNDkzNTM1NjJdfQ
+eyJoaXN0b3J5IjpbLTE5Nzg4NjEwNjQsLTEzNDkzNTM1NjJdfQ
 ==
 -->
