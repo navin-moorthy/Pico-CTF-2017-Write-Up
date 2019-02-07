@@ -83,10 +83,10 @@ Zip entry offsets do not need adjusting
  copying: nottheflag3.png
  copying: nottheflag4.png
 ```
-
+![flag]()
 
 Thansk [w3ndige](https://www.rootnetsec.com/) for the writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDY5ODk3OTUsMTgyNDI1ODcyNiwtMT
-k3ODg2MTA2NCwtMTM0OTM1MzU2Ml19
+eyJoaXN0b3J5IjpbOTc1ODgyMDYxLC0xNzA2OTg5Nzk1LDE4Mj
+QyNTg3MjYsLTE5Nzg4NjEwNjQsLTEzNDkzNTM1NjJdfQ==
 -->
