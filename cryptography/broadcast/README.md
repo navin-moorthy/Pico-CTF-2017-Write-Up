@@ -181,7 +181,7 @@ if __name__ == '__main__':
     print "Decoded Hex :\n",resultHex
     print "---------------------------"
     print "As Ascii :\n",resultHex.decode('hex')
-print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 ```
 
 Shoutout to  [JulesDT](https://github.com/JulesDT)!
@@ -222,5 +222,5 @@ Amazing crypto challenge, and we have another flag!
 
 Thanks to [w3ndige](https://www.rootnetsec.com) for this amazing writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjgwMTUxMTddfQ==
+eyJoaXN0b3J5IjpbNjYyNTk0Mzc5LC0xODI4MDE1MTE3XX0=
 -->
