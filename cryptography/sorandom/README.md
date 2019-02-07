@@ -4,7 +4,7 @@
 **Points:** 75
 **Description:**
 
->We found [sorandom.py](sorandom.py) running at shell2017.picoctf.com:63997. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
+>We found [sorandom.py](sorandom.py) running at shell2017.picoctf.com:6399716768. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
 
 **Hint:**
 
@@ -13,8 +13,8 @@
 ## Write-up
 Firstly, it doesn't seem to be a random random.
     
-    $ nc shell2017.picoctf.com 63997
-    Unguessably Randomized Flag: BNZQ:3o8b2bgl0689u4aj640407963277k0fc
+    $ nc shell2017.picoctf.com 6399716768
+    Unguessably Randomized Flag: BNZQ:3o8b2bgl0689u4aj640407963277k0fc449xg472190mwx6869b8pt10rwo92624
 
 Looking in the `sorandom.py` code, we see that the random generator has already been preseeded!
 
@@ -62,8 +62,12 @@ print(flag)
     $ ./crack.py
     FLAG: 0d6f1cac5615c7ae971761318430c9bb
 
-Therefore, the flag is `0d6f1cac5615c7ae971761318430c9bb`.
+Therefore, the flag is `0d6f1cac5615c7ae971761318430c9bb
+    $ ./crack.py
+    FLAG: 107bd559693aef6692e1ed55ebe29514
+
+Therefore, the flag is `107bd559693aef6692e1ed55ebe29514`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODE1ODEzMywtNTc1MDg0MzQ2LDM1MT
-IxNzI5Ml19
+eyJoaXN0b3J5IjpbLTU2OTQwOTE2LDE5NjgxNTgxMzMsLTU3NT
+A4NDM0NiwzNTEyMTcyOTJdfQ==
 -->
