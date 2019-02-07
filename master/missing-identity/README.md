@@ -26,7 +26,25 @@ Now we get a black PNG file? Hmm... Courtesy of @zst123, apparently [JD-GUI](htt
 
 Therefore, the [flag](file.zip.src/flag.png) is `zippidydooda29494995`.
 
-On first seeing the file with `cat`, we get some random letters but with the strings
+On first seeing the file with `cat`, we get some random letters but with the `strings` got something interesting.
+```bash
+....
+....
+....
+0j@&
+rguvt
+UwjS
+J(o*
+"f)=
+u$dq
+>k0U
+IEND
+flag.pngPK
+nottheflag1.pngPK
+nottheflag2.pngPK
+nottheflag3.pngPK
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTMzOTY4OF19
+eyJoaXN0b3J5IjpbLTEzNDkzNTM1NjJdfQ==
 -->
