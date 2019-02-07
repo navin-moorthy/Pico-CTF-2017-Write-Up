@@ -12,35 +12,48 @@
 
 ## Write-up
 Using something like JD-GUI, we get the source of the class file
+```java
+import  java.util.Base64.Decoder;
 
-    import java.io.PrintStream;
-    import java.util.Arrays;
-    import java.util.Base64;
-    import java.util.Base64.Decoder;
+  
 
-    public class problem
-    {
-      public static String get_flag()
-      {
-        String str1 = "Hint: Don't worry about the schematics";
-        String str2 = "eux_Z]\\ayiqlog`s^hvnmwr[cpftbkjd";
-        String str3 = "Zf91XhR7fa=ZVH2H=QlbvdHJx5omN2xc";
-        byte[] arrayOfByte1 = str2.getBytes();
-        byte[] arrayOfByte2 = str3.getBytes();
-        byte[] arrayOfByte3 = new byte[arrayOfByte2.length];
-        for (int i = 0; i < arrayOfByte2.length; i++) {
-          arrayOfByte3[i] = arrayOfByte2[(arrayOfByte1[i] - 90)];
-        }
-        System.out.println(Arrays.toString(Base64.getDecoder().decode(arrayOfByte3)));
-        return new String(Base64.getDecoder().decode(arrayOfByte3));
-      }
-      
-      public static void main(String[] paramArrayOfString)
-      {
-        System.out.println("Nothing to see here");
-      }
-    }
+public  class  problem {
 
+public  problem() {}
+
+public  static  String  get_flag() { String  str1  =  "Hint: Don't worry about the schematics";
+
+String  str2  =  "eux_Z]\\ayiqlog`s^hvnmwr[cpftbkjd";
+
+String  str3  =  "Zf91XhR7fa=ZVH2H=QlbvdHJx5omN2xc";
+
+byte[] arrayOfByte1  =  str2.getBytes();
+
+byte[] arrayOfByte2  =  str3.getBytes();
+
+byte[] arrayOfByte3  =  new  byte[arrayOfByte2.length];
+
+for (int  i  =  0; i <  arrayOfByte2.length; i++)
+
+{
+
+arrayOfByte3[i] = arrayOfByte2[(arrayOfByte1[i] -  90)];
+
+}
+
+System.out.println(java.util.Arrays.toString(java.util.Base64.getDecoder().decode(arrayOfByte3)));
+
+return  new  String(java.util.Base64.getDecoder().decode(arrayOfByte3));
+
+}
+
+public  static  void  main(String[] paramArrayOfString) {
+
+System.out.println("Nothing to see here");
+
+}
+
+}
 Like the source says, I'm way too lazy to work out the schematics, so lets try calling the `get_flag()` method from another file. This is where my [solver](solve.java) comes in! Just compile and run!
 
     $ javac solve.java 
@@ -49,3 +62,6 @@ Like the source says, I'm way too lazy to work out the schematics, so lets try c
     flag_{pretty_cool_huh}
 
 Therefore, the flag is `flag_{pretty_cool_huh}`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3OTk4NDIzMl19
+-->
