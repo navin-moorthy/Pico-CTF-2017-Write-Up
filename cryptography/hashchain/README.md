@@ -51,10 +51,23 @@ s.send(hashc+'\n'); #Send the hash
 print(s.recv(4096)); #Get the flag
 ```
 Now we run the python file to get the flag.
-``
+```text
+$ python hashchain.py 
+This flag only for user 2748
+Please authenticate as user 2748
 
+7fee24d2715bed64874cc62b84d421c1
+Next token?
+
+User: 2748
+Token: 7fee24d2715bed64874cc62b84d421c1
+Seed: 1006ff12c465532f8c574aeaa4461b16
+Hash found: 9f49c8d5476b808519490041c248a3f6
+Sending hash...
+Hello user 2748! Here's the flag: 9494f4171092452602fa545ab927e99e
+```
 Therefore, the flag is `9494f4171092452602fa545ab927e99e`.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzk2MzQ4Nl19
+eyJoaXN0b3J5IjpbLTIwMzUxNDk5ODVdfQ==
 -->
