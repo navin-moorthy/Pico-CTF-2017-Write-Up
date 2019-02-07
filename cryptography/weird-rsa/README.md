@@ -111,7 +111,9 @@ We have the message. Last thing will be to turn it into a hexadecimal number, an
 
 Thanks  [Andrew](http://stackoverflow.com/questions/9641440/convert-from-ascii-string-encoded-in-hex-to-plain-ascii)  for this snippet. Here's the flag!
 
-Thanks [rootsec](https://www.rootnetsec.com/picoctf-weird-rsa/) for the detailed explanation.
+Thanks [rootsec](https://www.rootnetsec.com/picoctf-weird-rsa/) for the detailed explanationPython and BigInteger to the rescue! Link to [script](solve.py). No idea why it would just work with `m2` alone, I need to learn my RSA more.
+
+Therefore, the flag is `Theres_more_than_one_way_to_RSA`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY1MzAxNzBdfQ==
+eyJoaXN0b3J5IjpbMzExNDM0ODg4LC0yMDY2NTMwMTcwXX0=
 -->
