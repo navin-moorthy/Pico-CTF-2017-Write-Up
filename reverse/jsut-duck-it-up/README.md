@@ -13,6 +13,9 @@
 ## Write-up
 Like the name suggests, lets try Javascripting. Paste the contents of the file into Chrome's Developer's Console and bam!
 
-    aw_yiss_ducking_breadcrumbs_18fb66f1
+    aw_yiss_ducking_breadcrumbs_61637ee8
 
-Therefore, the flag is `aw_yiss_ducking_breadcrumbs_18fb66f1`.
+Therefore, the flag is `aw_yiss_ducking_breadcrumbs_61637ee8`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA4NjMxMDQ2NF19
+-->
