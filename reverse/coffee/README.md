@@ -11,7 +11,7 @@
 >Is there a way to get the source of the program?
 
 ## Write-up
-Using something like JD-GUI, we get the source of the class file
+Using something like JD-GUI or any online java compiler to get the .java file, we get the source of the class file
 ```java
 import  java.util.Base64.Decoder;
 
@@ -79,8 +79,9 @@ print d
 ```text
 $ python solve.py 
 flag_{pretty_cool_huh}
-
+```
 Therefore, the flag is `flag_{pretty_cool_huh}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODEyMjE1NiwtMTc4NDkwNzQzMl19
+eyJoaXN0b3J5IjpbLTEwNjIwNTA2MTcsLTE3ODQ5MDc0MzJdfQ
+==
 -->
