@@ -17,11 +17,52 @@ Install [zsteg](https://github.com/zed-0xff/zsteg) and run the following command
 $ zsteg littleschoolbus.bmp 
 imagedata           .. text: "~vusnljmkhifgXWWNNOVUV~}"
 b1,lsb,bY           .. text: "flag{remember_kids_protect_your_headers_f5e8}"
-b3,r,lsb,xY         .. file: very old 16-bit-int big-endian archive
+b3,r,lsb,xY         .. file: very old 16-bit-First, we need to convert `littleschoolbus.bmp` to a ASCII binary form, then we need to extract the least significant bit? Maybe add bits together?
+
+    with open("littleschoolbus.bmp", "rb") as file:
+        data = file.read()
+
+        bits = ""
+        for c in data:
+            lsb = str(c & 0x1)
+            bits += lsb
+
+        bytess = [chr(int(bits[i:i+8], 2)) for i in range(0, len(bits), 8)]
+        lsbstr = "".join(bytess)
+        print(lsbstr)
+        if "flag" in lsbstr:
+            break
+
+Hmm... doesn't seem to contain the flag! I know, let's make it keep removing front bits till we get "flag"!
+
+    for iter in range(16):
+        with open("littleschoolbus.bmp", "rb") as file:
+            data = file.read()
+            data = data[iter:]
+
+            bits = ""
+            for c in data:
+                lsb = str(c & 0x1)
+                bits += lsb
+
+            bytess = [chr(int (big-endian archive
 b4,rgb,msb,xY       .. file: MPEG ADTS, layer I, v2, 112 kbps, 24 kHz, JntStereo
-```
+```ts[i:i+8], 2)) for i in range(0, len(bits), 8)]
+            lsbstr = "".join(bytess)
+            print(lsbstr)
+            if "flag" in lsbstr:
+                break
+
+Putting this into [search.py](search.py) and running it, we get,
+
+    $ ./search.py
+    # Lots of random crap
+    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿó°¤Ç­?ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+    flag{remember_kids_protect_your_headers_5e31}ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿñü¿ÿÿÿÿÿÿÿÿÿÿÿÿÿÿ;lvØ^ÈÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÒY#YÿÿÿÿÿÿÿÿÿÿÿÿÿûÆã±Ûd=ÿÛÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿñ9lü;ÿÿÿÿÿÿÿÿÿÿÿÿñ¢NÛm°ÿÿÿýÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿòçÿÿüÿÿÿÿÿÿÿÿÿ
+    # Even more random crap
+
 Well, that worked!
-Therefore, the flag is `flag{remember_kids_protect_your_headers_f5e8}`.
+Therefore, the flag is `flag{remember_kids_protect_your_headers_f5e8}31`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjY5NDY1OF19
+eyJoaXN0b3J5IjpbLTMxNjA5NDAyLDE3NDY2OTQ2NThdfQ==
 -->
