@@ -54,6 +54,7 @@ System.out.println("Nothing to see here");
 }
 
 }
+```
 Like the source says, I'm way too lazy to work out the schematics, so lets try calling the `get_flag()` method from another file. This is where my [solver](solve.java) comes in! Just compile and run!
 
     $ javac solve.java 
@@ -63,5 +64,5 @@ Like the source says, I'm way too lazy to work out the schematics, so lets try c
 
 Therefore, the flag is `flag_{pretty_cool_huh}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTk4NDIzMl19
+eyJoaXN0b3J5IjpbLTE3ODQ5MDc0MzJdfQ==
 -->
