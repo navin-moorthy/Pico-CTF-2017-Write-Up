@@ -65,7 +65,14 @@ file #1:  bad zipfile offset (local header sig):  0
   inflating: nottheflag1.png         
   inflating: nottheflag2.png         
   inflating: nottheflag3.png         
-  inflating: nottheflag4.png         
+  inflating: nottheThis seems to be a zip file, [unzipped contents](unzipped) doesn't appear to contain flags, however we get an interesting error.
+
+    Archive:  picoctf_2017_writeup/master/master_2/file
+    file #1:  bad zipfile offset (local header sig):  0
+
+Hmmm... Let's try to extract it with offsets
+
+    $ dd if=file of=flag4.png         
 
 Let's repair this with correct signature, which is **50 4B 03 04 00 00**. using a hex editor of your choice
 ```
@@ -85,8 +92,13 @@ Zip entry offsets do not need adjusting
 ```
 ![flag](unzipped/flag.png)
 
-Thansk [w3ndige](https://www.rootnetsec.com/) for the writeup.
+Thansk [w3ndige](https://www.rootnetsec.com/) for the writeupbs=1 count=93628 skip=43
+
+Now we get a black PNG file? Hmm... Courtesy of @zst123, apparently [JD-GUI](http://jd.benow.ca/) happens to fix archives too! Doing a rename on `file` to `file.zip` and running it through JD-GUI gives us the flag! _Even though I'm sure that's cheating, heh!_
+
+Therefore, the [flag](file.zip.src/flag.png) is `zippidydooda29494995`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTc5MzEwLC0xNzA2OTg5Nzk1LDE4Mj
-QyNTg3MjYsLTE5Nzg4NjEwNjQsLTEzNDkzNTM1NjJdfQ==
+eyJoaXN0b3J5IjpbMTkxODQwMDgwNywtNzUxNzkzMTAsLTE3MD
+Y5ODk3OTUsMTgyNDI1ODcyNiwtMTk3ODg2MTA2NCwtMTM0OTM1
+MzU2Ml19
 -->
