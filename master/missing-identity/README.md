@@ -83,10 +83,10 @@ Zip entry offsets do not need adjusting
  copying: nottheflag3.png
  copying: nottheflag4.png
 ```
-![flag]()
+![flag](unzipped/flag.png)
 
 Thansk [w3ndige](https://www.rootnetsec.com/) for the writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1ODgyMDYxLC0xNzA2OTg5Nzk1LDE4Mj
+eyJoaXN0b3J5IjpbLTc1MTc5MzEwLC0xNzA2OTg5Nzk1LDE4Mj
 QyNTg3MjYsLTE5Nzg4NjEwNjQsLTEzNDkzNTM1NjJdfQ==
 -->
