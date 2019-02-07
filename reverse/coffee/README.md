@@ -55,14 +55,32 @@ System.out.println("Nothing to see here");
 
 }
 ```
-Like the source says, I'm way too lazy to work out the schematics, so lets try calling the `get_flag()` method from another file. This is where my [solver](solve.java) comes in! Just compile and run!
+A python alternative to the java program has been written to solve the program.
+```python
+#!/usr/bin/env python2.7
 
-    $ javac solve.java 
-    $ java solve
-    [102, 108, 97, 103, 95, 123, 112, 114, 101, 116, 116, 121, 95, 99, 111, 111, 108, 95, 104, 117, 104, 125]
-    flag_{pretty_cool_huh}
+import base64
+
+a = "eux_Z]\\ayiqlog`s^hvnmwr[cpftbkjd"
+b = "Zf91XhR7fa=ZVH2H=QlbvdHJx5omN2xc"
+cd = []
+
+for x in range(len(b)):
+    c = b[(ord((a)[x])-90)]
+    cd.append(c)
+
+dc = ''.join(cd)
+
+d = base64.b64decode(dc)
+
+print d
+
+```
+```text
+$ python solve.py 
+flag_{pretty_cool_huh}
 
 Therefore, the flag is `flag_{pretty_cool_huh}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQ5MDc0MzJdfQ==
+eyJoaXN0b3J5IjpbLTU5ODEyMjE1NiwtMTc4NDkwNzQzMl19
 -->
