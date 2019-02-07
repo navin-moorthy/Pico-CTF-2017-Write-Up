@@ -28,7 +28,7 @@ Pasting this code into the text field, and running it produces an alert.
 
 Therefore, the flag is `aw_yiss_ducking_breadcrumbs_61637ee8`.
 
-Thanks [w3ndige](https://www.rootnetsec.com/)
+Thanks [w3ndige](https://www.rootnetsec.com/) for the writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDI2NDQzMywyMDg2MzEwNDY0XX0=
+eyJoaXN0b3J5IjpbLTE5ODg5NjIzNTcsMjA4NjMxMDQ2NF19
 -->
