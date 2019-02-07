@@ -46,11 +46,46 @@ nottheflag3.pngPK
 ```
 At the end of the provided output we can see 8 file names with additional **PK** letters appended to it. Quick google search shows us that PK are the initals of Phil Katz, co-creator of the ZIP file format and author of PKZIP. You can read more [here](http://www.garykessler.net/library/file_sigs.html).
 
+As it's not that easy to just change the file name and extract from the archive, we will have to take a closer look at the structure of the file. I'm going to use  **Bliss**  hexeditor for Linux and  **hexdump**  for navigating the hexadecimal values.
+
+```bash
+w3ndige@W3ndige ~/Pobrane> hexdump -C file > texthexdump.txt
+```
+
+Now we can view the beginning (head) of the texthexdump.
+
+```text
+w3ndige@W3ndige ~/Pobrane> head texthexdump.txt
+00000000  58 58 58 58 58 58 00 00  08 00 22 44 7f 4a b4 8b  |XXXXXX...."D.J..|
+00000010  e4 67 2b 90 00 00 1c 90  00 00 08 00 00 00 66 6c  |.g+...........fl|
+00000020  61 67 2e 70 6e 67 00 66  40 99 bf 89 50 4e 47 0d  |ag.png.f@...PNG.|
+00000030  0a 1a 0a 00 00 00 0d 49  48 44 52 00 00 02 81 00  |.......IHDR.....|
+00000040  00 00 3c 08 02 00 00 00  96 fa f7 6d 00 00 8f e3  |..<........m....|
+00000050  49 44 41 54 78 9c ec fd  59 af 6c d9 96 1e 86 8d  |IDATx...Y.l.....|
+00000060  31 9b d5 45 1f bb 3f 6d  b6 37 33 6f de ae ea 96  |1..E..?m.73o....|
+00000070  cc 2a 56 d9 34 8b b2 20  1b 86 4c 91 80 21 d8 16  |.*V.4.. ..L..!..|
+00000080  0c 43 06 fc e6 27 fd 0c  c2 80 fc e2 27 fa c1 10  |.C...'......'...|
+00000090  6c 58 76 d1 86 21 c0 b2  45 53 02 2d 36 2e 56 cb  |lXv..!..ES.-6.V.|
+```
+
+We can clearly see the cause of the problem. Every file starts with the file signature, but this one has been overwritten with  **X**  characters. We can even view this error while trying to unzip this file.
+
+```bash
+w3ndige@W3ndige ~/Pobrane> unzip file
+Archive:  file
+file #1:  bad zipfile offset (local header sig):  0
+  inflating: nottheflag1.png         
+  inflating: nottheflag2.png         
+  inflating: nottheflag3.png         
+  inflating: nottheflag4.png         
+  inflating: nottheflag5.png         
+  inflating: nottheflag6.png         
+  inflating: nottheflag7.png
+```
 
 
-
-Thansk [w3ndige](https://www.rootnetsec.com/) for the tips.
+Thansk [w3ndige](https://www.rootnetsec.com/) for the writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDYwNDg1NCwtMTk3ODg2MTA2NCwtMT
-M0OTM1MzU2Ml19
+eyJoaXN0b3J5IjpbLTExOTE0NjMzNjEsLTE5Nzg4NjEwNjQsLT
+EzNDkzNTM1NjJdfQ==
 -->
