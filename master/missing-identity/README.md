@@ -48,8 +48,9 @@ At the end of the provided output we can see 8 file names with additional **PK**
 
 
 
+
 Thansk [w3ndige](https://www.rootnetsec.com/) for the tips.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzg4NjEwNjQsLTEzNDkzNTM1NjJdfQ
-==
+eyJoaXN0b3J5IjpbLTk5NDYwNDg1NCwtMTk3ODg2MTA2NCwtMT
+M0OTM1MzU2Ml19
 -->
