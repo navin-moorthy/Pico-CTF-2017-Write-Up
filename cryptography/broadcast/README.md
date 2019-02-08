@@ -24,7 +24,7 @@ c3 = 633230627388596886579908367739501184580838393691617645602928172655297372145
 n3 = 1204664380009414697639782865058772653140636684336678901863196025928054706723976869222235722439176825580211657044153004521482757717615318907205106770256270292154250168657084197056536811063984234635803887040926920542363612936352393496049379544437329226857538524494283148837536712608224655107228808472106636903723
 ```
 
-Another RSA challenge. This time we have number of group messages, encrypted with the same small exponent (e). After doing a little bit of googling, I've found that Hastad's Broadcast Attack is able to break this encryption. You can read more about it  [here](http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf), at chapter 4.2.
+Another RSA challenge. This time we have number of group messages, encrypted with the same small exponent (e). After doing a little bit of googling, I've found thatThis challenge involves the RSA Hastad's Broadcast Aattack is able to break this encryption. You can read more about it  [here](http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf), at chapter 4.2.
 
 _If three parties participating in the same system encrypt the same message m using the same public exponent e=3, although perhaps different modulus n1, n2, and n3, then one can easily compute m from the three cipher texts._
 
@@ -220,7 +220,15 @@ broadcast_with_small_e_is_killer_40332300191
 
 Amazing crypto challenge, and we have another flag!
 
-Thanks to [w3ndige](https://www.rootnetsec.com) for this amazing writeup.
+Thanks to [w3ndige](https://www.rootnetsec.com) for this amazing writeup. In a true TLDR fashion, this attack refers to how if a small exponent is used and when a significant number of ciphertexts and public keys have been intercepted, the ciphertext can then be easily cracked.
+
+[Sample pythonic script](solve.py).
+
+    $ ./solve.py 
+    Flag: broadcast_with_small_e_is_killer_20472673112
+
+Therefore, the flag is `broadcast_with_small_e_is_killer_20472673112`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyNTk0Mzc5LC0xODI4MDE1MTE3XX0=
+eyJoaXN0b3J5IjpbOTY4MzQwNDc3LDY2MjU5NDM3OSwtMTgyOD
+AxNTExN119
 -->
