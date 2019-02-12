@@ -2,7 +2,7 @@
 
 **Category:** Binary Exploitation
 
-**Points:** 125
+**Points:** 150
 
 **Description:**
 
@@ -16,5 +16,5 @@ The Matrix awaits you,. Take the [red pill](https://webshell2017.picoctf.com/sta
 ## Write-up
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MDc1MTAwMV19
+eyJoaXN0b3J5IjpbLTExOTkwNzE1NTFdfQ==
 -->
