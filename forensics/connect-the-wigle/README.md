@@ -54,9 +54,12 @@ sqlite> select lat, lon from location;
 ```
 
 Mysterious list of long coordinates. We can try to plot them using  [hamstermap](http://www.hamstermap.com/quickmap.php)  website. But firstly, we will have to change all the  **|**  characters into the  **,**. Then we're ready to plot them on a map.
+
+![Flag](https://github.com/NavinNavi19/Pico-CTF-2017-Write-Up/blob/master/forensics/connect-the-wigle/flag.PNG)
+
 After taking a closer look, we can see that the flag is FLAG{F0UND_M3_33DE7930}.
 
 Thanks [w3ndige](https://www.rootnetsec.com/picoctf-connect-the-wiggle/) for the cleat writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjA2OTczMl19
+eyJoaXN0b3J5IjpbLTE1NzM2NDYyNzMsLTE3MjA2OTczMl19
 -->
