@@ -20,8 +20,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Meta-Find-Me_70](forensics/meta-find-me) :heavy_check_mark:
     - [Little-School-Bus_75](forensics/little-school-bus) :heavy_check_mark:
     - [Just-Keyp-Trying_80](forensics/just-keyp-trying) :heavy_check_mark:
-    - [Puzzingly-Accountable_100](forensics/puzzingly-accountable)
-    - [Connect-the-Wigle_140](forensics/connect-the-wigle)
+    - [Puzzingly-Accountable_100](forensics/puzzingly-accountable) :heavy_check_mark:
+    - [Connect-the-Wigle_140](forensics/connect-the-wigle) :heavy_check_mark:
 * **Cryptography**
     - [Keyz_20](cryptography/keyz) :heavy_check_mark:
     - [Substitute_40](cryptography/substitute) :heavy_check_mark:
@@ -31,9 +31,9 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [SoRandom_75](cryptography/sorandom) :heavy_check_mark:
     - [LeakedHashes_90](cryptography/leakedhashes) :heavy_check_mark:
     - [Weird-RSA_90](cryptography/weird-rsa) :heavy_check_mark:
-    - [HashChain_90](cryptography/hashchain)
-    - [Broadcast_120](cryptography/broadcast)
-    - [smallRSA_120](cryptography/smallrsa)
+    - [HashChain_90](cryptography/hashchain) :heavy_check_mark:
+    - [Broadcast_120](cryptography/broadcast) :heavy_check_mark:
+    - [smallRSA_120](cryptography/smallrsa) 
     - [SmallSign_140](cryptography/smallsign)
     - [Encrypted-Shell_190](cryptography/encrypted-shell)
     - ECC2_200
@@ -42,20 +42,19 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Raw2Hex_20](reverse/raw2hex) :heavy_check_mark:
     - [A-Thing-Called-The-Stack_60](reverse/a-thing-called-the-stack) :heavy_check_mark:
     - [Programmers-Assemble_75](reverse/programmers-assemble) :heavy_check_mark:
-    - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up)
-    - [Coffee_115](reverse/coffee)
+    - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up) :heavy_check_mark:
+    - [Coffee_115](reverse/coffee) :heavy_check_mark:
     - [MIPS_140](reverse/mips)
     - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking)
     - [Forest_200](reverse/forest)
 * **Web Exploitation**
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
     - [My-First-SQL_50](web/my-first-sql) :heavy_check_mark:
-    - [Biscuit_75](web/biscuit)
+    - [Biscuit_75](web/biscuit) :heavy_check_mark:
     - [TW-GR-E1-ART_100](web/tw-gr-e1-art) :heavy_check_mark:
-    - [A-Happy-Union_110](web/a-happy-union)
+    - [A-Happy-Union_110](web/a-happy-union) :heavy_check_mark:
     - [TW-GR-E2-EOTDS_120](web/tw-gr-e2-eotds) :heavy_check_mark:
-    - [A-Happy-Union_110](web/a-happy-union)
-    - [No-Eyes_125](web/no-eyes)
+    - [No-Eyes_125](web/no-eyes) :heavy_check_mark:
     - [A-Kaley-Ceilidh](web/a-kaley-ceilidh)
     - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl)
     - [TW-GR-E4-STW_200](web/tw-gr-e4-stw)
@@ -68,7 +67,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Ive-Got-A-Secret_75](binary/ive-got-a-secret) :heavy_check_mark:
     - [Flagsay-1_80](binary/flagsay-1) :heavy_check_mark:
     - [VR-Gear-Console_95](binary/vr-gear-console) :heavy_check_mark:
-    - [Config-Console_125](binary/config-console) 
+    - [Config-Console_125](binary/config-console) :heavy_check_mark:
     - Enter-The-Matrix_150
     - Flagsay-2_150
     - Aggregator_190
