@@ -57,9 +57,10 @@ Mysterious list of long coordinates. We can try to plot them using  [hamstermap]
 
 ![Flag](https://github.com/NavinNavi19/Pico-CTF-2017-Write-Up/blob/master/forensics/connect-the-wigle/flag.PNG)
 
-After taking a closer look, we can see that the flag is FLAG{F0UND_M3_33DE7930}.
+After taking a closer look, we can see that the flag is FLAG{F0UND_M305148BBEA}.
 
 Thanks [w3ndige](https://www.rootnetsec.com/picoctf-connect-the-wiggle/) for the cleat writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM2NDYyNzMsLTE3MjA2OTczMl19
+eyJoaXN0b3J5IjpbNTk3ODgxMDA0LC0xNTczNjQ2MjczLC0xNz
+IwNjk3MzJdfQ==
 -->
