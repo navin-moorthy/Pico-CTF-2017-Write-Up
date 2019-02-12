@@ -14,12 +14,49 @@ Try zero in the first word of the flag, if you think it's an O.
 If you think you're super close, make a private piazza post with what you think it is.
 
 ## Write-up
-The solution to this challenge was very simple, except that if you are an over-thinker and over-analyzer like me, you tend to miss out on the easiest step.
 
-Firstly, analysing the file tells us that it's an SQLite file, so let's open it up and view the data. Next, dumping the `lat` and `lon` to a CSV file and plotting it on a map... wait for it... gives us
+Identify the data contained within wigle and determine how to visualize it.
 
-![flag](flag.png)
+This time we get another sqlite file called  **wigle**.
 
-My original attempt was foolish, trying to deduce any erroneous locations in the data and ploting that instead.
+```bash
+w3ndige@W3ndige ~/Pobrane> file wigle
+wigle: SQLite 3.x database, last written using SQLite version 3008007
+```
 
-Therefore, the flag is `flag{f0und_m3_ee263b5f}`.
+Now we can open it up, and try to determine, which of the tables in a database should be our target.
+
+```sql
+sqlite> SELECT * FROM sqlite_master WHERE type='table';
+table|android_metadata|android_metadata|2|CREATE TABLE android_metadata (locale text)
+table|location|location|3|CREATE TABLE location (_id int, bssid text, level int, lat double, lon double, altitude double, accuracy float, time long)
+table|network|network|4|CREATE TABLE network (bssid text, ssid text, frequency int, capabilities text, lasttime long, lastlat double, lastlon double, type text)
+```
+
+Great, location table, with some longitude, and latitude columns. Let's view them.
+
+```sql
+sqlite> select lat, lon from location;
+-30.0|94.04
+-29.99|94.04
+-29.98|94.04
+-29.98|94.045
+-29.98|94.05
+-29.97|94.04
+-29.96|94.04
+-29.96|94.05
+-29.96|94.06
+-30.0|94.14
+-29.99|94.14
+.
+.
+.
+```
+
+Mysterious list of long coordinates. We can try to plot them using  [hamstermap](http://www.hamstermap.com/quickmap.php)  website. But firstly, we will have to change all the  **|**  characters into the  **,**. Then we're ready to plot them on a map.
+After taking a closer look, we can see that the flag is FLAG{F0UND_M3_33DE7930}.
+
+Thanks [w3dige]
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI3Njg1OTU2MF19
+-->
