@@ -24,4 +24,7 @@ Lo and behold, [python script](solve.py) and shell loops.
         sleep 3
     done
 
-Therefore, the flag is `damnitiforgottosavetheflag`.
+Therefore, the flag is `c4061d2c3315e76970f4c70e26a459cf`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1OTc1MDEwNzZdfQ==
+-->
