@@ -101,10 +101,32 @@ r.interactive()
 r.close()
 ```
 ```text
-
+[*] you bet 160.
+    The opponent has a 0 of suit 0.
+    You have a 3 of suit 3.
+    You won? Hmmm something must be wrong...
+    You actually won! Nice job
+    
+    You have 336 coins.
+    How much would you like to bet?
+[*] Switching to interactive mode
+you bet 200.
+The opponent has a 0 of suit 0.
+You have a 3 of suit 3.
+You won? Hmmm something must be wrong...
+You actually won! Nice job
+You won the game! That's real impressive, seeing as the deck was rigged...
+/bin/sh: 0: can't access tty; job control turned off
+$ $ ls
+flag.txt
+war
+war_no_aslr
+xinetd_wrapper.sh
+$ $ cat flag.txt
+403e07a54ec83113feb1e18c94d65704
 ```
 
-Therefore, the flag is `04ab44dab3330a7633d9956b789f2769`.
+Therefore, the flag is `403e07a54ec83113feb1e18c94d65704`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTc3NzUzMl19
+eyJoaXN0b3J5IjpbLTEzMDk4MDE4ODldfQ==
 -->
