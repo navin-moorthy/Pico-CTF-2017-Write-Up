@@ -13,6 +13,11 @@
 ## Write-up
 A challenge that tests whether you noticed a `/secret/*.png` GET request and then a manual individual TCP stream of each GET request to pngs.
 
+We found the GETS that go to /secret/ in wireshark, yielding two results. For each of these we followed the TCP Stream (the wireshark tool), and saved the data as raw, then deleted everything up until the PNG header in a hex editor, saved as a PNG, and opened. We then proceeded to make a Piazza post because we couldn't tell the difference between the 1s and 7s in the final image.
+
 ![Final Image](https://github.com/NavinNavi19/Pico-CTF-2017-Write-Up/blob/master/forensics/puzzingly-accountable/FinalImage.jpg)
 
 Therefore, the flag is `953c5041c35bfebdf8625c3d517daa65`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA1NDA2NTcxMV19
+-->
