@@ -51,7 +51,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
     - [My-First-SQL_50](web/my-first-sql) :heavy_check_mark:
     - [Biscuit_75](web/biscuit) :heavy_check_mark:
-    - [TW-GR-E1-ART_100](web/tw-gr-e1-art)
+    - [TW-GR-E1-ART_100](web/tw-gr-e1-art) :heavy_check_mark:
     - [TW-GR-E2-EOTDS_120](web/tw-gr-e2-eotds) :heavy_check_mark:
     - [A-Happy-Union_110](we :heavy_check_mark:
     - [No-Eyes_125](web/no-eyes) :heavy_check_mark:
@@ -84,6 +84,6 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Yarn_55](miscellanous/yarn) :heavy_check_mark:
     - [Mystery-Box_60](miscellanous/mystery-box) :heavy_check_mark:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzI1NjEzNjQsLTIxMzgzNTI1ODIsLT
-E1ODQwNDkwMTUsNTU4MDEyNjE1XX0=
+eyJoaXN0b3J5IjpbLTQ2NTkzMDg2NCwtMTI3MjU2MTM2NCwtMj
+EzODM1MjU4MiwtMTU4NDA0OTAxNSw1NTgwMTI2MTVdfQ==
 -->
