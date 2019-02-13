@@ -24,7 +24,7 @@ w3ndige@W3ndige ~/Pobrane> file wigle
 wigle: SQLite 3.x database, last written using SQLite version 3008007
 ```
 
-Now we can open it up, and try to determine, which of the tables in a database should be our target.
+Now we can open it up, and try to determine, whichThe solution to this challenge was very simple, except that if you are an over-thinker and over-analyzer like me, you tend to miss out ofn the tables in a database should be our target.
 
 ```sql
 sqlite> SELECT * FROM sqlite_master WHERE type='table';
@@ -53,14 +53,22 @@ sqlite> select lat, lon from location;
 .
 ```
 
-Mysterious list of long coordinates. We can try to plot them using  [hamstermap](http://www.hamstermap.com/quickmap.php)  website. But firstly, we will have to change all the  **|**  characters into the  **,**. Then we're ready to plot them on a map.
+Mysterious list of long coordinates. We can try to plot them using  [hamstermap](http://www.hamstermap.com/quickmap.php)  website. But firstly, we will have to change all the  **|**  charactereasiest step.
+
+Firstly, analysing the file tells us that it's an SQLite file, so let's open it up and view the data. Next, dumping the `lat` and `lon` to a CSV file and plotting it on a map... wait for it... gives us
+
+![flag](flag.png)
+
+My original attempt was foolish, trying to deduce any erroneous locations into the  **,**. Then we're ready to plot them on a map.
 
 ![Flag](https://github.com/NavinNavi19/Pico-CTF-2017-Write-Up/blob/master/forensics/connect-the-wigle/flag.PNG)
 
 After taking a closer look, we can see that the flag is FLAG{F0UND_M305148BBEA}.
 
-Thanks [w3ndige](https://www.rootnetsec.com/picoctf-connect-the-wiggle/) for the cleat writeup.
+Thanks [w3ndige](https://www.rootnetsec.com/picoctf-connect-the-wiggle/) for the cleat writeupdata and ploting that instead.
+
+Therefore, the flag is `flag{f0und_m3_ee263b5f}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk3ODgxMDA0LC0xNTczNjQ2MjczLC0xNz
-IwNjk3MzJdfQ==
+eyJoaXN0b3J5IjpbMjAyNTk1NDc2Niw1OTc4ODEwMDQsLTE1Nz
+M2NDYyNzMsLTE3MjA2OTczMl19
 -->
