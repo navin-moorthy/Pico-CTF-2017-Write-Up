@@ -45,7 +45,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up) :heavy_check_mark:
     - [Coffee_115](reverse/coffee) :heavy_check_mark:
     - [MIPS_140](reverse/mips)
-    - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking)
+    - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking) :heavy_check_mark:
     - [Forest_200](reverse/forest)
 * **Web Exploitation**
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
@@ -56,7 +56,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [A-Happy-Union_110](web/a-happy-union) :heavy_check_mark:
     - [No-Eyes_125](web/no-eyes) :heavy_check_mark:
     - [A-Kaley-Ceilidh](web/a-kaley-ceilidh)
-    - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl)
+    - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl) :heavy_check_mark:
     - [TW-GR-E4-STW_200](web/tw-gr-e4-stw)
 * **Binary Exploitation**
     - [Bash-Loop_40](binary/bash-loop) :heavy_check_mark:
@@ -68,10 +68,10 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Flagsay-1_80](binary/flagsay-1) :heavy_check_mark:
     - [VR-Gear-Console_95](binary/vr-gear-console) :heavy_check_mark:
     - [Config-Console_125](binary/config-console) :heavy_check_mark:
-    - [Enter-The-Matrix_150](binary/enter-the-matrix)
+    - [Enter-The-Matrix_150](binary/enter-the-matrix) :heavy_check_mark:
     - Flagsay-2_150
     - Aggregator_190
-    - Chat-Logger_200
+    - [Chat-Logger_200](binary/chat-logger) :heavy_check_mark:
     - Deeper-Into-The-Matrix_200
     - Contact-Helper_225
 * **Miscellanous**
