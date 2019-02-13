@@ -103,6 +103,8 @@ $ cat flag.txt
 164579d8d535184967061cc94ec029c5
 ```
 The flag is  `164579d8d535184967061cc94ec029c5`.
+
+Thanks to **BOAKGP** for the help with amazing writeup.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjQ5MTcwNCwtMTE4OTEwNDIzNl19
+eyJoaXN0b3J5IjpbMTY5NTQyMDEzNCwtMTE4OTEwNDIzNl19
 -->
