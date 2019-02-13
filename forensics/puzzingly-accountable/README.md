@@ -13,4 +13,6 @@
 ## Write-up
 A challenge that tests whether you noticed a `/secret/*.png` GET request and then a manual individual TCP stream of each GET request to pngs.
 
+![Final Image](https://github.com/NavinNavi19/Pico-CTF-2017-Write-Up/blob/master/forensics/puzzingly-accountable/FinalImage.jpg)
+
 Therefore, the flag is `953c5041c35bfebdf8625c3d517daa65`.
