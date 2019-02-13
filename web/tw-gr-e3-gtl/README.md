@@ -74,4 +74,13 @@ The next solution was completely unintended and relies on the low ID value of fl
 
 By pure RNG, it is possible to have an item spawn in a level with an ID of 12. Using Chrome's Developers Console and repeatedly checking item values with `state.items` and `state.player.items`, it's possible to narrow it down to a single item with ID of 12. Then, resist sorting your items till you are on level 5, drop the item and pick it up again. Flag bingo!
 
-Therefore, the flag is `the_new_feature_where_you_manage_your_own_shelf_in_the_refrigerator_was_an_interesting_addition_3a4b094d798ee2e4fc2aac44cf9a5902`.
+```javascript
+javascript:(function()%7BMOVE_TIME%20%3D%201%3BHURT_TIME%20%3D%201%3BINPUT_TIME%20%3D%201%3BWARP_TIME%20%3D%201%7D)()
+```
+
+When run as a bookmarklet, this short script dramatically increases animation speed by decreasing the wait time between actions.
+
+Therefore, the flag is `the_new_feature_where_you_manage_your_own_shelf_in_the_refrigerator_was_an_interesting_addition_6aaa8ea8b1ab25329c8eced6bbc8a0be`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDY1MzUwNDc3XX0=
+-->
