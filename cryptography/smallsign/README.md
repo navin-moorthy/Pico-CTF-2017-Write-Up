@@ -105,7 +105,18 @@ Please let me know if you can solve this diff. eq! Then we can find the optimum 
 
 Therefore, the flag is `c4061d2c3315e76970f4c70e26a459cf`.
 
-Thanks[[Hackademia](https://ctftime.org/team/38238)](https://hgarrereyn.gitbooks.io) for the writeup
+Thanks[[Hackademia](https://ctftime.org/team/38238)](https://hgarrereyn.gitbooks.io) for the writeupThis challenge mainly focuses on a simple concept of RSA, which is it's multiplicativity? Is that a word? Well, basically, this concept states that for a given signature of `m1`, `s1` and a signature of `m2`, `s2` would end up in the form where (`m1` * `m2`) = (`s1` * `s2`).
+
+In this challenge, we are given the ability to make the server sign as many integers as we want for 60 seconds and then we have to also solve the challenge in that same time. This challenge is a random integer from `0` to `2**32`, which is a large number and something we cannot possibly get the server to sign to, within 60 seconds. However, we can take a shortcut and just try getting the server to sign a couple prime factors and then hoping for the RNG to get us a challenge that is factored up by the prime factors we have.
+
+Lo and behold, [python script](solve.py) and shell loops.
+
+    while true; do
+        python3 -u smallsign.py | tee -a log
+        sleep 3
+    done
+
+Therefore, the flag is `damnitiforgottosavetheflag`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU3NjM0MjldfQ==
+eyJoaXN0b3J5IjpbMTY4MTU0Mzg1NCwtMTU1NTc2MzQyOV19
 -->
