@@ -96,6 +96,8 @@ public class Kaley
 ```
 
 Therefore, the flag is `flag{I_only_eat_0rg4n1c_flages}`.
+
+Also useful one https://github.com/BOAKGP/CTF-Writeups/tree/master/PicoCTF%202017/Level%204/Web%20Exploitation/A%20Kaley%20Ceilidh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzQ5Mjg5XX0=
+eyJoaXN0b3J5IjpbLTE5MDU3Mzk0MzYsLTI3NzQ5Mjg5XX0=
 -->
