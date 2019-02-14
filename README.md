@@ -11,7 +11,7 @@ _Challenges without links are uncompleted/unattempted challenges._
 * **Master**
     - [Lazy-Dev_50](master/lazy-dev) :heavy_check_mark:
     - [Missing-Identity_100](master/missing-identity) :heavy_check_mark:
-    - [War_125](master/war)
+    - [War_125](master/war) :heavy_check_mark:
     - [WeirderRSA_175](master/weirderRSA)
     - Choose_150
 * **Forensics**
@@ -33,8 +33,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Weird-RSA_90](cryptography/weird-rsa) :heavy_check_mark:
     - [HashChain_90](cryptography/hashchain) :heavy_check_mark:
     - [Broadcast_120](cryptography/broadcast) :heavy_check_mark:
-    - [smallRSA_120](cryptography/smallrsa) 
-    - [SmallSign_140](cryptography/smallsign)
+    - [smallRSA_120](cryptography/smallrsa) :heavy_check_mark:
+    - [SmallSign_140](cryptography/smallsign) :heavy_check_mark:
     - [Encrypted-Shell_190](cryptography/encrypted-shell)
     - ECC2_200
 * **Reverse Engineering**
@@ -44,7 +44,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Programmers-Assemble_75](reverse/programmers-assemble) :heavy_check_mark:
     - [JSut-Duck-It-Up_100](reverse/jsut-duck-it-up) :heavy_check_mark:
     - [Coffee_115](reverse/coffee) :heavy_check_mark:
-    - [MIPS_140](reverse/mips)
+    - [MIPS_140](reverse/mips) :heavy_check_mark:
     - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking) :heavy_check_mark:
     - [Forest_200](reverse/forest)
 * **Web Exploitation**
@@ -53,9 +53,9 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Biscuit_75](web/biscuit) :heavy_check_mark:
     - [TW-GR-E1-ART_100](web/tw-gr-e1-art) :heavy_check_mark:
     - [TW-GR-E2-EOTDS_120](web/tw-gr-e2-eotds) :heavy_check_mark:
-    - [A-Happy-Union_110](we :heavy_check_mark:
+    - [A-Happy-Union_110](web/a-happy-union) :heavy_check_mark:
     - [No-Eyes_125](web/no-eyes) :heavy_check_mark:
-    - [A-Kaley-Ceilidh](web/a-kaley-ceilidh)
+    - [A-Kaley-Ceilidh](web/a-kaley-ceilidh) :heavy_check_mark:
     - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl) :heavy_check_mark:
     - [TW-GR-E4-STW_200](web/tw-gr-e4-stw)
 * **Binary Exploitation**
