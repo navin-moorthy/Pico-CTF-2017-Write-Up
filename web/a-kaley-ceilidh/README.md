@@ -97,7 +97,12 @@ public class Kaley
 
 Therefore, the flag is `flag{I_only_eat_0rg4n1c_flages}`.
 
-Also useful one https://github.com/BOAKGP/CTF-Writeups/tree/master/PicoCTF%202017/Level%204/Web%20Exploitation/A%20Kaley%20Ceilidh
+Also useful one https://github.com/BOAKGP/CTF-Writeups/tree/master/PicoCTF%202017/Level%204/Web%20Exploitation/A%20Kaley%20Ceilidhrom the clue given, this is a common(_not really_) case of MongoDB exploitation. The basis of this exploit revolves around MongoDB's magical `$where` function followed by a slow bruteforce with time-based blind exploits.
+
+[Python Script](solve.py)
+
+Therefore, the flag is `flag{I_only_eat_0rg4n1c_flages}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU3Mzk0MzYsLTI3NzQ5Mjg5XX0=
+eyJoaXN0b3J5IjpbMzg2MjM0MjMxLC0xOTA1NzM5NDM2LC0yNz
+c0OTI4OV19
 -->
