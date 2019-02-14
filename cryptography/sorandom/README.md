@@ -62,10 +62,6 @@ print(flag)
     $ ./crack.py
     FLAG: 0d6f1cac5615c7ae971761318430c9bb
 
-Therefore, the flag is `0d6f1cac5615c7ae971761318430c9bb
-    $ ./crack.py
-    FLAG: 107bd559693aef6692e1ed55ebe29514
-
 Therefore, the flag is `107bd559693aef6692e1ed55ebe29514`.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTU2OTQwOTE2LDE5NjgxNTgxMzMsLTU3NT
