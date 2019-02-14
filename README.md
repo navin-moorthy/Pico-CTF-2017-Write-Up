@@ -69,7 +69,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [VR-Gear-Console_95](binary/vr-gear-console) :heavy_check_mark:
     - [Config-Console_125](binary/config-console) :heavy_check_mark:
     - [Enter-The-Matrix_150](binary/enter-the-matrix) :heavy_check_mark:
-    - Flagsay-2_150
+    - [Flagsay-2_150](binary/flagsay-2) :heavy_check_mark:
     - Aggregator_190
     - [Chat-Logger_200](binary/chat-logger) :heavy_check_mark:
     - Deeper-Into-The-Matrix_200
