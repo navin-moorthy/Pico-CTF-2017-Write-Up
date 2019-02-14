@@ -114,7 +114,12 @@ And lastly, decrypt it.
 
 Great, we have another flag!
 
-Thanks [w3ndige](https://www.rootnetsec.com/picoctf-smallrsa/) for the amazing writeup.
+Thanks [w3ndige](https://www.rootnetsec.com/picoctf-smallrsa/) for the amazing writeupThis challenge is an implementation of Wiener's RSA attack. I would like to give credits to [pablocelayes](https://github.com/pablocelayes/rsa-wiener-attack) for his wonderful library for this attack. He saved me from doing math.
+
+[Script](solve.py)
+
+Therefore, the flag is `flag{Are_any_RSA_vals_good_95979862524}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzM5MTkwMDRdfQ==
+eyJoaXN0b3J5IjpbLTIwNzQzNDEzNzQsLTE3NzM5MTkwMDRdfQ
+==
 -->
