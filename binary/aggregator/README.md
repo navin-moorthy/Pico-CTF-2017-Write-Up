@@ -9,11 +9,11 @@ Find my aggregator running on shell2017.picoctf.com:7785. [aggregator.c](https:/
 
 **Hint:**
 
-The buffer isn't on the stack, so you can't use your own pointers. Is there another way to get a pointer?
-
-Make sure you know about using hn and $ in format strings
+Does it look like there is a stack vulnerability?
 
 ## Write-up
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjQ2NDAwNjldfQ==
+eyJoaXN0b3J5IjpbMzY1MjQyODJdfQ==
 -->
