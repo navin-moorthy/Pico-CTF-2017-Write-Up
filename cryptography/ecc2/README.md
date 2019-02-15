@@ -73,7 +73,6 @@ We can rule out the MOV attack, since it is infeasible given the size of the ell
 ```
 sage: factor(E.order())
 2^2 * 3 * 5 * 7 * 137 * 593 * 24337 * 25589 * 3637793 * 5733569 * 106831998530025000830453 * 1975901744727669147699767
-
 ```
 
 The goal of Pohlig-Hellman and the mathematics leading to it is as follows:
@@ -107,16 +106,16 @@ sage: for fac in primes:
           dlogs += [dlog]
           print("factor: "+str(fac)+", Discrete Log: "+str(dlog)) #calculates discrete logarithm for each prime order
 
-factor: 4, dlog: 2
-factor: 3, dlog: 1
-factor: 5, dlog: 4
-factor: 7, dlog: 1
-factor: 137, dlog: 129
-factor: 593, dlog: 224
-factor: 24337, dlog: 5729
-factor: 25589, dlog: 13993
-factor: 3637793, dlog: 1730599
-factor: 5733569, dlog: 4590572
+factor: 4, Discrete Log: 2
+factor: 3, Discrete Log: 0
+factor: 5, Discrete Log: 0
+factor: 7, Discrete Log: 0
+factor: 137, Discrete Log: 130
+factor: 593, Discrete Log: 530
+factor: 24337, Discrete Log: 5173
+factor: 25589, Discrete Log: 24401
+factor: 3637793, Discrete Log: 1403911
+factor: 5733569, Discrete Log: 2087121
 
 ```
 
@@ -125,7 +124,7 @@ You will notice that Sage hangs while computing the discrete logarithms for last
 Our final step is just to solve for  ll  via CRT:
 
 ```
-sage: l = crt(dlogs.primes[:-2])
+sage: l = crt(dlogs,primes[:-2])
 152977126447386808276536247114
 
 ```
@@ -178,5 +177,5 @@ print(l)
 
 [http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTcxMzk3OCwxNDg5NzYzODE3XX0=
+eyJoaXN0b3J5IjpbLTk0MDg4MTM5OSwxNDg5NzYzODE3XX0=
 -->
