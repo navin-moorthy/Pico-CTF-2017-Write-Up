@@ -88,6 +88,8 @@ api("action", {
 Doing this on the third floor immediately shoots us up to the fifth floor where we can grab the flag:
 
 `im_still_upset_you_dont_get_to_keep_the_cute_scarves_in_the_postgame_b33182b1495755d059698f90cec2b4e3`
+
+Thanks [intelagent](https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/content/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.html) for the writeup. Much helpful.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTg3MTI2M119
+eyJoaXN0b3J5IjpbLTE0NjY3MzMxNzRdfQ==
 -->
