@@ -125,7 +125,7 @@ Our final step is just to solve for  ll  via CRT:
 
 ```
 sage: l = crt(dlogs,primes[:-2])
-152977126447386808276536247114
+249838002898687975937532407250
 
 ```
 
@@ -143,7 +143,7 @@ Thus, our value of  ll  is indeed correct!
 
 ### Flag
 
-152977126447386808276536247114
+249838002898687975937532407250
 
 Note: due to random problem generation, your value may be different.
 
@@ -177,5 +177,5 @@ print(l)
 
 [http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDg4MTM5OSwxNDg5NzYzODE3XX0=
+eyJoaXN0b3J5IjpbMjk3Mzc2NDE3LDE0ODk3NjM4MTddfQ==
 -->
