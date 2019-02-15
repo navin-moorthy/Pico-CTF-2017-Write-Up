@@ -46,10 +46,9 @@ In Sage, this is done via substituting the  xx  and  yy  values as shown:
 
 ```
 sage: x, y = P[0], P[1]
-sage: b = (y^2 - x^3 - a*x) % N  #The ^ operator is exponentiation instead of XOR in Sage.
+sage:  b = (y^2 - x^3 - *x) % N  #The ^ operator is exponentiation instead of XOR in Sage.
 sage: print(b)
 25255205054024371783896605039267101837972419055969636393425590261926131199030
-
 ```
 
 Solving for  bb, we obtain 25255205054024371783896605039267101837972419055969636393425590261926131199030.
@@ -60,7 +59,7 @@ We now have all the necessary parameters for the elliptic curve. Thus, our next 
 F = FiniteField(M)
 E = EllipticCurve(F,[A,B])
 P = E.point(P)
-Q = E.point(Q)
+Q = E.point(Q) #here Q is n*P
 
 ```
 
@@ -179,5 +178,5 @@ print(l)
 
 [http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTc2MzgxNywyMTA5Mzc1ODQ2XX0=
+eyJoaXN0b3J5IjpbLTU5NTcxMzk3OCwxNDg5NzYzODE3XX0=
 -->
