@@ -14,7 +14,7 @@ Learning about  [ptmalloc2](https://sploitfun.wordpress.com/2015/02/10/understan
 
 ## Write-up
 
-Almost 40 min video @ https://www.youtube.com/watch?v=g1NYv3avSbU with clear explanation to solve the Challe
+Almost 40 min video @ https://www.youtube.com/watch?v=g1NYv3avSbU with clear explanation to solve the Challenge
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIwMzU5MzkzXX0=
+eyJoaXN0b3J5IjpbMTc5NTQ4MTY3XX0=
 -->
