@@ -70,7 +70,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Config-Console_125](binary/config-console) :heavy_check_mark:
     - [Enter-The-Matrix_150](binary/enter-the-matrix) :heavy_check_mark:
     - [Flagsay-2_150](binary/flagsay-2) :heavy_check_mark:
-    - Aggregator_190
+    - [Aggregator_190](binary/aggregator) :heavy_check_mark:
     - [Chat-Logger_200](binary/chat-logger) :heavy_check_mark:
     - Deeper-Into-The-Matrix_200
     - Contact-Helper_225
