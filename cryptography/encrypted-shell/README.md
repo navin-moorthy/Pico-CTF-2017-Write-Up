@@ -16,9 +16,9 @@ This challenge revolves on breaking the Diffie-Hellman key exchange. The hint gi
 
 So, we are then able to use the "Baby Step Giant Step" algorithm to try and reverse `a` from the given `A`. Additionally, since we know the range of `a`, we can run a `sqrt(a)` to limit the amount of small steps we have to take.
 
-[Code](solve.py)
+[Code](solvedhshell.py)
 
-Therefore, the flag is `19fb0bd975d6b133a480577c7e9c6426`.
+Therefore, the flag is `19fb0bd975d6b133a480577c7e9c6426467de743e8f82e09b555426e322adba5`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTE0MTEzM119
+eyJoaXN0b3J5IjpbNDcyMTk1OTMyLC03OTUxNDExMzNdfQ==
 -->
