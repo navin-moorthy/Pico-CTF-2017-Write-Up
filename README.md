@@ -35,8 +35,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Broadcast_120](cryptography/broadcast) :heavy_check_mark:
     - [smallRSA_120](cryptography/smallrsa) :heavy_check_mark:
     - [SmallSign_140](cryptography/smallsign) :heavy_check_mark:
-    - [Encrypted-Shell_190](cryptography/encrypted-shell)
-    - ECC2_200
+    - [Encrypted-Shell_190](cryptography/encrypted-shell) :heavy_check_mark:
+    - [ECC2_200](cryptography/ecc2) :heavy_check_mark:
 * **Reverse Engineering**
     - [Hex2Raw_20](reverse/hex2raw) :heavy_check_mark:
     - [Raw2Hex_20](reverse/raw2hex) :heavy_check_mark:
@@ -46,7 +46,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Coffee_115](reverse/coffee) :heavy_check_mark:
     - [MIPS_140](reverse/mips) :heavy_check_mark:
     - [Much-Ado-About-Hacking_165](reverse/much-ado-about-hacking) :heavy_check_mark:
-    - [Forest_200](reverse/forest)
+    - [Forest_200](reverse/forest) :heavy_check_mark:
 * **Web Exploitation**
     - [What-Is-Web_20](web/what-is-web) :heavy_check_mark:
     - [My-First-SQL_50](web/my-first-sql) :heavy_check_mark:
