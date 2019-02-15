@@ -79,7 +79,6 @@ Let's walk through this subroutine from the start and see if we can find anythin
 08048769         je         good_args(0x0804879b)
 
 ```
-
 So we see that it sets up a stack frame, and then pushes a pointer of that weird string we found to the stack before calling  `sub_80486f0`  (subroutine at  `0x80486f0`). Then it checks if we've supplied the right number of arguments and if we have, it branches to the  `good_args`  location.
 
 I'll name this function  `do_something_with_string(0x80486f0)`. Now none of the arguments passed to this subroutine were user-controlled so will skip over it for now and treat it as a static initialization routine.
@@ -606,5 +605,5 @@ LRRLD       w
 
 Flag:  `you_could_see_the_forest_for_the_trees_ckyljfxyfmsw`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NDUzNTMxMV19
+eyJoaXN0b3J5IjpbLTE1MDYyNjU3MjVdfQ==
 -->
