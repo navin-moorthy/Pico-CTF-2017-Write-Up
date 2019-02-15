@@ -1,6 +1,6 @@
 ## ECC 2 - 200 (Cryptography)
 
-#### Thanks and Writen over the pwang00 (Sanguinius) writeup from 
+#### Thanks and Writen over the pwang00 (Sanguinius) writeup from [Hacademia](https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/2017/picoCTF_2017/problems/cryptography/ECC2/ECC2.html)
 
 ### Problem
 
@@ -28,7 +28,7 @@ B = *You can figure this out with the point below :)*
 
 P = (56027910981442853390816693056740903416379421186644480759538594137486160388926, 65533262933617146434438829354623658858649726233622196512439589744498050226926)
 n = *SECRET*
-n*P = (61124499720410964164289905006830679547191538609778446060514645905829507254103, 2595146854028317060979753545310334521407008629091560515441729386088057610440)
+n*P = (23587034938374768786301222539991586253242655515915989431307599794801199763403, 58594847963665471409425852843336835079537055974819057000500246625851308476858)
 
 n < 400000000000000000000000000000
 
@@ -179,5 +179,5 @@ print(l)
 
 [http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzE2MTI4MV19
+eyJoaXN0b3J5IjpbMjEwOTM3NTg0Nl19
 -->
