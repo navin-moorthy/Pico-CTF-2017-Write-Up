@@ -315,7 +315,9 @@ First, we see that  `loop`  calls a new subroutine with three arguments:
 
 Then it takes the return value from the new subroutine (we'll call it  `check_pass_char(0x08048539)`) and performs an  `AND`  operation with the  `check`  variable, storing the result in  `check`. Ok, so if at any point this function returns zero, we have the wrong password.
 
-Next, the  `pass`  string is incremented by one and we see that the  `string`  pointer is compared against two chars  `L`  and  `R`. If it is pointing to either of these characters, it is incremented so that it is not.
+Next, the  `pass`  string is incremented by one and we see that the  `string`  pointer is compared against two chars  `L`  and  `R`. If it is pointis challenge was a fun one, given that it had a varying level of requirements in it. For the most part, IDA Pro will be very useful but for us freebies out there, we can use [RetDec](https://retdec.com/decompilation). We get a [file decompiled like this](forest.c).
+
+This is an example of binary tree sorting, with each letter sorted with the smaller character going to the left and the larger character going to either of these characters, it is incremented so that it is not.
 
 Then right before we move out of the loop back to the conditions check, we see that  `string`  is incremented once more.
 
@@ -529,7 +531,9 @@ Breakpoint 1, 0x08048760 in ?? ()
 
 ```
 
-![layer1](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/layer1.png)
+![layer1](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeup right. The string we have to sort in this case is `yuoteavpxqgrlsdhwfjkzi_cmbn`.
+
+Next, the string we are given refers to the ways we should select characters. `L` means go down the left branch, `R` goes down the right branch while `D` means this character. If we compare the string we got and the [top-down tree we graphed](images/graw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/layer1.png)
 
 When we split the string into segments, we get:
 
@@ -605,7 +609,9 @@ LRRLD       w
 
 ```
 
-Flag:  `you_could_see_the_forest_for_the_trees_ckyljfxyfmsw`
+Flag: ph.jpg), we get the flag.
+
+Therefore, the flag is `you_could_see_the_forest_for_the_trees_ckyljfxyfmsw`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5Mjc4MDExNl19
+eyJoaXN0b3J5IjpbLTM2NTMxMjUxMSwxNjkyNzgwMTE2XX0=
 -->
