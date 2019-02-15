@@ -12,6 +12,8 @@
 
 ## Write-up
 
+Thanks [hgarrereyn](https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/content/2017/picoCTF_2017/problems/reverse/Forest/Forest.html) for the clear explanation, I learned a lot through this writeup.
+ 
 We were provided with a binary and a string. My first move was to simply run the binary:
 
 ```
@@ -605,5 +607,5 @@ LRRLD       w
 
 Flag:  `you_could_see_the_forest_for_the_trees_ckyljfxyfmsw`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDYyNjU3MjVdfQ==
+eyJoaXN0b3J5IjpbMTY5Mjc4MDExNl19
 -->
