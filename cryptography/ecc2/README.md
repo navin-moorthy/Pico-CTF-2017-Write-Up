@@ -175,7 +175,9 @@ print(l)
 
 ### Resources
 
-[http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
+[http://wstein.org/edu/2010/414/projects/novotney.pdf](http://wstein.org/edu/2010/414/projects/novotney.pdf)
+[https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf](https://koclab.cs.ucsb.edu/teaching/ecc/project/2015Projects/Sommerseth+Hoeiland.pdf)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjQ0NjcxLDE0ODk3NjM4MTddfQ==
+eyJoaXN0b3J5IjpbLTc4MzI1MTk4NywxMzQyNDQ2NzEsMTQ4OT
+c2MzgxN119
 -->
