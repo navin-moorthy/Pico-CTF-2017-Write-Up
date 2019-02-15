@@ -12,6 +12,22 @@ Find my aggregator running on shell2017.picoctf.com:7785. [aggregator.c](https:/
 Does it look like there is a stack vulnerability?
 
 ## Write-up
+
+In my opinion the main difficulty in this challenge was to read these 350 lines of code. The vulnerability was rather an obvious one. Very often if the application allows to remove data (and in this challenge it's even mentioned in description), there is  `use-after-free`  flaw.
+
+When we add some value to database and then remove it, the memory will be freed, but the pointer in  `D->table[offset]`won't be reset, so we can still use this data. Our buffer is also stored on heap, so we can overwrite old content just by sending any string. Then we can use aggregate function to read some pointers from  `.got.plt`.
+
+``` text
+$ r2 /lib/x86_64-linux-gnu/libc.so.6
+[0x00021c50]> ?v sym.free
+0x7c600
+[0x00021c50]> ?v sym.system
+0x41490
+
+```
+
+With this knowledge we can easily calculate  `system`  address and now we only have to write it to  `.got.plt`. We add another value to database and immediately remove it. Then we overwrite the memory with fake  `data_table_chain`  using the vulnerability. We set  `*data`  pointer to  `strlen@got.plt`  and then add next value to database (`system`  address).
+
 ```python
 #!/usr/bin/env python2
 
@@ -70,6 +86,9 @@ xinetd_wrapper.sh
 $ cat flag.txt
 a65b3f946c058f6dbec3d14d8449a468
 ```
+Flag : `a65b3f946c058f6dbec3d14d8449a468`
+
+Thanks [BOAKGP]()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyNTUyMDAwLDM2NTI0MjgyXX0=
+eyJoaXN0b3J5IjpbLTM5Mjk1MjUwMCwzNjUyNDI4Ml19
 -->
