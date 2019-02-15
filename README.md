@@ -72,8 +72,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Flagsay-2_150](binary/flagsay-2) :heavy_check_mark:
     - [Aggregator_190](binary/aggregator) :heavy_check_mark:
     - [Chat-Logger_200](binary/chat-logger) :heavy_check_mark:
-    - Deeper-Into-The-Matrix_200
-    - Contact-Helper_225
+    - [Deeper-Into-The-Matrix_200](binary/deep-into-the-matrix) :heavy_check_mark:
+    - [Contact-Helper_225](binary/contact-helper) :heavy_check_mark:
 * **Miscellanous**
     - [Internet-Kitties_10](miscellanous/internet-kitties) :heavy_check_mark:
     - [Piazza_10](miscellanous/piazza) :heavy_check_mark:
