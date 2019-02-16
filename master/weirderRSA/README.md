@@ -15,7 +15,7 @@ Fermat's Little Theorem may be helpful
 
 The first thing I will try to do is solve for p. Because we are given n, computing q after getting p will be simple. With both q and p, the rest of the problem is relatively trivial.
 
-From previous questions, we knew that dp was d%(p-1), where % is the modulus function. (NOTE: dp is NOT d*p. For multiplication, I will explicitly write “*”.)
+From previous questions, we knew that dp was `d%(p-1)`, where % is the modulus function. (NOTE: dp is NOT d*p. For multiplication, I will explicitly write “*”.)
 
 It then follows that `d < p-1`.
 
@@ -53,5 +53,5 @@ Done! Honestly, trying to fit the hint into the problem was harder than just doi
 
 Thanks to [soup](https://medium.com/@nicebowlofsoup) for the writeup help.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDg3ODU5MSwxMTcyOTczMzMzXX0=
+eyJoaXN0b3J5IjpbMjA0NDMyMzgzMSwxMTcyOTczMzMzXX0=
 -->
