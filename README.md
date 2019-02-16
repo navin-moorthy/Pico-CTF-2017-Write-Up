@@ -12,8 +12,8 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [Lazy-Dev_50](master/lazy-dev) :heavy_check_mark:
     - [Missing-Identity_100](master/missing-identity) :heavy_check_mark:
     - [War_125](master/war) :heavy_check_mark:
-    - [WeirderRSA_175](master/weirderRSA)
-    - Choose_150
+    - [WeirderRSA_175](master/weirderRSA) :heavy_check_mark:
+    - [Choose_150](master/choose) :heavy_check_mark:
 * **Forensics**
     - [Digital-Camouflage_50](forensics/digital-camouflage) :heavy_check_mark:
     - [Special-Agent-User_50](forensics/special-agent-user) :heavy_check_mark:
