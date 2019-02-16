@@ -4,14 +4,14 @@
 **Points:** 175
 **Description:**
 
->Another message encrypted with RSA. It looks like some parameters are missing. Can you still decrypt it? [Message](clue.txt)
+Unhappy that you can't choose which enemies to fight? [Choose](https://webshell2017.picoctf.com/static/b1b96f912d40344f5f1f0bb5d3a8f7b4/choose) your own adventure! [Source](https://webshell2017.picoctf.com/static/b1b96f912d40344f5f1f0bb5d3a8f7b4/choose.c). Connect on shell2017.picoctf.com:43651. ASLR is not enabled.
 
 **Hint:**
 
->Is there some way to create a multiple of p given the values you have?
-Fermat's Little Theorem may be helpful
+An assumption made in the code is wrong. Which assumption, and what does it allow you to do?
 
-## Write-upThe vulnerability was a wrong assumption that a group of structs were the same size in memory. Specifically, the programmer assumed that these structs were the same size (`0x14 bytes`):
+## Write-up
+The vulnerability was a wrong assumption that a group of structs were the same size in memory. Specifically, the programmer assumed that these structs were the same size (`0x14 bytes`):
 
 ```
 #define ENEMNAMELEN 12
@@ -219,5 +219,5 @@ sock.interactive()
 
 So, the flag is `c3b7d7d3659f98d19c8a510718e45575`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDAxMDgwOTVdfQ==
+eyJoaXN0b3J5IjpbNDU2NDkxNzU4XX0=
 -->
