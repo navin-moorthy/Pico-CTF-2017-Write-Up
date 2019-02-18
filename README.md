@@ -1,8 +1,7 @@
 # PicoCTF_2017 Writeup
 This repository serves as a writeup for PicoCTF_2017
 
-## Completed Challenges
-_Challenges without links are uncompleted/unattempted challenges._
+## Challenges
 
 * **Tutorial**
     - [Tutorial-1_0](tutorial/tutorial_1) :heavy_check_mark:
