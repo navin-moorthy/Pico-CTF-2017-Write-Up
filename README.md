@@ -57,7 +57,7 @@ _Challenges without links are uncompleted/unattempted challenges._
     - [No-Eyes_125](web/no-eyes) :heavy_check_mark:
     - [A-Kaley-Ceilidh](web/a-kaley-ceilidh) :heavy_check_mark:
     - [TW-GR-E3-GTL_180](web/tw-gr-e3-gtl) :heavy_check_mark:
-    - [TW-GR-E4-STW_200](web/tw-gr-e4-stw)
+    - [TW-GR-E4-STW_200](web/tw-gr-e4-stw) :heavy_check_mark:
 * **Binary Exploitation**
     - [Bash-Loop_40](binary/bash-loop) :heavy_check_mark:
     - [Just-No_40](binary/just-no) :heavy_check_mark:
