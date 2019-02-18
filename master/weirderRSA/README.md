@@ -38,20 +38,36 @@ for k in range(1, e):
         p = (l//k + 1)  
         if n%p == 0:  
             q = n//p  
-            t = (p-1)*(q-1)  
+            tFermat's Little Theorem is an interesting thing that took me awhile to understand, being new to cryptography but essentially what we have to do to break this involves just playing with `dp` to get `p`
+    
+    r = 123456
+    p = gmpy2.gcd(n, pow(r, (e*dp), n) - r)
+
+With `p` found, we can just divide `n` with `p` to get `q`.
+
+    q = gmpy2.div(n, p)
+
+With `q` found, we can calculate `d` to be the inverse of `(p-1)(q-1)`
+
+    phi = (p-1)* * (q-1)  
             print(pow(c,modinv(e,t),n))
 ```
-In that above script, I went ahead and tried deciphering the ciphertext c in the loop as well. It only took a few seconds to run, and voila! We got our plaintext number:
+In that above script, I went ahead ad = gmpy2.invert(e, phi)
+
+With `d` found, tried deciphering the ciphertext c in the loop as well. It only took a few seconds to run, and voila! We got our plaintext number:
 
 `3670434958110785066911905751469631231338751225710158680692616521935747246580688484040488309932916523151997`
 
 Converting this to ASCII, we get:
 
-flag{`wow_leaking_dp_breaks_rsa?_98924743502`}
+he challenge is [solved](solve.py).
+
+Therefore, the flag is `flag{`wow_leaking_dp_breaks_rsa?_98924743502`}
 
 Done! Honestly, trying to fit the hint into the problem was harder than just doing it this way.
 
-Thanks to [soup](https://medium.com/@nicebowlofsoup) for the writeup help.
+Thanks to [soup](https://medium.com/@nicebowlofsoup) for the writeup help64151418169}`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDMyMzgzMSwxMTcyOTczMzMzXX0=
+eyJoaXN0b3J5IjpbLTk5NjMxMjUyOCwyMDQ0MzIzODMxLDExNz
+I5NzMzMzNdfQ==
 -->
