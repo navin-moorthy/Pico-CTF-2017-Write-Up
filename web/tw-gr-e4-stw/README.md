@@ -56,7 +56,9 @@ For those unfamiliar with race condtions, a race condition is
 So how can we get this code to be called multiple times? The client side has all sorts of delays and timeouts, so it will not be fast enough to call this code twice before our floor changes. However, we can change our location using this code:
 
 ```
-api("action", {
+apiExecute this command right under Level 3 staircase to move up twice :D
+    
+    socket.emit("action", {
     type: "move",
     direction: moveDir
 });
@@ -68,7 +70,8 @@ So if we go up to a staricase and call this function 3 times we can go into the 
 We can queue up the api calls in the console like so:
 
 ```
-api("action", {
+api2});
+    socket.emit("action", {
     type: "move",
     direction: 6
 });
@@ -89,7 +92,7 @@ Doing this on the third floor immediately shoots us up to the fifth floor where 
 
 `im_still_upset_you_dont_get_to_keep_the_cute_scarves_in_the_postgame_b33182b1495755d059698f90cec2b4e3`
 
-Thanks [intelagent](https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/content/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.html) for the writeup. Much helpful.
+Thanks [intelagent](https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/content/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.html) for the writeup. Much helpfulTherefore, the flag is `im_still_upset_you_dont_get_to_keep_the_cute_scarves_in_the_postgame_a44703668b068b3fa9a7a83a8f466ace`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjY3MzMxNzRdfQ==
+eyJoaXN0b3J5IjpbMjEyOTUsLTE0NjY3MzMxNzRdfQ==
 -->
